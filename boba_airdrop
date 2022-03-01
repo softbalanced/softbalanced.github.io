@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+
+<html lang="en-US" class="wf-poppins-n3-active wf-poppins-n4-active wf-poppins-n5-active wf-poppins-n6-active wf-poppins-i4-active wf-poppins-i5-active wf-poppins-i6-active wf-opensans-n3-active wf-opensans-n4-active wf-opensans-n6-active wf-opensans-n7-active wf-opensans-i3-active wf-opensans-i4-active wf-opensans-i6-active wf-opensans-i7-active wf-lora-n4-active wf-lora-n7-active wf-lora-i4-active wf-lora-i7-active js_active vc_desktop vc_transform vc_transform wf-poppins-n1-active wf-poppins-n2-active wf-poppins-n7-active wf-poppins-n8-active wf-poppins-n9-active wf-poppins-i1-active wf-poppins-i2-active wf-poppins-i3-active wf-poppins-i7-active wf-poppins-i8-active wf-poppins-i9-active wf-opensans-n8-active wf-opensans-i8-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- Mobile Specific Metas & Favicons -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<title>Balanced Dollar Cryptobacked stable coin</title>
+                        <script src="./index_files/webfont.js.download" type="text/javascript" async=""></script><script>
+                            /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
+                            if ( typeof WebFontConfig === "undefined" ) {
+                                WebFontConfig = new Object();
+                            }
+                            WebFontConfig['google'] = {families: ['Poppins:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic', 'Open+Sans:300,400,600,700,800,300italic,400italic,600italic,700italic,800italic', 'Lora:400,700,400italic,700italic']};
+
+                            (function() {
+                                var wf = document.createElement( 'script' );
+                                wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js';
+                                wf.type = 'text/javascript';
+                                wf.async = 'true';
+                                var s = document.getElementsByTagName( 'script' )[0];
+                                s.parentNode.insertBefore( wf, s );
+                            })();
+                        </script>
+                        <link rel="dns-prefetch" href="http://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Bixcoin - WordPress theme for Cryptocurrency | Bitcoin | Ethemreum » Feed" href="feed/">
+<link rel="alternate" type="application/rss+xml" title="Bixcoin - WordPress theme for Cryptocurrency | Bitcoin | Ethemreum » Comments Feed" href="comments/feed/">
+		
+		
+		<script src="./index_files/wp-emoji-release.min.js.download" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="contact-form-7-css" href="./index_files/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="rs-plugin-settings-css" href="./index_files/settings.css" type="text/css" media="all">
+<style id="rs-plugin-settings-inline-css" type="text/css">
+#rs-demo-id {}
+.tp-caption.subcaption,.subcaption{color:#6f7c82;font-size:19px;line-height:24px;font-weight:400;font-style:normal;font-family:roboto;text-decoration:none;background-color:transparent;border-color:#000000;border-style:none;border-width:0px;border-radius:0 0 0 0px;text-shadow:none} #rev_slider_1_1_wrapper .tp-loader.spinner2{ background-color: #fff !important; } .tp-caption.menutab:before {
+          content:" ";
+          height:0px;
+          width:3px;
+          background:#D50000;
+          position:absolute;
+          top:16%;
+          left:-30px;
+          transition:all 0.3s;
+          -webkit-transition:all 0.3s;
+          box-sizing:border-box;
+          margin-top:-1px;
+}
+
+.tp-caption.menutab.selected:before {
+          height:66%;
+}
+.mn-ct{
+		text-align: center !important;
+		}
+.rev_slider .tp-caption, .rev_slider .caption{
+	display: inline-block !important;
+}</style>
+<link rel="stylesheet" id="bixcoin-flipclock-css" href="./index_files/flipclock.css" type="text/css" media="all">
+<link rel="stylesheet" id="bixcoin-shortcodes-css" href="./index_files/shortcodes.css" type="text/css" media="all">
+<link rel="stylesheet" id="bixcoin-responsive-css" href="./index_files/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="bixcoin-strokegap-css" href="./index_files/strokegap.css" type="text/css" media="all">
+<link rel="stylesheet" id="fonts-css" href="./index_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="bixcoin-stylesheet-css" href="./index_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="bixcoin-bootstrap-css" href="./index_files/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="js_composer_front-css" href="./index_files/js_composer.min.css" type="text/css" media="all">
+<script type="text/javascript" src="./index_files/jquery.js.download"></script>
+<script type="text/javascript" src="./index_files/jquery-migrate.min.js.download"></script>
+<script type="text/javascript" src="./index_files/jquery.themepunch.tools.min.js.download"></script>
+<script type="text/javascript" src="./index_files/jquery.themepunch.revolution.min.js.download"></script>
+<link rel="https://api.w.org/" href="http://wp.zozotheme.com/wp-bixcoin/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://wp.zozotheme.com/wp-bixcoin/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://wp.zozotheme.com/wp-bixcoin/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.9.18">
+<link rel="canonical" href="http://wp.zozotheme.com/wp-bixcoin/">
+<link rel="shortlink" href="http://wp.zozotheme.com/wp-bixcoin/">
+<link rel="alternate" type="application/json+oembed" href="http://wp.zozotheme.com/wp-bixcoin/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwp.zozotheme.com%2Fwp-bixcoin%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://wp.zozotheme.com/wp-bixcoin/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwp.zozotheme.com%2Fwp-bixcoin%2F&amp;format=xml">
+<style type="text/css">
+body{ font: 400 16px Open Sans, Arial, Helvetica, sans-serif; color: #777777; line-height: 1.9;} .wrapall, .boxed-layout{ background-color: #ffffff; } body.page-template-page-blank-php{ background: #ffffff !important; } h1{ font: 600 28px Poppins, Arial, Helvetica, sans-serif; color: #333333; } h2{ font: 600 24px Poppins, Arial, Helvetica, sans-serif; color: #333333; } h3{ font: 600 20px Poppins, Arial, Helvetica, sans-serif; color: #333333; } h4{ font: 600 16px Poppins, Arial, Helvetica, sans-serif; color: #333333; } h5{ font: 600 16px Poppins, Arial, Helvetica, sans-serif; color: #333333; } h6{ font: 600 16px Poppins, Arial, Helvetica, sans-serif; color: #333333; } .title{ font-family: 'Poppins', Arial, Helvetica, sans-serif; } h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; color: inherit; } h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, a:hover h1, a:hover h2, a:hover h3, a:hover h4, a:hover h5, a:hover h6 { color: #333333; } a{ color: #37ab75; } a:hover{ color: #333333; } input[type='text'], input[type='password'], input[type='email'], input[type='tel'], textarea, select { font-family: Open Sans, Arial, Helvetica, sans-serif; font-size: 16px; } #sidebar .widget h3{ font: 600 22px Poppins, Arial, Helvetica, sans-serif; color: #444444; } .container .twelve.alt.pull-right, .container .twelve.alt.pull-left, #sidebar.pull-right #sidebar-widgets, #sidebar.pull-left #sidebar-widgets{ border-color: #efefef;} #topbar{ background: transparent; color: #948ea1; } #topbar a{ color: #948ea1; } #topbar a:hover{ color: #333333; } @media only screen and (max-width: 767px) { #topbar .topbar-col1{ background: transparent; } } /* Navigation */ #navigation > ul > li > a{ font: 400 16px Poppins, Arial, Helvetica, sans-serif; color: #fff; } #navigation > ul > li:hover > a, #navigation > ul > li > a:hover { color: #37ab75; } #navigation li.current-menu-item > a:hover, #navigation li.current-page-ancestor > a:hover, #navigation li.current-menu-ancestor > a:hover, #navigation li.current-menu-parent > a:hover, #navigation li.current_page_ancestor > a:hover, #navigation > ul > li.sfHover > a { color: #37ab75; } #navigation li.current-menu-item > a, #navigation li.current-page-ancestor > a, #navigation li.current-menu-ancestor > a, #navigation li.current-menu-parent > a, #navigation ul li:hover{ border-color: #37ab75; } #navigation li.current-menu-item, #navigation li.current-page-ancestor, #navigation li.current-menu-ancestor, #navigation li.current-menu-parent, #navigation .sub-menu{ background: transparent; } #navigation .sub-menu li a{ font: 15px Poppins, Arial, Helvetica, sans-serif; color: #454545; } #navigation .sub-menu li a:hover{ color: #ffffff; } #navigation .sub-menu li.current_page_item > a, #navigation .sub-menu li.current_page_item > a:hover, #navigation .sub-menu li.current-menu-item > a, #navigation .sub-menu li.current-menu-item > a:hover, #navigation .sub-menu li.current-page-ancestor > a, #navigation .sub-menu li.current-page-ancestor > a:hover, #navigation .sub-menu li.current-menu-ancestor > a, #navigation .sub-menu li.current-menu-ancestor > a:hover, #navigation .sub-menu li.current-menu-parent > a, #navigation .sub-menu li.current-menu-parent > a:hover, #navigation .sub-menu li.current_page_ancestor > a, #navigation .sub-menu li.current_page_ancestor > a:hover{ color: #ffffff; } #navigation .sub-menu li a, #navigation .sub-menu ul li a{ border-color: #f0f0f0; } #navigation > ul > li.megamenu > ul.sub-menu{ background: transparent; border-color: #37ab75; } #navigation > ul > li.megamenu > ul > li { border-right-color: #f0f0f0 !important; } #navigation > ul > li.megamenu ul li a{ color:#454545; } #navigation > ul > li.megamenu > ul > li > a { color:#333333; } #navigation > ul > li.megamenu > ul ul li a:hover, #header #navigation > ul > li.megamenu > ul ul li.current-menu-item a { color: #ffffff !important; background-color: #333333 !important; } /* Header General */ #search-btn, #shopping-btn, #close-search-btn { color: #454545; } #search-btn:hover, #shopping-btn:hover, #close-search-btn:hover { color: #848484; } /* Mobile Header */ #mobile-navigation{ background: transparent; } #mobile-navigation ul li a{ font: 15px Poppins, Arial, Helvetica, sans-serif; color: #454545; border-bottom-color: #f0f0f0 !important; } #mobile-navigation ul li a:hover, #mobile-navigation ul li a:hover [class^='fa-'], #mobile-navigation li.open > a, #mobile-navigation ul li.current-menu-item > a, #mobile-navigation ul li.current-menu-ancestor > a{ color: #ffffff; } body #mobile-navigation li.open > a [class^='fa-']{ color: #ffffff; } #mobile-navigation form, #mobile-navigation form input{ background: #444444; color: #cccccc; } #mobile-navigation form:before{ color: #cccccc; } #mobile-header{ background: #000000; height: 90px; } #mobile-navigation-btn, #mobile-cart-btn, #mobile-shopping-btn{ color: #454545; line-height: 90px; } #mobile-navigation-btn:hover, #mobile-cart-btn:hover, #mobile-shopping-btn:hover { color: #848484; } #mobile-header .logo{ margin-top: 24px; } /* Header V1 */ #header.header-v1.header-trans, #header.header-v1 { height: 90px; background:#000000 } .header-v1.stuck.header-trans .logo, .header-v1 .logo{ margin-top: 24px; } .header-v1.stuck.header-trans #navigation > ul > li, .header-v1 #navigation > ul > li{ height: 90px; padding-top: 35px; } .header-v1 #navigation .sub-menu{ top: 90px; } .header-v1 .header-icons-divider{ line-height: 90px; background: #efefef; } #header.header-v1 .widget_shopping_cart{ top: 90px; } .header-v1 #search-btn, .header-v1 #close-search-btn, .header-v1 #shopping-btn{ line-height: 90px; } .header-v1 #search-top, .header-v1 #search-top input{ height: 90px; } .header-v1 #search-top input{ color: #666666; font-family: Open Sans, Arial, Helvetica, sans-serif; } /* Header V3 */ #header.header-v3 { background: #000000; } .header-v3 .navigation-wrap{ background: #ffffff; border-top: 1px solid #efefef; } .header-v3 .logo { margin-top: 30px; margin-bottom: 30px; } #header.header-trans.header-v1.custom-trans.headerv3 #logo-navigation{background: #182557;} /* Header V4 */ #header.header-v4 { background: #000000; } .header-v4 .navigation-wrap{ background: #ffffff; border-top: 1px solid #efefef; } .header-v4 .logo { margin-top: 30px; margin-bottom: 30px; } /* Transparent Header */ #transparentimage{ padding: 200px 0 75px 0; } .header-is-transparent #mobile-navigation{ top: 90px; } /* Stuck */ .stuck{ background: #000000; } /* Titlebars */ .titlebar h1{ font: 50px Poppins, Arial, Helvetica, sans-serif; color: #f9f9fa; } #fulltitle{ background: #f9f9f9; border-bottom: 1px solid #efefef; } #breadcrumbs{ margin-top: 20px; } #breadcrumbs, #breadcrumbs a{ font: 400 13px Open Sans, Arial, Helvetica, sans-serif; color: #37ab75; } #breadcrumbs a:hover{ color: #666666; } #fullimagecenter h1, #transparentimage h1{ font: 50px Poppins, Arial, Helvetica, sans-serif; color: #ffffff; letter-spacing: 1px; text-align: left; } /* Footer */ #footer .widget h3 { font: 500 20px Poppins, Arial, Helvetica, sans-serif; color: #ffffff; } #footer{ color: #8b8b8b; border-top: 4px none #37ab75; } #footer{ background-color: #191919; } #footer a, #footer .widget ul li:after { color: #8b8b8b; } #footer a:hover, #footer .widget ul li:hover:after { color: #37ab75; } /* Copyright */ #copyright{ background: #191919; color: #777777; } #copyright a { color: #999999; } #copyright a:hover { color: #cccccc; } /* Color Accent */ .highlight{color:#37ab75 !important;} ::selection{ background: #37ab75; } ::-moz-selection { background: #37ab75; } #shopping-btn span{background:#37ab75;} .blog-page .post h1 a:hover,.blog-page .post h2 a:hover{color:#37ab75;} .entry-image .entry-overlay{background:#37ab75;} .entry-quote a:hover{background:#37ab75;} .entry-link a:hover{background:#37ab75;} .blog-single .entry-tags a:hover{color:#37ab75;} .sharebox ul li a:hover{color:#37ab75;} #pagination .current a{background:#37ab75;} #filters ul li a:hover{color:#37ab75;} #filters ul li a.active{color:#37ab75;} #back-to-top a:hover{background-color:#37ab75;} #sidebar .widget ul li a:hover{color:#37ab75;} #sidebar .widget ul li:hover:after{color:#37ab75;} .widget_tag_cloud a:hover,.widget_product_tag_cloud a:hover{background:#37ab75;border-color:#37ab75;} .widget_portfolio .portfolio-widget-item .portfolio-overlay{background:#37ab75;} #sidebar .widget_nav_menu ul li a:hover{color:#37ab75;} #footer .widget_tag_cloud a:hover,#footer .widget_product_tag_cloud a:hover{background:#37ab75;border-color:#37ab75;} /* Shortcodes */ .box.style-2{border-top-color:#37ab75;} .box.style-4{border-color:#37ab75;} .shareicons_icon, #sidebar .widget h3::before, .box.style-6{background:#37ab75;} a.button,input[type=submit],button,.bixcoin_button{background:#37ab75;border-color:#37ab75;} a.button.color-2{color:#37ab75;border-color:#37ab75;} a.button.color-3{background:#37ab75;border-color:#37ab75;} a.button.color-9{color:#37ab75;} a.button.color-6:hover{background:#37ab75;border-color:#37ab75;} a.button.color-7:hover{background:#37ab75;border-color:#37ab75;} .counter-number{color:#37ab75;} .divider-title.align-center:after, .divider-title.align-left:after { background-color:#37ab75 } .divider5{border-bottom-color:#37ab75;} .dropcap.dropcap-circle{background-color:#37ab75;} .dropcap.dropcap-box{background-color:#37ab75;} .dropcap.dropcap-color{color:#37ab75;} .toggle .toggle-title.active, .color-light .toggle .toggle-title.active{ background:#37ab75; border-color: #37ab75;} .iconbox-style-1.icon-color-accent i.boxicon,.iconbox-style-2.icon-color-accent i.boxicon,.iconbox-style-3.icon-color-accent i.boxicon,.iconbox-style-8.icon-color-accent i.boxicon,.iconbox-style-9.icon-color-accent i.boxicon{color:#37ab75!important;} .iconbox-style-4.icon-color-accent i.boxicon,.iconbox-style-5.icon-color-accent i.boxicon,.iconbox-style-6.icon-color-accent i.boxicon,.iconbox-style-7.icon-color-accent i.boxicon,.flip .icon-color-accent.card .back{background:#37ab75;} .latest-blog .blog-item .blog-overlay{background:#37ab75;} .latest-blog .blog-item .blog-pic i{color:#37ab75;} .latest-blog .blog-item h4 a:hover{color:#37ab75;} .progressbar .progress-percentage{background:#37ab75;} .wpb_widgetised_column .widget ul li a:hover{color:#37ab75;} .wpb_widgetised_column .widget ul li:hover:after{color:#37ab75;} .wpb_accordion .wpb_accordion_wrapper .ui-state-active .ui-icon{background-color:#37ab75;} .wpb_accordion .wpb_accordion_wrapper .ui-state-active.wpb_accordion_header a{color:#37ab75;} .wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header a:hover,.wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header a:hover .ui-state-default .ui-icon{color:#37ab75;} .wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header:hover .ui-icon{background-color:#37ab75!important;} .wpb_content_element.wpb_tabs .wpb_tabs_nav li.ui-tabs-active{border-bottom-color:#37ab75;} .portfolio-item h4 a:hover{ color: #37ab75; } .portfolio-filters ul li a:hover { color: #37ab75; } .portfolio-filters ul li a.active { color: #37ab75; } .portfolio-overlay-icon .portfolio-overlay{ background: #37ab75; } .portfolio-overlay-icon i{ color: #37ab75; } .portfolio-overlay-effect .portfolio-overlay{ background: #37ab75; } .portfolio-overlay-name .portfolio-overlay{ background: #37ab75; } .portfolio-detail-attributes ul li a:hover{ color: #37ab75; } a.catimage:hover .catimage-text{ background: #37ab75; } /* Special Font */ .font-special, .counter-title, h6, .wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header a, .pricing-plan .pricing-plan-head h3, a.catimage, .divider-title, button, input[type='submit'], input[type='reset'], input[type='button'], .vc_pie_chart h4, .page-404 h3, .bixcoin_masonrygrid_item h4{ font-family: 'Lora', Arial, Helvetica, sans-serif; /*letter-spacing: 0px; font-weight: 700;*/} .ui-helper-reset{ line-height: 1.9; } /* User CSS from Theme Options */ @media only screen and (max-width: 959px) { #header, .sticky-wrapper{display:block;} #mobile-header{display:inherit} }
+</style><meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="http://wp.zozotheme.com/wp-bixcoin/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style><meta name="generator" content="Powered by Slider Revolution 5.4.8.3 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+<script type="text/javascript">function setREVStartSize(e){									
+						try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+							if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
+						}catch(d){console.log("Failure at Presize of Slider:"+d)}						
+					};</script>
+		<style type="text/css" id="wp-custom-css">
+			@media only screen and (min-width: 768px) and (max-width: 992px) {
+.member {
+    position: relative;
+    padding-bottom: 10px;
+    width: 270px;
+    margin: 0 auto;
+}
+	
+}
+@media only screen and (max-width: 992px) {
+	.wpb_column.vc_custom_1560117229992 {
+    padding-left: 25px !important;
+}
+.price_calculator input, .price_calculator select{
+		width:100% !important;
+	}
+}
+.overflow-hidden{
+	overflow:hidden;
+}
+.page-section .service-section {
+
+    background-position: center top 268px !important;
+
+}		</style>
+	<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1561013402532{padding-top: 60px !important;padding-bottom: 60px !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1516306902461{background: #f0f0f0 url(http://wp.zozotheme.com/wp-bixcoin/wp-content/uploads/2018/01/tablet-bg.png?id=16585) !important;}.vc_custom_1561013886441{padding-top: 70px !important;padding-bottom: 35px !important;background: #f4f3f5 url(http://wp.zozotheme.com/wp-bixcoin/wp-content/uploads/2018/01/arrow.png?id=16608) !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1516434241940{padding-top: 30px !important;padding-bottom: 30px !important;background: #008ed6 url(bg-4.jpg?id=16614) !important;}.vc_custom_1516449728567{padding-top: 80px !important;padding-bottom: 80px !important;background-color: #f3f3f8 !important;background-position: 0 0 !important;background-repeat: repeat !important;}.vc_custom_1560116552992{background: #008ed6 url(http://wp.zozotheme.com/wp-bixcoin/wp-content/uploads/2019/06/converter-bg.jpg?id=16875) !important;}.vc_custom_1516991603470{padding-top: 90px !important;padding-bottom: 10px !important;background-color: #ffffff !important;}.vc_custom_1516990417978{padding-top: 30px !important;padding-right: 15px !important;padding-bottom: 20px !important;padding-left: 20px !important;}.vc_custom_1500839366965{background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1516423216840{padding-top: 60px !important;}.vc_custom_1516427253859{padding-top: 80px !important;padding-bottom: 80px !important;}.vc_custom_1516427240317{padding-top: 90px !important;padding-bottom: 90px !important;}.vc_custom_1498294033746{margin-bottom: 25px !important;}.vc_custom_1516448374822{padding-top: 50px !important;}.vc_custom_1516448196867{padding-right: 0px !important;padding-left: 0px !important;}.vc_custom_1516448539121{padding-top: 30px !important;padding-right: 30px !important;padding-bottom: 30px !important;padding-left: 30px !important;background-color: #2540a5 !important;}.vc_custom_1516514990588{padding-left: 0px !important;}.vc_custom_1490902640136{padding-right: 10px !important;padding-left: 0px !important;}.vc_custom_1516515004450{padding-left: 0px !important;}.vc_custom_1490902361308{padding-left: 0px !important;}.vc_custom_1490902580621{padding-left: 0px !important;}.vc_custom_1490902588853{padding-left: 0px !important;}.vc_custom_1490902595124{padding-left: 0px !important;}.vc_custom_1560117229992{padding-top: 65px !important;padding-bottom: 39px !important;padding-left: 80px !important;}.vc_custom_1516515021451{padding-left: 0px !important;}.vc_custom_1516477846931{padding-left: 0px !important;}.vc_custom_1517135542150{margin-top: 46px !important;margin-bottom: 75px !important;}.vc_custom_1516993029628{padding-top: 30px !important;padding-right: 15px !important;padding-bottom: 20px !important;padding-left: 20px !important;background-color: #f8f8f7 !important;}.vc_custom_1516514418463{padding-left: 30px !important;}.vc_custom_1516513845530{padding-top: 15px !important;}</style><link rel="stylesheet" href="./index_files/css(1)"><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+
+<body  class="home page-template-default page page-id-15799 smooth-scroll header-is-transparent  wpb-js-composer js-comp-ver-5.5.1 vc_responsive" style="background-color: rgb(25, 25, 25);">  
+
+	<div class="site-wrapper wrapall">
+
+	
+<div class="sticky-wrapper" style="height: 90px;"><header id="header" class="header header-v1 custom-trans clearfix  header-trans stuck">
+	<div id="topbar" class="header-v2 clearfix">
+  <div class="container">
+    <div class="col-md-12">
+      <div class="topbar-col1">
+                <span>+(1800) 574 9687   /   inquery@softbalanced.com</span>              </div>
+      <div class="topbar-col2">
+                
+<div class="social-icons clearfix">
+	<ul>
+					<!--li><a href="http://wp.zozotheme.com/wp-bixcoin/#" target="_blank" title="Dribbble"><i class="fa fa-dribbble"></i></a></li-->
+					
+							<!--li><a href="http://facebook.com/softbalanced" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li-->
+							<li><a id="telegram_soc" href="https://t.me/joinchat/bOAMiNIqHLJhNjJk" target="_blank" title="Telegram"><img style="width:60%;"src="telegram-brands.svg"><i class="fab fa-telegram"></i></a></li>
+							<li><a href="https://github.com/softbalanced" target="_blank" title="Github"><img style="width:60%; "src="github-brands.svg"><i class=""></i></a></li>
+							<li><a href="https://app.sigle.io/softbalanced.id.stx" target="_blank" title="Blog"><img style="width:60%; "src="iconmonstr-rss-feed-4.svg"><i class=""></i></a></li>
+							<li><a href="https://discord.gg/HkHyKCjfRQ" target="_blank" title="Discord"><img style="width:60%; "src="discord.svg"><i class=""></i></a></li>
+							
+																																			</ul>
+</div>              </div>
+    </div>
+  </div>
+</div>
+  <div class="container">
+    <div id="logo-navigation" class="col-md-12"> 
+      <div id="logo" class="logo">
+                <a href="http://wp.zozotheme.com/wp-bixcoin/"><img  src="usbl_svg_balanced.svg" alt="Bixcoin – WordPress theme for Cryptocurrency | Bitcoin | Ethemreum" class="logo_standard"></a>
+                <a href="http://wp.zozotheme.com/wp-bixcoin/"><img  src="usbl_svg_balanced.svg" alt="Bixcoin – WordPress theme for Cryptocurrency | Bitcoin | Ethemreum" class="logo_transparent"></a>
+                        <a href="http://wp.zozotheme.com/wp-bixcoin/"><img  src="usbl_svg_balanced.svg" alt="Bixcoin – WordPress theme for Cryptocurrency | Bitcoin | Ethemreum" class="logo_retina"></a>
+                        <a href="http://wp.zozotheme.com/wp-bixcoin/"><img  src="usbl_svg_balanced.svg" alt="Bixcoin – WordPress theme for Cryptocurrency | Bitcoin | Ethemreum" class="logo_retina_transparent"></a>
+                      </div>
+      <div class="menu-toggle"> <span>&nbsp;</span> <span>&nbsp;</span> <span>&nbsp;</span> </div>
+      <div id="navigation" class="clearfix">
+        <div class="header-icons">
+                    <div class="header-icons-divider"></div>
+                              <a href="" id="search-btn"><i class="icon icon-Search"></i></a>
+                  </div>
+        <ul id="nav" class="menu sf-js-enabled sf-arrows">
+		<!--li id="menu-item-16860" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-15799 current_page_item menu-item-16860 active">
+		<a title="Home" href="">Home</a></li-->
+<li id="menu-item-16858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16858"><a title="About Us" href="https://softbalanced.github.io/core/">About Us</a></li>
+<li id="menu-item-16858" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16858"><a title="Trading Pairs" href="https://nomics.com/assets/usbl-balanced-dollar/markets">Markets</a></li>
+
+
+<!--li id="menu-item-16854" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16854"><a title="Our Team" href="our-team/">Our Team</a></li-->
+
+<!--li id="menu-item-16861" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16861 dropdown"><a title="Pages" href="#" data-toggle="dropdown" class="dropdown-toggle sf-with-ul">Pages </a><span></span>
+<ul role="menu" class=" dropdown-menu" style="display: none;">
+	<li id="menu-item-16859" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16859"><a title="Blog" href="blog/">Blog</a></li>
+	<li id="menu-item-16862" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16862"><a title="Single Post" href="2014/12/11/the-wilderness-of-montibo/">Single Post</a></li>
+</ul>
+</li-->
+
+
+<li id="menu-item-16856" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16856">
+<a title="Whitepaper" href="https://github.com/softbalanced/core/raw/gh-pages/bdollar_launch_whitepaper.pdf">Whitepaper</a></li>
+
+
+<li id="menu-item-16856" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16856">
+<a title="Wallet" href="https://github.com/softbalanced/core/releases">Wallet</a></li>
+
+<li id="menu-item-16855" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16855"><a title="Masternode" href="https://softbalanced.com/masternodeguide.html">Masternode</a></li>
+<!--li id="menu-item-16855" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16855"><a title="Mining" href="https://softbalanced.com/minerguide.html">Mining</a></li-->
+<li id="menu-item-16857" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16857"><a title="Contact Us" href="https://discord.gg/HkHyKCjfRQ">Contact Us</a></li>
+
+<li id="menu-item-16857" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16857"><a title="DEX Wallet" href="https://github.com/KomodoPlatform/atomicDEX-Desktop/releases">DEX Wallet</a></li>
+
+</ul>      </div>
+    </div>
+        <div id="search-top" class="col-md-12 clearfix">
+<script>
+function searchsf(){
+document.location.href='https://blockscan.com/search?q=softbalanced '+document.getElementById('sf').value;
+}</script>
+      <!--form action="" method="POST" onsubmit="searchsf();return false;"-->
+      <form action="" method="POST" >
+        <input type="text" name="sf" id="sf" value="" placeholder="To Search start typing..." autocomplete="off">
+      </form>
+      <a href="#" id="close-search-btn"><i class="icon-bixcoin-close"></i></a> </div>
+      </div>
+</header></div>
+
+
+
+		
+
+
+<div id="page-wrap">
+
+	<div id="content" class="page-section nopadding">
+	
+		<section class="vc_rows wpb_rows vc_rows-fluid" style="background-position: center;"><div class="row full-width"><div class="wpb_column col-md-12"><div class="wpb_wrapper"><div class="wpb_revslider_element wpb_content_element"><link href="./index_files/css(2)" rel="stylesheet" property="stylesheet" type="text/css" media="all">
+<div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container tp-mouseover" data-source="gallery" style="margin: 0px auto; background: rgb(238, 240, 241); padding: 0px; height: 835px; overflow: visible;">
+<!-- START REVOLUTION SLIDER 5.4.8.3 auto mode -->
+	<div id="rev_slider_1_1" class="rev_slider fullwidthabanner revslider-initialised tp-simpleresponsive rev_redraw_on_blurfocus" style="margin-top: 0px; margin-bottom: 0px; height: 835px;" data-version="5.4.8.3" data-slideactive="rs-1">
+<ul class="tp-revslider-mainul" style="visibility: visible; display: block; overflow: hidden; width: 100%; height: 100%; max-height: none; left: 0px;">	<!-- SLIDE  -->
+	<li data-index="rs-1" data-transition="scaledownfrombottom" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="-410" data-thumb="http://wp.zozotheme.com/wp-bixcoin/wp-content/uploads/revslider/demo2/banner1-1-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Premium Benefits" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" class="tp-revslider-slidesli active-revslide" style="width: 100%; height: 100%; overflow: hidden; z-index: 20; visibility: inherit; opacity: 1; background-color: rgba(255, 255, 255, 0);">
+		<!-- MAIN IMAGE -->
+		<div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="http://wp.zozotheme.com/wp-bixcoin/wp-content/plugins/revslider/admin/assets/images/dummy.png" alt="" title="Home" data-lazyload="banner1-1.jpg" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg defaultimg" data-no-retina="">--><div class="tp-bgimg defaultimg " data-bgcolor="undefined" style="background-repeat: no-repeat; background-image: url(&quot;banner1-1.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;" src="banner1-1.jpg"></div></div>
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 1 -->
+		<div class="tp-parallax-wrap" style="position: absolute; display: inline-block; visibility: visible; left: 281px; top: 286px; z-index: 5;"><div class="tp-loop-wrap" style="position:absolute;display:inline-block;;"><div class="tp-mask-wrap" style="position: absolute; display: inline-block; overflow: visible;"><div class="tp-caption subcaption   tp-resizeme  rev-title" id="slide-1-layer-2" data-x="[&#39;left&#39;,&#39;left&#39;,&#39;center&#39;,&#39;center&#39;]" data-hoffset="[&#39;50&#39;,&#39;50&#39;,&#39;0&#39;,&#39;-1&#39;]" data-y="[&#39;top&#39;,&#39;top&#39;,&#39;top&#39;,&#39;top&#39;]" data-voffset="[&#39;286&#39;,&#39;247&#39;,&#39;250&#39;,&#39;250&#39;]" data-fontsize="[&#39;55&#39;,&#39;55&#39;,&#39;40&#39;,&#39;30&#39;]" data-lineheight="[&#39;61&#39;,&#39;60&#39;,&#39;40&#39;,&#39;30&#39;]" data-fontweight="[&#39;600&#39;,&#39;600&#39;,&#39;700&#39;,&#39;700&#39;]" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:290,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:290,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]" data-textalign="[&#39;left&#39;,&#39;left&#39;,&#39;center&#39;,&#39;center&#39;]" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; white-space: nowrap; font-size: 55px; line-height: 61px; font-weight: 600; color: rgb(255, 255, 255); letter-spacing: 0px; font-family: Poppins; cursor: pointer; visibility: inherit; transition: none 0s ease 0s; text-align: left; border-width: 0px; margin: 0px; padding: 0px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">
+		Boba chain<span class="green" style="transition: none 0s ease 0s; text-align: left; line-height: 61px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 600; font-size: 55px;">
+		<br>USBL token Airdrop </span> <br>
+</div></div></div></div>
+
+		<!-- LAYER NR. 2 -->
+		<div class="tp-parallax-wrap" style="position: absolute; display: inline-block; visibility: visible; left: 282px; top: 434px; z-index: 6;"><div class="tp-loop-wrap" style="position:absolute;display:inline-block;;"><div class="tp-mask-wrap" style="position: absolute; display: inline-block; overflow: visible;"><div class="tp-caption subcaption   tp-resizeme" id="slide-1-layer-50" data-x="[&#39;left&#39;,&#39;center&#39;,&#39;center&#39;,&#39;center&#39;]" data-hoffset="[&#39;51&#39;,&#39;-181&#39;,&#39;-2&#39;,&#39;-2&#39;]" data-y="[&#39;top&#39;,&#39;top&#39;,&#39;top&#39;,&#39;top&#39;]" data-voffset="[&#39;434&#39;,&#39;394&#39;,&#39;360&#39;,&#39;316&#39;]" data-fontsize="[&#39;22&#39;,&#39;20&#39;,&#39;18&#39;,&#39;14&#39;]" data-lineheight="[&#39;30&#39;,&#39;40&#39;,&#39;30&#39;,&#39;30&#39;]" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:290,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:290,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]" data-textalign="[&#39;left&#39;,&#39;left&#39;,&#39;center&#39;,&#39;center&#39;]" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: nowrap; font-size: 22px; line-height: 30px; color: rgb(255, 255, 255); letter-spacing: 0px; font-family: Poppins; cursor: pointer; visibility: inherit; transition: none 0s ease 0s; text-align: left; border-width: 0px; margin: 0px; padding: 0px; font-weight: 400; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">
+		
+<form id="claim_form" name="claim_form" action="boba_airdrop.php">
+
+<input type=text id="address" name="address" style="width:750px;height:40px;border:0px;font-size:20px;background-color:#b7b9c7"  placeholder="Boba address">
+<br><br>Step 1. Copy boba chain address from metamask
+<br><br>
+<input type=submit value="Continue" style="">
+</form>
+
+<br><br>Optional steps, navigate to boba swap
+<br><br>Swap USBL, deposit liquidity pair USBL/USDC
+
+
+		</div></div></div>
+		</div>
+
+		<!-- LAYER NR. 3 -->
+		<div class="tp-parallax-wrap" style="position: absolute; display: inline-block; visibility: visible; left: 282px; top: 532px; z-index: 7;"><div class="tp-loop-wrap" style="position:absolute;display:inline-block;;"><div class="tp-mask-wrap" style="position: absolute; display: inline-block; overflow: visible;">
+		
+		<div onclick="document.getElementById('claim_form').submit()" style="text-decoration:none;">
+		<div class="tp-caption rev-btn rev-withicon  rs-hover-ready" id="slide-1-layer-55" data-x="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" data-hoffset="[&#39;51&#39;,&#39;47&#39;,&#39;155&#39;,&#39;63&#39;]" 
+		data-y="[&#39;top&#39;,&#39;top&#39;,&#39;top&#39;,&#39;top&#39;]" data-voffset="[&#39;532&#39;,&#39;509&#39;,&#39;450&#39;,&#39;398&#39;]" 
+		data-fontsize="[&#39;16&#39;,&#39;17&#39;,&#39;17&#39;,&#39;12&#39;]" data-lineheight="[&#39;57&#39;,&#39;17&#39;,&#39;17&#39;,&#39;17&#39;]" data-fontweight="[&#39;500&#39;,&#39;700&#39;,&#39;700&#39;,&#39;700&#39;]"
+		data-letterspacing="[&#39;0&#39;,&#39;&#39;,&#39;&#39;,&#39;&#39;]" data-width="none" data-height="none" data-whitespace="nowrap" data-type="button" data-responsive_offset="on" data-responsive="off"
+		data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:300,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},
+		{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;frame&quot;:&quot;hover&quot;,
+		&quot;speed&quot;:&quot;0&quot;,&quot;ease&quot;:&quot;Linear.easeNone&quot;,&quot;to&quot;:&quot;o:1;rX:0;rY:0;rZ:0;z:0;&quot;,&quot;style&quot;:&quot;c:rgba(255,255,255,1);&quot;}]" data-textalign="[&#39;inherit&#39;,
+		&#39;inherit&#39;,&#39;inherit&#39;,&#39;inherit&#39;]" data-paddingtop="[0,14,14,10]" data-paddingright="[45,25,20,10]" data-paddingbottom="[0,14,14,10]" data-paddingleft="[45,25,20,10]" style="z-index: 7; white-space: 
+		nowrap; font-size: 16px; line-height: 57px; font-weight: 500; color: rgb(255, 255, 255); letter-spacing: 0px; font-family: Poppins; background-color: rgb(55, 171, 117); border-radius: 45px; outline: none; box-shadow: none;
+		box-sizing: border-box; cursor: pointer; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; border-width: 0px; margin: 0px; padding: 0px 45px; min-height: 0px; min-width: 0px; max-height: none; max-width: 
+		none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;"></div>
+		</div>
+		</div></div>
+		</div>
+
+		<!-- LAYER NR. 4 -->
+		<div class="tp-parallax-wrap" style="position: absolute; display: inline-block; visibility: visible; left: 1016px; top: 207px; z-index: 8;">
+<div class="tp-loop-wrap" style="position:absolute;display:inline-block;;"><div class="tp-mask-wrap" style="position: absolute; display: inline-block; overflow: visible;">
+<div class="tp-caption   tp-resizeme rs-toggle-content-active" id="slide-1-layer-59" data-x="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" 
+data-hoffset="[&#39;665&#39;,&#39;665&#39;,&#39;108&#39;,&#39;59&#39;]" data-y="[&#39;top&#39;,&#39;top&#39;,&#39;top&#39;,&#39;top&#39;]" 
+data-voffset="[&#39;207&#39;,&#39;177&#39;,&#39;428&#39;,&#39;468&#39;]" data-width="none" data-height="none" data-whitespace="nowrap" 
+data-visibility="[&#39;on&#39;,&#39;on&#39;,&#39;off&#39;,&#39;off&#39;]" data-type="image" data-responsive_offset="on"
+ data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:300,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;&quot;,&quot;
+ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;
+,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="[&#39;inherit&#39;,&#39;inherit&#39;,&#39;inherit&#39;,&#39;inherit&#39;]" data-paddingtop="[0,0,0,0]"
+ data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" 
+data-paddingleft="[0,0,0,0]" data-captionhidden="on" style="z-index: 8; visibility: inherit; transition: none 0s ease 0s; text-align: 
+inherit; line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 16px; white-space: nowrap; min-height: 
+0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">
+
+
+<a style="text-decoration:none;" href="https://github.com/KomodoPlatform/atomicDEX-Desktop/releases">
+<img src="img.png" style="" alt=""
+ data-ww="[&#39;660px&#39;,&#39;660px&#39;,&#39;570px&#39;,&#39;342px&#39;]" data-hh="[&#39;463px&#39;,&#39;463px&#39;,&#39;400px&#39;,&#39;236px&#39;]" 
+ 
+data-lazyload="http://wp.zozotheme.com/wp-bixcoin/wp-content/uploads/revslider/demo2/img.png" data-no-retina="" 
+style="transition: none 0s ease 0s; text-align: inherit; line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; 
+font-size: 16px;"> 
+</a>
+</div></div></div>
+		</div>
+
+		<!-- LAYER NR. 5 -->
+		<div class="tp-parallax-wrap" style="position: absolute; display: inline-block; visibility: visible; left: 281px; top: 239px; z-index: 9;"><div class="tp-loop-wrap" style="position:absolute;display:inline-block;;"><div class="tp-mask-wrap" style="position: absolute; display: inline-block; overflow: visible;"><div class="tp-caption subcaption   tp-resizeme  rev-title" id="slide-1-layer-61" data-x="[&#39;left&#39;,&#39;left&#39;,&#39;center&#39;,&#39;center&#39;]" data-hoffset="[&#39;50&#39;,&#39;50&#39;,&#39;12&#39;,&#39;15&#39;]" data-y="[&#39;top&#39;,&#39;top&#39;,&#39;top&#39;,&#39;top&#39;]" data-voffset="[&#39;239&#39;,&#39;183&#39;,&#39;200&#39;,&#39;211&#39;]" data-fontsize="[&#39;22&#39;,&#39;22&#39;,&#39;25&#39;,&#39;20&#39;]" data-lineheight="[&#39;24&#39;,&#39;40&#39;,&#39;30&#39;,&#39;30&#39;]" data-fontweight="[&#39;700&#39;,&#39;400&#39;,&#39;700&#39;,&#39;700&#39;]" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:280,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:290,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]" data-textalign="[&#39;center&#39;,&#39;center&#39;,&#39;center&#39;,&#39;center&#39;]" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9; white-space: nowrap; font-size: 22px; font-weight: 700; color: rgb(255, 255, 255); letter-spacing: 0px; font-family: Lato; cursor: pointer; visibility: inherit; transition: none 0s ease 0s; text-align: center; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;"><i style="transition: none 0s ease 0s; text-align: center; line-height: 24px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 700; font-size: 22px;">
+		<!--Welcome to our coin--> </i> </div></div></div></div>
+
+		<!-- LAYER NR. 6 -->
+		<div class="tp-parallax-wrap" style="position: absolute; display: inline-block; visibility: visible; left: 546px; top: 540px; z-index: 10;">
+		<div class="tp-loop-wrap" style="position:absolute;display:inline-block;;">
+		<div class="tp-mask-wrap" style="position: absolute; display: inline-block; overflow: visible;">
+		<div class="tp-caption   tp-resizeme" id="slide-1-layer-64" data-x="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" 
+		data-hoffset="[&#39;315&#39;,&#39;310&#39;,&#39;410&#39;,&#39;268&#39;]" data-y="[&#39;top&#39;,&#39;top&#39;,&#39;top&#39;,&#39;top&#39;]" 
+		data-voffset="[&#39;540&#39;,&#39;507&#39;,&#39;450&#39;,&#39;392&#39;]" data-width="none" data-height="none" data-whitespace="nowrap" 
+		data-type="image" data-responsive_offset="on" 
+		data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:300,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="[&#39;inherit&#39;,&#39;inherit&#39;,&#39;inherit&#39;,&#39;inherit&#39;]" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 10; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 0px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 16px; white-space: nowrap; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">
+		
+		
+
+		</div></div></div>
+		</div>
+
+		<!-- LAYER NR. 7 -->
+		<div class="tp-parallax-wrap" style="position: absolute; display: inline-block; visibility: visible; left: 616px; top: 538px; z-index: 11;"><div class="tp-loop-wrap" style="position:absolute;display:inline-block;;"><div class="tp-mask-wrap" style="position: absolute; display: inline-block; overflow: visible;"><div class="tp-caption subcaption   tp-resizeme" id="slide-1-layer-65" data-x="[&#39;left&#39;,&#39;center&#39;,&#39;center&#39;,&#39;center&#39;]" data-hoffset="[&#39;385&#39;,&#39;-46&#39;,&#39;160&#39;,&#39;131&#39;]" data-y="[&#39;top&#39;,&#39;top&#39;,&#39;top&#39;,&#39;top&#39;]" data-voffset="[&#39;538&#39;,&#39;510&#39;,&#39;451&#39;,&#39;393&#39;]" data-fontsize="[&#39;20&#39;,&#39;20&#39;,&#39;18&#39;,&#39;12&#39;]" data-lineheight="[&#39;26&#39;,&#39;22&#39;,&#39;20&#39;,&#39;20&#39;]" data-fontweight="[&#39;400&#39;,&#39;400&#39;,&#39;400&#39;,&#39;700&#39;]" data-letterspacing="[&#39;0&#39;,&#39;&#39;,&#39;&#39;,&#39;&#39;]" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:290,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:50px;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:290,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]" data-textalign="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 11; white-space: nowrap; font-size: 20px; line-height: 26px; color: rgb(255, 255, 255); letter-spacing: 0px; font-family: Lora; cursor: pointer; visibility: inherit; transition: none 0s ease 0s; text-align: left; border-width: 0px; margin: 0px; padding: 0px; font-weight: 400; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;"><i style="transition: none 0s ease 0s; text-align: left; line-height: 26px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 20px;">
+		 <br></i> </div></div></div>
+		</div>
+
+		<!-- LAYER NR. 8 -->
+		<!--div class="tp-parallax-wrap" style="position: absolute; display: inline-block; visibility: visible; left: 491px; top: 240px; z-index: 12;"><div class="tp-loop-wrap" style="position:absolute;display:inline-block;;"><div class="tp-mask-wrap" style="position: absolute; display: inline-block; overflow: visible;"><div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-1-layer-66" data-x="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" data-hoffset="[&#39;260&#39;,&#39;260&#39;,&#39;260&#39;,&#39;256&#39;]" data-y="[&#39;top&#39;,&#39;top&#39;,&#39;top&#39;,&#39;top&#39;]" data-voffset="[&#39;240&#39;,&#39;240&#39;,&#39;240&#39;,&#39;286&#39;]" data-width="79" data-height="1" data-whitespace="nowrap" data-visibility="[&#39;on&#39;,&#39;on&#39;,&#39;off&#39;,&#39;off&#39;]" data-type="shape" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:300,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="[&#39;inherit&#39;,&#39;inherit&#39;,&#39;inherit&#39;,&#39;inherit&#39;]" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12; background-color: rgba(255, 255, 255, 0.5); visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 30px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 16px; white-space: nowrap; min-height: 1px; min-width: 79px; max-height: 1px; max-width: 79px; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;"> </div></div></div>
+		</div-->
+	</li>
+</ul>
+<div class="tp-bannertimer tp-bottom" style="height: 5px; background: rgba(0, 0, 0, 0.15); width: 0%;"></div>	<div class="tp-loader spinner2" style="display: none;"><div class="dot1"></div><div class="dot2"></div><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div></div>
+<script>var htmlDiv = document.getElementById("rs-plugin-settings-inline-css"); var htmlDivCss=".tp-caption.subcaption,.subcaption{color:#6f7c82;font-size:19px;line-height:24px;font-weight:400;font-style:normal;font-family:roboto;text-decoration:none;background-color:transparent;border-color:#000000;border-style:none;border-width:0px;border-radius:0 0 0 0px;text-shadow:none}";
+				if(htmlDiv) {
+					htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+				}else{
+					var htmlDiv = document.createElement("div");
+					htmlDiv.innerHTML = "<style>" + htmlDivCss + "</style>";
+					document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);
+				}
+			</script>
+		<script type="text/javascript">
+if (setREVStartSize!==undefined) setREVStartSize(
+	{c: '#rev_slider_1_1', responsiveLevels: [1240,1024,778,480], gridwidth: [1230,1024,778,480], gridheight: [835,750,700,600], sliderLayout: 'auto'});
+			
+var revapi1,
+	tpj;	
+(function() {			
+	if (!/loaded|interactive|complete/.test(document.readyState)) document.addEventListener("DOMContentLoaded",onLoad); else onLoad();	
+	function onLoad() {				
+		if (tpj===undefined) { tpj = jQuery; if("on" == "on") tpj.noConflict();}
+	if(tpj("#rev_slider_1_1").revolution == undefined){
+		revslider_showDoubleJqueryError("#rev_slider_1_1");
+	}else{
+		revapi1 = tpj("#rev_slider_1_1").show().revolution({
+			sliderType:"standard",
+			jsFileLocation:"//wp.zozotheme.com/wp-bixcoin/wp-content/plugins/revslider/public/assets/js/",
+			sliderLayout:"auto",
+			dottedOverlay:"none",
+			delay:9000,
+			navigation: {
+				keyboardNavigation:"off",
+				keyboard_direction: "horizontal",
+				mouseScrollNavigation:"off",
+ 							mouseScrollReverse:"default",
+				onHoverStop:"on",
+				touch:{
+					touchenabled:"on",
+					touchOnDesktop:"off",
+					swipe_threshold: 75,
+					swipe_min_touches: 1,
+					swipe_direction: "horizontal",
+					drag_block_vertical: false
+				}
+			},
+			responsiveLevels:[1240,1024,778,480],
+			visibilityLevels:[1240,1024,778,480],
+			gridwidth:[1230,1024,778,480],
+			gridheight:[835,750,700,600],
+			lazyType:"single",
+			parallax: {
+				type:"mouse+scroll",
+				origo:"slidercenter",
+				speed:2000,
+				speedbg:0,
+				speedls:0,
+				levels:[1,2,3,20,25,30,35,40,45,50,47,48,49,50,51,55],
+				disable_onmobile:"on"
+			},
+			shadow:0,
+			spinner:"spinner2",
+			stopLoop:"on",
+			stopAfterLoops:0,
+			stopAtSlide:1,
+			shuffle:"off",
+			autoHeight:"off",
+			hideThumbsOnMobile:"off",
+			hideSliderAtLimit:0,
+			hideCaptionAtLimit:0,
+			hideAllCaptionAtLilmit:0,
+			debugMode:false,
+			fallbacks: {
+				simplifyAll:"off",
+				nextSlideOnWindowFocus:"off",
+				disableFocusListener:false,
+			}
+		});
+jQuery('.tp-caption.menutab').click(function() {
+  var btn = jQuery(this);
+  jQuery('.tp-caption.menutab.selected').removeClass("selected");
+  btn.addClass("selected");
+});
+
+revapi1.bind("revolution.slide.onchange",function (e,data) {
+	data.currentslide.find('.tp-caption.menutab').each(function(i) {
+       var btn=jQuery(this);
+       btn.removeClass("selected");
+       if (i===0) btn.addClass("selected");
+    });
+});	}; /* END OF revapi call */
+	
+ }; /* END OF ON LOAD FUNCTION */
+}()); /* END OF WRAPPING FUNCTION */
+</script>
+		<script>
+					var htmlDivCss = ' #rev_slider_1_1_wrapper .tp-loader.spinner2{ background-color: #fff !important; } ';
+					var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+					if(htmlDiv) {
+						htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+					}
+					else{
+						var htmlDiv = document.createElement('div');
+						htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+						document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+					}
+					</script>
+					<script>
+					var htmlDivCss = unescape(".tp-caption.menutab%3Abefore%20%7B%0A%20%20%20%20%20%20%20%20%20%20content%3A%22%20%22%3B%0A%20%20%20%20%20%20%20%20%20%20height%3A0px%3B%0A%20%20%20%20%20%20%20%20%20%20width%3A3px%3B%0A%20%20%20%20%20%20%20%20%20%20background%3A%23D50000%3B%0A%20%20%20%20%20%20%20%20%20%20position%3Aabsolute%3B%0A%20%20%20%20%20%20%20%20%20%20top%3A16%25%3B%0A%20%20%20%20%20%20%20%20%20%20left%3A-30px%3B%0A%20%20%20%20%20%20%20%20%20%20transition%3Aall%200.3s%3B%0A%20%20%20%20%20%20%20%20%20%20-webkit-transition%3Aall%200.3s%3B%0A%20%20%20%20%20%20%20%20%20%20box-sizing%3Aborder-box%3B%0A%20%20%20%20%20%20%20%20%20%20margin-top%3A-1px%3B%0A%7D%0A%0A.tp-caption.menutab.selected%3Abefore%20%7B%0A%20%20%20%20%20%20%20%20%20%20height%3A66%25%3B%0A%7D%0A.mn-ct%7B%0A%09%09text-align%3A%20center%20%21important%3B%0A%09%09%7D%0A.rev_slider%20.tp-caption%2C%20.rev_slider%20.caption%7B%0A%09display%3A%20inline-block%20%21important%3B%0A%7D");
+					var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+					if(htmlDiv) {
+						htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+					}
+					else{
+						var htmlDiv = document.createElement('div');
+						htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+						document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+					}
+				  </script></div><!-- END REVOLUTION SLIDER --></div></div></div></div></section>
+				  
+				  <!--section class="vc_rows wpb_rows vc_rows-fluid vc_custom_1561013402532" style="background-position: right bottom;">
+				  <div class="row"><div class="wpb_column col-md-12">
+				  <div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner"><div class="wpb_column col-md-8"><div class="wpb_wrapper">
+				  
+				  <div class="headline font-special bottom-line-left 1 fontweight-400 lh-12 align-left transform-inherit italic" style="margin: 0 0 15px 0; color: #959595; font-size: 22px;">
+				  What is Bixcoin currerency</div>
+				  <div class="spacer" style="height: 1px;"></div><div class="headline poppins_font no 1 fontweight-300 lh-15 align-left transform-inherit " style="margin: 7px 0 25px 0; color: #242424; font-size: 22px;">In our current reality where three billion individuals are associated on the web, autos drive themselves and machines can convey, worldwide installments are as yet stuck in the disco period. </div><div class="headline font-inherit no 1 fontweight-300 lh-15 align-left transform-inherit " style="margin: 0px 0 50px 0; color: #797979; font-size: 16px;">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</div></div></div><div class="wpb_column col-md-4 vc_custom_1516423216840"><div class="wpb_wrapper"><div class="single_image wpb_content_element align-left   " data-animation="none" data-delay="0"><img width="370" height="195" src="./index_files/bixcoin-currency.png" class="attachment-full" alt="" srcset="http://wp.zozotheme.com/wp-bixcoin/wp-content/uploads/2018/01/bixcoin-currency.png 370w, http://wp.zozotheme.com/wp-bixcoin/wp-content/uploads/2018/01/bixcoin-currency-300x158.png 300w" sizes="(max-width: 370px) 100vw, 370px"></div></div></div></div><div class="vc_row wpb_row vc_inner vc_custom_1500839366965 vc_row-has-fill"><div class="wpb_column col-md-4"><div class="wpb_wrapper"><div class="iconbox text-left wpb_content_element iconbox-style-2 icon-color-accent color- clearfix"><div class="iconbox-icon"><img src="./index_files/secure.png" alt="icon" class="iconimg"></div><div class="iconbox-content"><h4 style="">Secure Wallet</h4><p style="">Efficiently unleash cross-media info mation without cross-media value quickly maximize.</p></div></div></div></div><div class="wpb_column col-md-4"><div class="wpb_wrapper"><div class="iconbox text-left wpb_content_element iconbox-style-2 icon-color-accent color- clearfix"><div class="iconbox-icon"><img src="./index_files/instant.png" alt="icon" class="iconimg"></div><div class="iconbox-content"><h4 style="">Instant Exchange</h4><p style="">Efficiently unleash cross-media info mation without cross-media value quickly maximize.</p></div></div></div></div><div class="wpb_column col-md-4"><div class="wpb_wrapper"><div class="iconbox text-left wpb_content_element iconbox-style-2 icon-color-accent color- clearfix"><div class="iconbox-icon"><img src="./index_files/expert.png" alt="icon" class="iconimg"></div>
+				  <div class="iconbox-content"><h4 style="">Expert Support</h4>
+				  <p style="">Efficiently unleash cross-media info mation without cross-media value quickly maximize.</p></div>
+				  </div>
+				  </div></div></div></div></div></div>
+				  
+				  </section-->
+				  
+				  <!--section class="vc_rows wpb_rows vc_rows-fluid vc_custom_1516306902461" style="background-position: center;"><div class="row"><div class="wpb_column col-md-8 vc_custom_1516427253859"><div class="wpb_wrapper"><div class="headline poppins_font no 1 fontweight-600 lh-15 align-left transform-inherit " style="margin: 7px 0 30px 0; color: #ffffff; font-size: 35px;">Why are new generation evaluted<br>
+investing in <span class="green"> crypto currencies </span><br>
+like Bitcon &amp; Etherium</div><h1 class="headline poppins_font no 1 fontweight-400 lh-12 align-left transform-inherit italic underline" style="margin: 0 0 35px 0; color: #ffffff; font-size: 20px;">Buy and Sell Bitcons</h1><div class="headline font-inherit no 1 fontweight-300 lh-17 align-left transform-inherit " style="margin: 0px 0 50px 0; color: #a2a2a5; font-size: 16px;">Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI. Efficiently unleash cross-media information without cross-media value. </div><a href="http://http//wp.zozotheme.com/wp-bixcoin/contact-us/" target="_self" class="button custom large " style="background-color: #37ab75; border-color: #37ab75;border-radius: 50px;">Join us now</a></div></div><div class="full-image wpb_column col-md-4 vc_custom_1516427240317"><div class="wpb_wrapper"><div class="single_image wpb_content_element align-left   " data-animation="none" data-delay="0"><img width="587" height="322" src="./index_files/tablet.png" class="attachment-full" alt="" srcset="http://wp.zozotheme.com/wp-bixcoin/wp-content/uploads/2018/01/tablet.png 587w, http://wp.zozotheme.com/wp-bixcoin/wp-content/uploads/2018/01/tablet-300x165.png 300w" sizes="(max-width: 587px) 100vw, 587px"></div></div></div></div>
+</section-->
+
+<!--section class="vc_rows wpb_rows vc_rows-fluid service-section vc_custom_1561013886441" style="background-position: center center;"><div class="row"><div class="full-image wpb_column col-md-12"><div class="wpb_wrapper"><h1 class="headline poppins_font no 1 fontweight-600 lh-12 align-center transform-inherit " style="margin: 0 0 15px 0; color: #242424; font-size: 35px;">How it work</h1><div class="headline font-special no 1 fontweight-400 lh-inherit align-center transform-inherit italic" style="margin: 10px 0 35px 0; color: #797979; font-size: 20px;">Dynamically procrastinate B2C users after installed base benefits dramatically.</div><div class="newdivider align-center" style="border-bottom-style: solid; border-color: #37ab75; border-bottom-width: 2px; margin-top: 0; margin-bottom: 45px; width: 85px; "></div><div class="clear"></div><div class="vc_row wpb_row vc_inner vc_custom_1498294033746"><div class="wpb_column col-md-4"><div class="wpb_wrapper"><div class="iconbox text-center wpb_content_element iconbox-style-3 icon-color-accent color-"><img src="./index_files/wico1-1.png" alt="icon" class="iconimg"><h4 style="">Open Pass Free Account</h4><p style="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor met, consectetur adipisicing elit, sed</p></div></div></div><div class="wpb_column col-md-4"><div class="wpb_wrapper"><div class="iconbox text-center wpb_content_element iconbox-style-3 icon-color-accent color-"><img src="./index_files/wico2-1.png" alt="icon" class="iconimg"><h4 style="">Active Your Account</h4><p style="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor met, consectetur adipisicing elit, sed</p></div></div></div><div class="wpb_column col-md-4"><div class="wpb_wrapper"><div class="iconbox text-center wpb_content_element iconbox-style-3 icon-color-accent color-"><img src="./index_files/wico3-1.png" alt="icon" class="iconimg"><h4 style="">Grow Your Fund &amp; Enjoy</h4><p style="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor met, consectetur adipisicing elit, sed</p></div></div></div></div></div></div></div>
+
+</section-->
+
+<section class="vc_rows wpb_rows vc_rows-fluid vc_custom_1516434241940" style="background-position: center;"><div class="row"><div class="wpb_column col-md-9 vc_custom_1516448374822"><div class="wpb_wrapper"><h1 class="headline poppins_font no 1 fontweight-400 lh-15 align-left transform-inherit " style="margin: -10px 0 25px 0; color: #ffffff; font-size: 26px;">
+Use case for stablecoin: enable faster and cheaper transactions, offer a hedge against inflation, 
+provide new financial tool made to help give, earn, save, lend, and exchange assets.
+</h1>
+ <div class="headline font-special bottom-line-left 1 fontweight-400 lh-12 align-left transform-inherit italic" style="margin: 0 0 15px 0; color: #ffffff; font-size: 22px;">
+</div><div class="vc_row wpb_row vc_inner"><div class="wpb_column col-md-4"><div class="wpb_wrapper">
+ <h1 class="headline font-inherit no 1 fontweight-400 lh-inherit align-left transform-uppercase "
+ style="margin: 0px 0 -25px 0; color: #ffffff; font-size: 80px;">250<sup>+</sup> </h1>
+ <h1 class="headline font-inherit no 1 fontweight-400 lh-inherit align-left transform-inherit " 
+ style="margin: 0px 0 25px 0; color: #ffffff; font-size: 16px;">Customers</h1></div></div>
+ <div class="wpb_column col-md-4"><div class="wpb_wrapper"><h1 class="headline font-inherit no 1 fontweight-400 lh-inherit align-left transform-uppercase " 
+ style="margin: 0px 0 -25px 0; color: #ffffff; font-size: 80px;">15<sup>+</sup> </h1>
+ <h1 class="headline font-inherit no 1 fontweight-400 lh-inherit align-left transform-inherit " 
+ style="margin: 0px 0 25px 0; color: #ffffff; font-size: 16px;">Trading Pairs</h1></div></div>
+ <div class="wpb_column col-md-4"><div class="wpb_wrapper"></div></div></div></div></div><div class="wpb_column col-md-3 vc_custom_1516448196867">
+ <div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_custom_1516448539121 vc_row-has-fill"><div class="wpb_column col-md-12">
+ <div class="wpb_wrapper"><h1 class="headline poppins_font no 1 fontweight-600 lh-inherit align-left transform-inherit "
+ style="margin: 10px 0 0px 0; color: #ffffff; font-size: 30px;">$ 1.02 </h1>
+ <h1 class="headline font-special no 1 fontweight-300 lh-inherit align-left transform-inherit " 
+ style="margin: -10px 0 15px 0; color: #ffffff; font-size: 18px;">USBL price</h1>
+ <h1 class="headline poppins_font no 1 fontweight-600 lh-inherit align-left transform-inherit " 
+ style="margin: 10px 0 0px 0; color: #ffffff; font-size: 30px;">$ 2856</h1>
+ <h1 class="headline font-special no 1 fontweight-300 lh-inherit align-left transform-inherit " 
+ style="margin: -10px 0 15px 0; color: #ffffff; font-size: 18px;">24h volume</h1>
+ <h1 class="headline poppins_font no 1 fontweight-600 lh-inherit align-left transform-inherit "  
+ style="margin: 10px 0 0px 0; color: #ffffff; font-size: 30px;">988 </h1>
+ <h1 class="headline font-special no 1 fontweight-300 lh-inherit align-left transform-inherit " 
+ style="margin: -10px 0 15px 0; color: #ffffff; font-size: 18px;">wallets created</h1>
+ <h1 class="headline poppins_font no 1 fontweight-600 lh-inherit align-left transform-inherit " 
+ style="margin: 10px 0 0px 0; color: #ffffff; font-size: 30px;">87</h1>
+ <h1 class="headline font-special no 1 fontweight-300 lh-inherit align-left transform-inherit " 
+ style="margin: -10px 0 15px 0; color: #ffffff; font-size: 18px;">tokens issued</h1></div>
+ </div></div></div></div></div>
+ </section>
+ <!--section class="vc_rows wpb_rows vc_rows-fluid vc_custom_1516449728567" style="background-position: center;"><div class="row"><div class="wpb_column col-md-12"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_custom_1516514990588"><div class="wpb_column col-md-3 vc_custom_1516515004450"><div class="wpb_wrapper"><h1 class="headline poppins_font no 1 fontweight-600 lh-12 align-left transform-inherit " style="margin: 0 0 15px 0; color: #242424; font-size: 35px;">
+ Our Team</h1><div class="newdivider align-left" style="border-bottom-style: solid; border-color: #37ab75; border-bottom-width: 2px; margin-top: 0; margin-bottom: 45px; width: 58px; "></div><div class="clear"></div></div></div><div class="wpb_column col-md-9"><div class="wpb_wrapper"><div class="headline font-special no 1 fontweight-400 lh-inherit align-left transform-inherit italic" style="margin: 0px 0 55px 0; color: #797979; font-size: 20px;">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation.</div></div></div></div><div class="vc_row wpb_row vc_inner vc_custom_1490902640136"><div class="no-padding-left wpb_column col-md-3 vc_custom_1490902361308"><div class="wpb_wrapper"><div class="member"><div class="member-img"><img src="./index_files/team1.jpg" alt=""></div><h4>Merry Eneyol Joe</h4><div class="member-role">Developer</div><ul class="social-icons clearfix"><li class="social-icon social-twitter"><a href="http://wp.zozotheme.com/wp-bixcoin/#" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li><li class="social-icon social-facebook"><a href="http://wp.zozotheme.com/wp-bixcoin/#" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li><li class="social-icon social-skype"><a href="http://wp.zozotheme.com/wp-bixcoin/#" target="_blank" title="Skype"><i class="fa fa-skype"></i></a></li><li class="social-icon social-google"><a href="http://wp.zozotheme.com/wp-bixcoin/#" target="_blank" title="Google+"><i class="fa fa-google-plus"></i></a></li></ul></div><div class="newdivider align-center" style="border-bottom-style: solid; border-color: #37ab75; border-bottom-width: 1px; margin-top: 2px; margin-bottom: 45px; width: 44px; "></div><div class="clear"></div></div></div><div class="wpb_column col-md-3 vc_custom_1490902580621"><div class="wpb_wrapper"><div class="member"><div class="member-img"><img src="./index_files/team2.jpg" alt=""></div><h4>Merry Eneyol Joe</h4><div class="member-role">Investor in firm</div><ul class="social-icons clearfix"><li class="social-icon social-twitter"><a href="http://wp.zozotheme.com/wp-bixcoin/#" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li><li class="social-icon social-facebook"><a href="http://wp.zozotheme.com/wp-bixcoin/#" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li><li class="social-icon social-skype"><a href="http://wp.zozotheme.com/wp-bixcoin/#" target="_blank" title="Skype"><i class="fa fa-skype"></i></a></li><li class="social-icon social-google"><a href="http://wp.zozotheme.com/wp-bixcoin/#" target="_blank" title="Google+"><i class="fa fa-google-plus"></i></a></li></ul></div><div class="newdivider align-center" style="border-bottom-style: solid; border-color: #37ab75; border-bottom-width: 1px; margin-top: 2px; margin-bottom: 45px; width: 44px; "></div><div class="clear"></div></div></div><div class="wpb_column col-md-3 vc_custom_1490902588853"><div class="wpb_wrapper"><div class="member"><div class="member-img"><img src="./index_files/team3.jpg" alt=""></div><h4>Michale Joe</h4><div class="member-role">Business Advisor</div><ul class="social-icons clearfix"><li class="social-icon social-twitter"><a href="http://wp.zozotheme.com/wp-bixcoin/#" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li><li class="social-icon social-facebook"><a href="http://wp.zozotheme.com/wp-bixcoin/#" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li><li class="social-icon social-skype"><a href="http://wp.zozotheme.com/wp-bixcoin/#" target="_blank" title="Skype"><i class="fa fa-skype"></i></a></li><li class="social-icon social-google"><a href="http://wp.zozotheme.com/wp-bixcoin/#" target="_blank" title="Google+"><i class="fa fa-google-plus"></i></a></li></ul></div><div class="newdivider align-center" style="border-bottom-style: solid; border-color: #37ab75; border-bottom-width: 1px; margin-top: 2px; margin-bottom: 45px; width: 44px; "></div><div class="clear"></div></div></div><div class="wpb_column col-md-3 vc_custom_1490902595124"><div class="wpb_wrapper"><div class="member"><div class="member-img"><img src="./index_files/team4.jpg" alt=""></div><h4>Michale Joe</h4><div class="member-role">Business Advisor</div><ul class="social-icons clearfix"><li class="social-icon social-twitter"><a href="http://wp.zozotheme.com/wp-bixcoin/#" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li><li class="social-icon social-facebook"><a href="http://wp.zozotheme.com/wp-bixcoin/#" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li><li class="social-icon social-skype"><a href="http://wp.zozotheme.com/wp-bixcoin/#" target="_blank" title="Skype"><i class="fa fa-skype"></i></a></li><li class="social-icon social-google"><a href="http://wp.zozotheme.com/wp-bixcoin/#" target="_blank" title="Google+"><i class="fa fa-google-plus"></i></a></li></ul></div><div class="newdivider align-center" style="border-bottom-style: solid; border-color: #37ab75; border-bottom-width: 1px; margin-top: 2px; margin-bottom: 45px; width: 44px; "></div><div class="clear"></div></div></div></div></div></div></div>
+ 
+ </section-->
+ 
+ <!--section class="vc_rows wpb_rows vc_rows-fluid vc_custom_1560116552992" style="background-position: center;"><div class="row full-width"><div class="overflow-hidden full-image wpb_column col-md-5"><div class="wpb_wrapper"><div class="single_image wpb_content_element align-right   " data-animation="none" data-delay="0"><img width="744" height="409" src="./index_files/promo-bg.jpg" class="attachment-full" alt="" srcset="http://wp.zozotheme.com/wp-bixcoin/wp-content/uploads/2019/06/promo-bg.jpg 744w, http://wp.zozotheme.com/wp-bixcoin/wp-content/uploads/2019/06/promo-bg-300x165.jpg 300w" sizes="(max-width: 744px) 100vw, 744px"></div></div></div><div class="wpb_column col-md-7 vc_custom_1560117229992"><div class="wpb_wrapper"><h1 class="headline poppins_font no 1 fontweight-600 lh-15 align-left transform-inherit " style="margin: 10px 0 5px 0; color: #ffffff; font-size: 35px;">
+ Bitcoin Currency Convertor</h1><div class="headline font-special no 1 fontweight-400 lh-inherit align-left transform-inherit italic" style="margin: 5px 0 20px 0; color: #a9a9af; font-size: 20px;">Dynamically procrastinate B2C users after installed base benefits dramatically</div><div class="newdivider align-left" style="border-bottom-style: solid; border-color: #37ab75; border-bottom-width: 2px; margin-top: 0; margin-bottom: 2px; width: 58px; "></div><div class="clear"></div><div class="spacer" style="height: 60px;"></div>
+	<div class="wpb_text_column wpb_content_element  price_calculator">
+		<div class="wpb_wrapper">
+			
+
+          <h2>BTC calculator:</h2>
+
+          <form id="btc_calc">
+
+          <input type="text" class="currency1value" value="1"> btc 
+
+          = 
+
+          <input type="text" class="currency2value" value="?">  
+
+        <select class="currency_switcher"><option value="48165.31">usd</option><option value="15.1">eth</option></select></form>
+
+          <script type="text/javascript">
+
+            function setCalculatorValuebtc_calc(){
+
+              var currency1valueold = jQuery("#btc_calc .currency1value").val();
+
+              var currency2valueunit = jQuery("#btc_calc .currency_switcher").val();
+
+              jQuery("#btc_calc .currency2value").val(currency1valueold*currency2valueunit);
+
+            }
+
+            function setCalculatorValue2btc_calc(){
+
+              var currency2valueold = jQuery("#btc_calc .currency2value").val();
+
+              var currency2valueunit = jQuery("#btc_calc .currency_switcher").val();
+
+              jQuery("#btc_calc .currency1value").val(currency2valueold/currency2valueunit);
+
+            }
+
+            setCalculatorValuebtc_calc(); //call at start
+
+            jQuery("#btc_calc .currency1value").keyup(setCalculatorValuebtc_calc);
+
+            jQuery("#btc_calc .currency_switcher").change(setCalculatorValuebtc_calc);
+
+            jQuery("#btc_calc .currency2value").keyup(setCalculatorValue2btc_calc);
+
+          </script>
+
+        <a href="https://wordpress.org/plugins/cryptocurrency-prices/" style="font-size:small">Powered by Crytptocurrency All-in-One</a> <a href="https://www.cryptocompare.com/api/" style="font-size:small">Data by CryptoCompare API</a>
+
+		</div>
+	</div>
+</div></div></div>
+
+</section-->
+
+<!--section class="vc_rows wpb_rows vc_rows-fluid vc_custom_1516991603470" style="background-position: center;"><div class="row"><div class="full-image wpb_column col-md-12"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner"><div class="wpb_column col-md-10 vc_custom_1516515021451"><div class="wpb_wrapper"><div class="headline poppins_font bottom-line-left 1 fontweight-600 lh-12 align-left transform-inherit " style="margin: 0 0 5px 0; color: #242424; font-size: 35px;">
+Latest News</div><div class="headline font-special no 1 fontweight-400 lh-inherit align-left transform-inherit italic" style="margin: 0px 0 55px 0; color: #797979; font-size: 20px;">At the end of the day, going forward, a new normal that has evolved from generation.</div></div></div><div class="wpb_column col-md-2"><div class="wpb_wrapper"><div class="headline font-special no 1 fontweight-400 lh-inherit align-left transform-inherit italic" style="margin: 50px 0 55px 0; color: #797979; font-size: 20px;"><a href="http://wp.zozotheme.com/wp-bixcoin/#"> Read all news </a></div></div></div></div><div class="vc_row wpb_row vc_inner"><div class="wpb_column col-md-4 vc_custom_1516477846931"><div class="wpb_wrapper"><div class="blog-shortcode blog-page blog-medium"><div class="blog-wrap"><article id="post-12003" class="clearfix post-12003 post type-post status-publish format-standard has-post-thumbnail hentry category-sports category-travel category-uncategorized">
+    
+        <div class="entry-image">
+        <a href="http://wp.zozotheme.com/wp-bixcoin/blog/2014/12/11/the-wilderness-of-montibo/" title="Permalink to Capitalize on low hanging fruit to identify a ballpark value." rel="bookmark">
+            <img width="500" height="427" src="./index_files/blog1-2-500x427.jpg" class="attachment-regular size-regular wp-post-image" alt="">        <div class="entry-overlay"><i class="fa fa-expand"></i></div></a>
+    </div>
+        <div class="post-time">
+	    <span class="month">Dec</span>
+	    <span class="day">11</span>
+	</div>
+    <div class="entry-wrap">
+		<div class="entry-meta">
+            <ul>
+		
+		<li class="meta-date"> December 11, 2014</li>
+	            </ul>
+        </div>
+        <div class="entry-title">
+        	<h2><a href="http://wp.zozotheme.com/wp-bixcoin/blog/2014/12/11/the-wilderness-of-montibo/" title="Permalink to Capitalize on low hanging fruit to identify a ballpark value." rel="bookmark">Capitalize on low hanging fruit to identify a ballpark value.</a></h2>
+        </div>
+
+        <div class="entry-content">
+        	Lorem ipsum dolor sit amet, consectetur<div> <a class="read-more-link read-more" href="http://wp.zozotheme.com/wp-bixcoin/blog/2014/12/11/the-wilderness-of-montibo/">read more</a></div>        </div>
+
+    </div>
+
+</article>
+
+<div class="clear"></div></div></div></div></div><div class="wpb_column col-md-4"><div class="wpb_wrapper"><div class="blog-shortcode blog-page blog-medium"><div class="blog-wrap"><article id="post-16669" class="clearfix post-16669 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+    
+        <div class="entry-image">
+        <a href="http://wp.zozotheme.com/wp-bixcoin/blog/2018/01/20/capitalize-on-low-hanging-fruit-to-identify-a-ballpark-value-added-activity/" title="Permalink to Capitalize on low hanging fruit to identify a ballpark value added activity." rel="bookmark">
+            <img width="500" height="500" src="./index_files/blog2-1-500x500.jpg" class="attachment-regular size-regular wp-post-image" alt="" srcset="http://wp.zozotheme.com/wp-bixcoin/wp-content/uploads/2014/12/blog2-1-500x500.jpg 500w, http://wp.zozotheme.com/wp-bixcoin/wp-content/uploads/2014/12/blog2-1-150x150.jpg 150w, http://wp.zozotheme.com/wp-bixcoin/wp-content/uploads/2014/12/blog2-1-80x80.jpg 80w, http://wp.zozotheme.com/wp-bixcoin/wp-content/uploads/2014/12/blog2-1-1000x1000.jpg 1000w" sizes="(max-width: 500px) 100vw, 500px">        <div class="entry-overlay"><i class="fa fa-expand"></i></div></a>
+    </div>
+        <div class="post-time">
+	    <span class="month">Jan</span>
+	    <span class="day">20</span>
+	</div>
+    <div class="entry-wrap">
+		<div class="entry-meta">
+            <ul>
+		
+		<li class="meta-date"> January 20, 2018</li>
+	            </ul>
+        </div>
+        <div class="entry-title">
+        	<h2><a href="http://wp.zozotheme.com/wp-bixcoin/blog/2018/01/20/capitalize-on-low-hanging-fruit-to-identify-a-ballpark-value-added-activity/" title="Permalink to Capitalize on low hanging fruit to identify a ballpark value added activity." rel="bookmark">Capitalize on low hanging fruit to identify a ballpark value added activity.</a></h2>
+        </div>
+
+        <div class="entry-content">
+        	Lorem ipsum dolor sit amet, consectetur<div> <a class="read-more-link read-more" href="http://wp.zozotheme.com/wp-bixcoin/blog/2018/01/20/capitalize-on-low-hanging-fruit-to-identify-a-ballpark-value-added-activity/">read more</a></div>        </div>
+
+    </div>
+
+</article>
+
+<div class="clear"></div></div></div></div></div><div class="wpb_column col-md-4"><div class="wpb_wrapper"><div class="latest-blog-modern clearfix"><ul class="latest-blog-list-modern"><li>
+			  		<a href="http://wp.zozotheme.com/wp-bixcoin/blog/2018/01/20/capitalize-on-low-hanging-fruit-to-identify-a-ballpark-value-added-activity/" title="Capitalize on low hanging fruit to identify a ballpark value added activity.">
+						<h4>Capitalize on low hanging fruit to identify a ballpark value added activity.</h4>
+						<span>January 20, 2018</span>
+					</a>
+				</li><li>
+			  		<a href="http://wp.zozotheme.com/wp-bixcoin/blog/2014/12/11/the-wilderness-of-montibo/" title="Capitalize on low hanging fruit to identify a ballpark value.">
+						<h4>Capitalize on low hanging fruit to identify a ballpark value.</h4>
+						<span>December 11, 2014</span>
+					</a>
+				</li><li>
+			  		<a href="http://wp.zozotheme.com/wp-bixcoin/blog/2013/10/02/nanotechnology-immersion-along-the-information-highway-will-close-the-loop/" title="Nanotechnology immersion along the information highway will close the loop">
+						<h4>Nanotechnology immersion along the information highway will close the loop</h4>
+						<span>October 2, 2013</span>
+					</a>
+				</li></ul></div></div></div></div></div></div></div>
+				
+				</section-->
+				
+				<section class="vc_rows wpb_rows vc_rows-fluid vc_custom_1516990417978" style="background-position: center;"><div class="row"><div class="wpb_column col-md-12 vc_custom_1517135542150"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_custom_1516993029628 vc_row-has-fill"><div class="wpb_column col-md-2 vc_custom_1516514418463"><div class="wpb_wrapper"><div class="single_image wpb_content_element align-left   " data-animation="none" data-delay="0"><img width="117" height="92" src="./index_files/search-ico.jpg" class="attachment-full" alt=""></div></div></div><div class="wpb_column col-md-7"><div class="wpb_wrapper"><div class="headline poppins_font no 1 fontweight-600 lh-12 align-left transform-inherit " style="margin: 0 0 0px 0; color: #242424; font-size: 35px;">Want to get more details ?</div><div class="headline font-special no 1 fontweight-400 lh-inherit align-left transform-inherit italic" style="margin: 10px 0 15px 0; color: #797979; font-size: 20px;">
+				Read our whitepapers or visit our <a href="https://app.sigle.io/softbalanced.id.stx">blog</a></div></div></div><div class="wpb_column col-md-3 vc_custom_1516513845530"><div class="wpb_wrapper">
+				<a href="https://github.com/softbalanced/core/raw/gh-pages/bdollar_launch_whitepaper.pdf" target="_self" class="button custom large large2" style="background-color: #3f4f9f; border-color: #3f4f9f;border-radius: 50px;">
+				Read the whitepaper</a></div></div></div></div></div></div></section>
+
+		
+		
+			</div> <!-- end content -->
+
+	
+</div> <!-- end page-wrap -->
+	
+		
+			
+		<footer id="footer">
+			<div class="container">
+				<div class="col-md-3 columns"><div id="text-1" class="widget widget_text">			<div class="textwidget"><p><img  src="usbl_svg_balanced.svg" alt=""></p>
+<h5><a href="tel:18005749687" class="phone">(1800) 574 9687</a></h5>
+
+<p>                                    <a href="mailto:inquery@softbalanced.com" class="email">inquery@softbalanced.com</a></p>
+</div>
+		</div></div>
+								<div class="col-md-3 columns"><div id="text-2" class="widget widget_text"><h3>About Us</h3>			<div class="textwidget"><ul class="list_style">
+<li><a href="https://discord.gg/HkHyKCjfRQ">Team</a></li>
+<li><a href="https://app.sigle.io/softbalanced.id.stx">Blog</a></li>
+<!--li><a href="#">Blog</a></li-->
+<!--li><a href="#">Jobs</a></li-->
+<!--li><a href="#">Contact Us</a></li-->
+</ul>
+</div>
+		</div></div>
+												<div class="col-md-3 columns"><div id="text-3" class="widget widget_text"><h3>Resources</h3>			<div class="textwidget"><ul class="list_style">
+                                    <li><a href="https://swap.softbalanced.com/">Purchase Coin</a></li>
+                                    <li><a href="https://github.com/softbalanced">Source code</a></li>
+                                    <!--li><a href="#">News &amp; Info</a></li-->
+                                    <!--li><a href="#">Copyright Policies</a></li-->
+                                    <!--li><a href="#">Trademark Policies</a></li-->
+                                </ul></div>
+		</div></div>
+												<div class="col-md-3 columns"><div id="text-4" class="widget widget_text"><h3>Resources</h3>			<div class="textwidget"><h5>Get latest updates and offers.</h5>
+</div>
+		</div><div id="mc4wp_form_widget-1" class="widget widget_mc4wp_form_widget"><script>(function() {
+	if (!window.mc4wp) {
+		window.mc4wp = {
+			listeners: [],
+			forms    : {
+				on: function (event, callback) {
+					window.mc4wp.listeners.push({
+						event   : event,
+						callback: callback
+					});
+				}
+			}
+		}
+	}
+})();
+</script><!-- MailChimp for WordPress v4.2.1 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
+
+
+<form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-16846" method="post" 
+
+data-id="16846" data-name="footer-widget"><div class="mc4wp-form-fields"><div class="input-group subscrib_form">
+<input name="EMAIL" class="form-control memail" placeholder="Enter your email" type="email" required="">
+<span class="input-group-btn">
+<button class="btn btn-default submit_btn_b" type="submit"><i class="fa fa-paper-plane"></i></button>
+</span>
+</div>
+</div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"></label><input type="hidden" name="_mc4wp_timestamp" value="1629826890"><input type="hidden" name="_mc4wp_form_id" value="16846"><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1"><div class="mc4wp-response"></div></form><!-- / MailChimp for WordPress Plugin --></div>
+
+<!--div id="social_widget-1" class="widget widget_social_widget"-->		
+				<!--div class="as-social-info-widget-wrapper"-->
+                    <ul class="as-social-info-widget social">
+
+<li><a style="border:0px;" href="https://t.me/joinchat/bOAMiNIqHLJhNjJk" target="_blank" title="Telegram"><img style="width:60%;"src="telegram-brands.svg"><i class="fab fa-telegram"></i></a></li>
+							<li><a style="border:0px;"  href="https://github.com/softbalanced" target="_blank" title="Github"><img style="width:60%; "src="github-brands.svg"><i class=""></i></a></li>
+							<li><a style="border:0px;" href="https://app.sigle.io/softbalanced.id.stx" target="_blank" title="Medium"><img style="width:60%; "src="iconmonstr-rss-feed-4.svg"><i class=""></i></a></li>
+													
+
+
+
+</ul>
+                <!--/div-->
+			<!--/div--></div>	
+							</div>
+		</footer>
+		
+		<div id="copyright" class="clearfix">
+		<div class="container">
+			
+			<!--div class="col-md-12">
+
+				<div class="copyright-text copyright-col1">
+											© Copyright Bixcoin 2019 . All right reserved.  using <a href="http://wordpress.org/" target="_blank">WordPress</a>.									</div>
+				
+				<div class="copyright-col2">
+									</div>
+
+			</div-->
+			
+		</div>
+	</div><!-- end copyright -->
+			
+	</div><!-- end wrapall / boxed -->
+	
+		<div id="back-to-top" style="display: none;"><a href="#"><i class="fa fa-chevron-up"></i></a></div>
+		
+	<script>(function() {function addEventListener(element,event,handler) {
+	if(element.addEventListener) {
+		element.addEventListener(event,handler, false);
+	} else if(element.attachEvent){
+		element.attachEvent('on'+event,handler);
+	}
+}function maybePrefixUrlField() {
+	if(this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+		this.value = "http://" + this.value;
+	}
+}
+
+var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+if( urlFields && urlFields.length > 0 ) {
+	for( var j=0; j < urlFields.length; j++ ) {
+		addEventListener(urlFields[j],'blur',maybePrefixUrlField);
+	}
+}/* test if browser supports date fields */
+var testInput = document.createElement('input');
+testInput.setAttribute('type', 'date');
+if( testInput.type !== 'date') {
+
+	/* add placeholder & pattern to all date fields */
+	var dateFields = document.querySelectorAll('.mc4wp-form input[type="date"]');
+	for(var i=0; i<dateFields.length; i++) {
+		if(!dateFields[i].placeholder) {
+			dateFields[i].placeholder = 'YYYY-MM-DD';
+		}
+		if(!dateFields[i].pattern) {
+			dateFields[i].pattern = '[0-9]{4}-(0[1-9]|1[012])-(0[1-9]|1[0-9]|2[0-9]|3[01])';
+		}
+	}
+}
+
+})();</script>			<script type="text/javascript">
+				function revslider_showDoubleJqueryError(sliderID) {
+					var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
+					errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
+					errorMessage += "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
+					errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
+					errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>";
+						jQuery(sliderID).show().html(errorMessage);
+				}
+			</script>
+			<script type="text/javascript" src="./index_files/editor.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/wp.zozotheme.com\/wp-bixcoin\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./index_files/scripts.js.download"></script>
+<script type="text/javascript" src="./index_files/jquery.easing.min.js.download"></script>
+<script type="text/javascript" src="./index_files/waypoints.min.js.download"></script>
+<script type="text/javascript" src="./index_files/waypoints.min.js(1).download"></script>
+<script type="text/javascript" src="./index_files/waypoints-sticky.min.js.download"></script>
+<script type="text/javascript" src="./index_files/prettyPhoto.js.download"></script>
+<script type="text/javascript" src="./index_files/isotope.pkgd.min.js.download"></script>
+<script type="text/javascript" src="./index_files/functions.js.download"></script>
+<script type="text/javascript" src="./index_files/flexslider.min.js.download"></script>
+<script type="text/javascript" src="./index_files/smoothscroll.js.download"></script>
+<script type="text/javascript" src="./index_files/owl.carousel.min.js.download"></script>
+<script type="text/javascript" src="./index_files/bootstrap.min.js.download"></script>
+<script type="text/javascript" src="./index_files/flipclock.min.js.download"></script>
+<script type="text/javascript" src="./index_files/comment-reply.min.js.download"></script>
+<script type="text/javascript" src="./index_files/wp-embed.min.js.download"></script>
+<script type="text/javascript" src="./index_files/js_composer_front.min.js.download"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var mc4wp_forms_config = [];
+/* ]]> */
+</script>
+<script type="text/javascript" src="./index_files/forms-api.min.js.download"></script>
+<!--[if lte IE 9]>
+<script type='text/javascript' src='http://wp.zozotheme.com/wp-bixcoin/wp-content/plugins/mailchimp-for-wp/assets/js/third-party/placeholders.min.js?ver=4.2.1'></script>
+<![endif]-->
+
+	<script type="text/javascript">
+	jQuery(document).ready(function($){
+		"use strict";
+	    
+		/* PrettyPhoto Options */
+		var lightboxArgs = {			
+						animation_speed: 'fast',
+						overlay_gallery: false,
+			autoplay_slideshow: false,
+						slideshow: 5000,
+									opacity: 0.8,
+						show_title: false,
+			social_tools: "",			deeplinking: false,
+			allow_resize: true,
+			allow_expand: false,
+			counter_separator_label: '/',
+			default_width: 1160,
+			default_height: 653
+		};
+		
+				/* Automatic Lightbox */
+		$('a[href$=jpg], a[href$=JPG], a[href$=jpeg], a[href$=JPEG], a[href$=png], a[href$=gif], a[href$=bmp]:has(img)').prettyPhoto(lightboxArgs);
+					
+		/* General Lightbox */
+		$('a[class^="prettyPhoto"], a[rel^="prettyPhoto"], .prettyPhoto').prettyPhoto(lightboxArgs);
+
+
+
+		
+	    		/* Transparent Header */
+	    function transparentHeader() {
+			if ($(document).scrollTop() >= 60) {
+				//alert('fuddu');
+				$('#header.header-v1, #header.headerv3').removeClass('header-trans');
+			}
+			else {
+				//alert('fuddu');
+				$('#header.header-v1.stuck, #header.headerv3.stuck').addClass('header-trans');
+			}
+		}
+			
+			jQuery(window).scroll(function(){
+  var sticky = jQuery('#header'),
+      scroll = jQuery(window).scrollTop();
+
+  if (scroll >= 100) sticky.removeClass('header-trans');
+  else sticky.addClass('header-trans');
+});
+
+		/* Sticky Header */
+		if (/Android|BlackBerry|iPhone|iPad|iPod|webOS/i.test(navigator.userAgent) === false) {
+
+			var $stickyHeaders = $('#header.header-v1, #header.header-v3 .navigation-wrap, #header.header-v4 .navigation-wrap');
+			$stickyHeaders.waypoint('sticky');
+			
+			$(window).resize(function() {
+				$stickyHeaders.waypoint('unsticky');
+				if ($(window).width() < 944) {
+					$stickyHeaders.waypoint('unsticky');
+				}
+				else {
+					$stickyHeaders.waypoint('sticky');
+				}
+			});
+			
+			if ($("body").hasClass("header-is-transparent")) {
+				$(document).scroll(function() { transparentHeader(); });
+				transparentHeader();
+		    }
+
+		}			
+	    
+	    
+	    	
+	    /* Fill rest of page */
+	    			    			$('body').css({'background-color' : '#191919' });
+	    			    
+	});
+	</script>
+	
+
+<div style="margin-left:800px;" id="sfcq3esq58l8w3yglzp5lnf4m3wtk2wguak"></div>
+<!--script type="text/javascript" src="https://counter10.stat.ovh/private/counter.js?c=q3esq58l8w3yglzp5lnf4m3wtk2wguak&down=async" async></script-->
+
+
+
+</body></html>

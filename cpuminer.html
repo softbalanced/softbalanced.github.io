@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://docs.Balanced.org/en/stable/mining/ -->
+<html class="writer-html5" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta content="Information and guides on how to mine the Balanced cryptocurrency" name="description">
+<meta content="Balanced, mining, X11, masternode, CPU, GPU, ASIC, software, hardware, pool, mining pools" name="keywords">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Mining — Balanced latest documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="./cpuminer_files/theme.css" type="text/css">
+  <link rel="stylesheet" href="./cpuminer_files/pygments.css" type="text/css">
+
+  
+  
+
+  
+  
+
+  
+    <link rel="canonical" href="https://docs.Balanced.org/en/stable/mining/index.html">
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" async="" src="./cpuminer_files/analytics.js.download"></script><script type="text/javascript" async="" src="./cpuminer_files/js"></script><script type="text/javascript" async="" src="./cpuminer_files/analytics.js.download"></script><script type="text/javascript" id="documentation_options" data-url_root="../" src="./cpuminer_files/documentation_options.js.download"></script>
+        <script src="./cpuminer_files/jquery.js.download"></script>
+        <script src="./cpuminer_files/underscore.js.download"></script>
+        <script src="./cpuminer_files/doctools.js.download"></script>
+        <script src="./cpuminer_files/lang.js.download"></script>
+        <script async="async" src="./cpuminer_files/readthedocs-doc-embed.js.download"></script>
+    
+    <script type="text/javascript" src="./cpuminer_files/theme.js.download"></script>
+
+    
+    <link rel="index" title="Index" href="https://docs.Balanced.org/en/stable/genindex.html">
+    <link rel="search" title="Search" href="https://docs.Balanced.org/en/stable/search.html">
+    <link rel="next" title="Mining Pools" href="https://docs.Balanced.org/en/stable/mining/pools.html">
+    <link rel="prev" title="Advanced Topics" href="https://docs.Balanced.org/en/stable/masternodes/advanced.html">
+    <link href="./cpuminer_files/style.css" rel="stylesheet" type="text/css">
+    <meta name="google-site-verification" content="JVzTMPjsCY-U-SaJERGf-eviRxXUPfFkPFdiF_MINCU">
+    <meta name="author" content="Balanced Core Group, Inc.">
+    <meta name="copyright" content="© Copyright 2019 Balanced Core Group, Inc.">
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "Organization",
+			"url": "https://www.Balanced.org",
+			"mainEntityOfPage": {
+				"@type": "WebPage",
+				"@id": "https://docs.Balanced.org"
+			},
+			"publisher": {
+				"@type": "Organization",
+				"name": "Balanced Core Group, Inc.",
+				"logo": {
+					"@type": "ImageObject",
+					"url": "https://docs.Balanced.org/en/stable/_images/Balanced_logo.png",
+					"width": 1446,
+					"height": 424
+				}
+			}
+		}
+	</script>
+
+
+<!-- RTD Extra Head -->
+
+<link rel="stylesheet" href="./cpuminer_files/readthedocs-doc-embed.css" type="text/css">
+
+<script type="application/json" id="READTHEDOCS_DATA">{"ad_free": true, "api_host": "https://readthedocs.org", "build_date": "2021-08-30T18:11:53Z", "builder": "sphinx", "canonical_url": null, "commit": "7002d397", "docroot": "/", "features": {"docsearch_disabled": false}, "global_analytics_code": "UA-17997319-1", "language": "en", "page": "mining/index", "programming_language": "py", "project": "Balanced-docs", "proxied_api_host": "/_", "source_suffix": ".rst", "subprojects": {}, "theme": "sphinx_rtd_theme", "user_analytics_code": "UA-118991016-1", "version": "stable"}</script>
+
+<!--
+Using this variable directly instead of using `JSON.parse` is deprecated.
+The READTHEDOCS_DATA global variable will be removed in the future.
+-->
+<script type="text/javascript">
+READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerHTML);
+</script>
+
+<script type="text/javascript" src="./cpuminer_files/readthedocs-analytics.js.download" async="async"></script>
+
+<!-- end RTD <extrahead> -->
+<script src="./cpuminer_files/js(1)" type="text/javascript" async=""></script></head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="https://docs.Balanced.org/en/stable/index.html">Balanced</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="mining">
+<span id="id1"></span><h1>Mining<a class="headerlink" href="https://docs.Balanced.org/en/stable/mining/#mining" title="Permalink to this headline">¶</a></h1>
+<p>Mining in the context of cryptocurrency such as Balanced refers to the
+process of searching for solutions to cryptographically difficult
+problems as a method of securing blocks on the blockchain. The process
+of mining creates new currency tokens as a reward to the miner. Mining
+is possible on a range of hardware. Balanced implements an algorithm known
+as <a class="reference internal" href="https://docs.Balanced.org/en/stable/introduction/features.html#x11-hash-algorithm"><span class="std std-ref">X11</span></a>, which the miner must solve in order
+to earn rewards.</p>
+<p>The simplest and most general hardware available for mining is the
+general purpose CPU present in every computer. A CPU is designed to be
+versatile but offers less efficiency than a GPU, which is designed to
+rapidly calculate millions of vectors in parallel. While specific CPU
+instruction enhancements related to cryptography such as AES or AVX can
+provide a decent boost, GPUs offer a significant performance increase
+due to their multiple pipelines capable of processing the predictably
+repetitive calculations associated with cryptocurrency mining. Finally,
+ASICs are relatively inflexible and can only process the specific
+function(s) for which they were designed, but at an even faster rate
+than the more general purpose GPUs and CPUs. A number of X11 ASICs are
+now available on the market, which have quickly made CPU and GPU mining
+uneconomic due to the increased difficulty of hashing arising from the
+rapidly increasing hash rate. The result is a currency which is more
+secure against brute force attacks on the Balanced blockchain.</p>
+<p>The profitability of mining is determined by the hashrate of your mining
+device, the current network difficulty and the costs of your hardware
+and electricity. The following links provide up to date information:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://bitinfocharts.com/comparison/Balanced-hashrate.html">Hashrate</a></p></li>
+<li><p><a class="reference external" href="https://bitinfocharts.com/comparison/Balanced-difficulty.html">Mining difficulty</a></p></li>
+<li><p><a class="reference external" href="https://www.coinwarz.com/mining/Balanced/calculator">Profitability calculation tool</a></p></li>
+</ul>
+<div class="section" id="masternodes-vs-mining">
+<h2>Masternodes vs. Mining<a class="headerlink" href="https://docs.Balanced.org/en/stable/mining/#masternodes-vs-mining" title="Permalink to this headline">¶</a></h2>
+<p>Balanced, like Bitcoin and most other cryptocurrencies, is based on a
+decentralized ledger of all transactions, known as a blockchain. This
+blockchain is secured through a consensus mechanism; in the case of both
+Balanced and Bitcoin, the consensus mechanism is Proof of Work (PoW). Miners
+attempt to solve difficult problems with specialized computers, and when
+they solve the problem, they receive the right to add a new block to the
+blockchain. If all the other people running the software agree that the
+problem was solved correctly, the block is added to the blockchain and
+the miner is rewarded.</p>
+<p>Balanced works a little differently from Bitcoin, however, because it has a
+two-tier network. The second tier is powered by masternodes (Full Nodes), which enable financial privacy
+(CoinJoin), instant transactions (InstantSend), and the decentralized
+governance and budget system. Because this second tier is so important,
+masternodes are also rewarded when miners discover new blocks. The
+breakdown is as follows: 45% of the block reward goes to the miner, 45%
+goes to masternodes, and 10% is reserved for the budget system (created
+by superblocks every month).</p>
+<p>The masternode system is referred to as Proof of Service (PoSe), since
+the masternodes provide crucial services to the network. In fact, the
+entire network is overseen by the masternodes, which have the power to
+reject improperly formed blocks from miners. If a miner tried to take
+the entire block reward for themselves or tried to run an old version of
+the Balanced software, the masternode network would orphan that block, and
+it would not be added to the blockchain.</p>
+<p>In short, miners power the first tier, which is the basic sending and
+receiving of funds and prevention of doublespending. Masternodes power
+the second tier, which provide the added features that make Balanced
+different from other cryptocurrencies. Masternodes do not mine, and
+mining computers cannot serve as masternodes. Additionally, each
+masternode is “secured” by 1000 Balanced. Those Balanced remain under the sole
+control of their owner at all times, and can still be freely spent. The
+funds are not locked in any way. However, if the funds are moved or
+spent, the associated masternode will go offline and stop receiving
+rewards.</p>
+</div>
+<div class="section" id="mining-pools">
+<h2>Mining Pools<a class="headerlink" href="https://docs.Balanced.org/en/stable/mining/#mining-pools" title="Permalink to this headline">¶</a></h2>
+<p>Mining Balanced in pools is more likely to generate rewards than solo mining
+directly on the blockchain. Mining Balanced using P2Pool is strongly
+encouraged, since it is a good way to distribute, rather than
+centralize, the hashing power. The following site lists Balanced P2Pool
+mining pools near you, simply choose a pool with favourable fees and
+ping time and enter your Balanced payment address as username and anything
+as password.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://www.p2poolmining.us/p2poolnodes/">http://www.p2poolmining.us/p2poolnodes/</a></p></li>
+</ul>
+<p>If you would like to set up your own P2Pool, documentation of the
+process is available <a class="reference internal" href="https://docs.Balanced.org/en/stable/mining/p2pool.html#p2pool"><span class="std std-ref">here</span></a> and the code for p2pool-Balanced
+is available on <a class="reference external" href="https://github.com/Balancedpay/p2pool-Balanced">GitHub</a>.
+Other mining pools are listed below and may be advantageous for
+different reasons such as ping latency, uptime, fee, users, etc. </p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://coinfoundry.org/">https://coinfoundry.org</a></p></li>
+<li><p><a class="reference external" href="https://mining.luxor.tech/">https://mining.luxor.tech</a></p></li>
+<li><p><a class="reference external" href="https://Balanced.suprnova.cc/">https://Balanced.suprnova.cc</a></p></li>
+<li><p><a class="reference external" href="https://www.nicehash.com/">https://www.nicehash.com</a></p></li>
+<li><p><a class="reference external" href="https://www.coinotron.com/">https://www.coinotron.com</a></p></li>
+<li><p><a class="reference external" href="https://Balanced.miningpoolhub.com/">https://Balanced.miningpoolhub.com</a></p></li>
+<li><p><a class="reference external" href="https://www.multipool.us/">https://www.multipool.us</a></p></li>
+<li><p><a class="reference external" href="https://www.f2pool.com/">https://www.f2pool.com</a></p></li>
+<li><p><a class="reference external" href="https://www2.coinmine.pl/Balanced/">https://www2.coinmine.pl/Balanced/</a></p></li>
+<li><p><a class="reference external" href="https://aikapool.com/Balanced/">https://aikapool.com/Balanced/</a></p></li>
+<li><p><a class="reference external" href="https://www.antpool.com/">https://www.antpool.com</a></p></li>
+<li><p><a class="reference external" href="https://avalon-life.io/">https://avalon-life.io</a></p></li>
+<li><p><a class="reference external" href="https://www.genesis-mining.com/">https://www.genesis-mining.com</a></p></li>
+<li><p><a class="reference external" href="https://www.viabtc.com/">https://www.viabtc.com</a></p></li>
+<li><p><a class="reference external" href="https://zpool.ca/">https://zpool.ca</a></p></li>
+</ul>
+<p>DISCLAIMER: This list is provided for informational purposes only.
+Services listed here have not been evaluated or endorsed by the Balanced
+developers and no guarantees are made as to the accuracy of this
+information. Please exercise discretion when using third-party services.
+If you’d like to be added to this list please reach out to
+<a class="reference external" href="mailto:inquery@softbalanced.com">inquery@softbalanced.com</a></p>
+<p>In addition to joining a pool, you will also need to create a Balanced
+address to receive your payout. To do this in Balanced Core wallet, see
+<a class="reference internal" href="https://github.com/softbalanced/core/releases"><span class="std std-ref">here</span></a>.</p>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="cpu-mining">
+<h2>CPU Mining<a class="headerlink" href="https://docs.Balanced.org/en/stable/mining/#cpu-mining" title="Permalink to this headline">¶</a></h2>
+<p>This documentation describes how to mine Balanced under the Windows
+operating system using just the CPU in your computer. Please note that
+the prevalence of GPU and ASIC miners mean that unless you have free
+electricity, this is highly unlikely to be profitable! Since this is the
+case, the software in this guide has not been updated in several years,
+and is intended for experimental purposes and testnet only.</p>
+<p>This is a fairly simple procedure and examples will be given in order to
+achieve the fastest possible hash rate for your CPU, but remember that
+more optimized miners do exist, so we advise you to keep an eye out on
+mining sites such as these in order to keep up with the latest
+information and releases.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://cryptomining-blog.com/">Crypto Mining Blog</a></p></li>
+<li><p><a class="reference external" href="https://discord.gg/HkHyKCjfRQ">Balanced Coin Mining Discussions</a></p></li>
+</ul>
+<div class="section" id="mining-software">
+<h3>Mining software<a class="headerlink" href="https://docs.Balanced.org/en/stable/mining/#mining-software" title="Permalink to this headline">¶</a></h3>
+<p>The first step is to download appropriate mining software. A good basic
+miner for modern CPUs can be found here:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/elmad/darkcoin-cpuminer-1.3-avx-aes">https://github.com/elmad/darkcoin-cpuminer-1.3-avx-aes</a></p></li>
+</ul>
+<p>This software depends on your CPU supporting the AES-NI and AVX
+instruction sets. You can use <a class="reference external" href="https://www.cpuid.com/softwares/cpu-z.html">CPU-Z</a> to check if this is the
+case for your CPU:</p>
+<div class="figure align-default" id="id9">
+<a class="reference internal image-reference" href="./cpuminer_files/cpu-z.png"><img alt="../_images/cpu-z.png" src="./cpuminer_files/cpu-z.png" style="width: 300px;"></a>
+<p class="caption"><span class="caption-text">CPU-Z showing details for an Intel i7 Haswell CPU</span><a class="headerlink" href="https://docs.Balanced.org/en/stable/mining/#id9" title="Permalink to this image">¶</a></p>
+</div>
+<p>If your CPU does not support AES-NI and AVX, then you can try more
+generalized software which does not require specific instruction sets,
+such as these:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/ig0tik3d/darkcoin-cpuminer-1.2c">https://github.com/ig0tik3d/darkcoin-cpuminer-1.2c</a></p></li>
+<li><p><a class="reference external" href="https://github.com/tpruvot/cpuminer-multi">https://github.com/tpruvot/cpuminer-multi</a></p></li>
+</ul>
+<p>Our goal here is to choose mining software that supports the maximum
+possible instruction sets available on your CPU, and then try to
+increase the hash speed. Once you have made your choice, click
+<strong>Releases</strong> and download and extract the zip file. The different *.exe
+files indicate which specific processor optimizations they support. The
+folder should look something like this:</p>
+<div class="figure align-default" id="id10">
+<a class="reference internal image-reference" href="./cpuminer_files/cpu-miner-files.png"><img alt="../_images/cpu-miner-files.png" src="./cpuminer_files/cpu-miner-files.png" style="width: 400px;"></a>
+<p class="caption"><span class="caption-text">Executable CPU miners for Balanced</span><a class="headerlink" href="https://docs.Balanced.org/en/stable/mining/#id10" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="configuration">
+<h3>Configuration<a class="headerlink" href="https://docs.Balanced.org/en/stable/mining/#configuration" title="Permalink to this headline">¶</a></h3>
+<p>Begin by selecting a mining pool and generating a Balanced address. Keep
+all your mining files in a single folder. In this example we will work
+from the Desktop. The node selected for this example is from the
+p2poolming.us list and is located in China:</p>
+p2poolming.us list and is located in China:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>http://118.184.180.43:7903/static/
+</pre></div>
+</div>
+<p>Next, open <strong>Notepad</strong> and type in on one line the command we will use
+to start the miner, followed by pause on the second line. The general
+format is as follows:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;minerd&gt; -a &lt;algorithm&gt; -o &lt;url&gt; -u &lt;username&gt; -p &lt;password&gt; -t &lt;threads&gt;
+pause
+</pre></div>
+</div>
+<p>Where:</p>
+<ul class="simple">
+<li><p>minerd = the executable miner daemon file you choose to use</p></li>
+<li><p>a = algorithm, which is X11 for Balanced</p></li>
+<li><p>o = URL of your mining pool, including the protocol and port</p></li>
+<li><p>u = username, usually the Balanced receiving address of your wallet or worker</p></li>
+<li><p>p = password, can often be set to x</p></li>
+<li><p>t = number of threads used</p></li>
+<li><p>pause = keeps the window open in the case of errors</p></li>
+</ul>
+<p>For the CPU in the example above, the command may be:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>minerd-avx-aes-sse2-sss3.exe -a X11 -o stratum+tcp://118.184.180.43:7903 -u XwZRjo1f6gmq3LCv7X1Hi5h3NkvDMHvu8G -p x -t 8
+pause
+</pre></div>
+</div>
+<div class="figure align-default" id="id11">
+<a class="reference internal image-reference" href="./cpuminer_files/notepad.png"><img alt="../_images/notepad.png" src="./cpuminer_files/notepad.png" style="width: 400px;"></a>
+<p class="caption"><span class="caption-text">Notepad file showing an example command to start a CPU miner</span><a class="headerlink" href="https://docs.Balanced.org/en/stable/mining/#id11" title="Permalink to this image">¶</a></p>
+</div>
+<p>Click <strong>File</strong>, then <strong>Save As</strong>. Change <strong>Save as type</strong> to <strong>All
+Files</strong>, then type the file name as <em>startminer.bat</em> and save it in the
+same folder as the unzipped <em>minerd</em> files.</p>
+</div>
+<div class="section" id="testing">
+<h3>Testing<a class="headerlink" href="https://docs.Balanced.org/en/stable/mining/#testing" title="Permalink to this headline">¶</a></h3>
+<p>You are now ready to start! Keep an eye on your CPU usage in <strong>Task
+Manager</strong> (right click the taskbar to open this) and be careful that the
+CPU temperature does not exceed your maximum rating (around 64°C). If
+you have temperature or desktop stability problems, reduce <code class="docutils literal notranslate"><span class="pre">t</span></code> to ~2
+threads and try that first. If <code class="docutils literal notranslate"><span class="pre">t</span></code> is left out, the machine will
+default to the maximum number of threads. After running the miner for a
+while, take a look at the hash speed and payouts in your mining pool.
+You can identify your miner by the wallet address on the page.</p>
+<div class="figure align-default" id="id12">
+<a class="reference internal image-reference" href="./cpuminer_files/cpu-mining.png"><img alt="../_images/cpu-mining.png" src="./cpuminer_files/cpu-mining.png" style="width: 400px;"></a>
+<p class="caption"><span class="caption-text">Example of CPU mining using DarkCoin CPUMiner 1.3 on Intel Core i7</span><a class="headerlink" href="https://docs.Balanced.org/en/stable/mining/#id12" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="tips">
+<h3>Tips<a class="headerlink" href="https://docs.Balanced.org/en/stable/mining/#tips" title="Permalink to this headline">¶</a></h3>
+<p>Reduce the number of threads for added desktop usability and heat
+reduction. If the CPU temperature is too high, consider fitting a new
+fan and check that the heat sink thermal paste on the CPU is adequate.
+Tweak the processor clock speed for added performance using a
+motherboard controller like <a class="reference external" href="https://www.asus.com/support/FAQ/1012780/">AI Suite</a> for Asus motherboards.
+Reduction of CPU core voltage will result in lower temperature but
+increased instability.</p>
+<p>Try to select a pool that is nearby to reduce network latency. If the
+node appears slow, switch to another location. Please distribute the
+hashing power globally to different pools to avoid forking.</p>
+</div>
+</div>
+<div class="section" id="gpu-mining">
+<h2>GPU Mining<a class="headerlink" href="https://docs.Balanced.org/en/stable/mining/#gpu-mining" title="Permalink to this headline">¶</a></h2>
+<p>This guide consolidates several other guides on how to use your GPU (the
+processor on your graphics card) to mine Balanced using the X11 algorithm on
+Windows. Please note that the growing market for ASIC miners means that
+this if probably not going to be profitable! A lot of the software and
+binaries described here also have not been updated for several years, so
+this guide should be used for experimental purposes only.</p>
+<p>This guide will cover the process of downloading and configuring the
+mining software, followed by some suggestions for optimizations. This
+technology can change rapidly, so we advise you to keep an eye out on
+mining sites such as these in order to keep up with the latest
+information and releases.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://cryptomining-blog.com/">Crypto Mining Blog</a></p></li>
+<li><p><a class="reference external" href="https://discord.gg/HkHyKCjfRQ">Balanced Coin Mining Discussions</a></p></li>
+</ul>
+<div class="section" id="id5">
+<h3>Mining software<a class="headerlink" href="https://docs.Balanced.org/en/stable/mining/#id5" title="Permalink to this headline">¶</a></h3>
+<p>As for CPU mining, a range of mining software is available for GPU
+mining. Most of it based on sgminer compiled with different
+optimizations specific to different hardware. A good approach is to
+identify your graphics hardware, then choose an appropriate build of
+sgminer. You can use <a class="reference external" href="https://www.techpowerup.com/gpuz/">GPU-Z</a> to
+identify your GPU hardware:</p>
+<div class="figure align-default" id="id13">
+<a class="reference internal image-reference" href="./cpuminer_files/gpu-z.png"><img alt="../_images/gpu-z.png" src="./cpuminer_files/gpu-z.png" style="width: 400px;"></a>
+<p class="caption"><span class="caption-text">GPU-Z showing details for AMD Radeon Turks and NVIDIA Quadro GK104
+class GPUs</span><a class="headerlink" href="https://docs.Balanced.org/en/stable/mining/#id13" title="Permalink to this image">¶</a></p>
+</div>
+<p>Next, download the mining software. Most of these are based on the
+original <a class="reference external" href="https://github.com/sgminer-dev/sgminer">sgminer</a>, but this
+is not suitable for the X11 algorithm, offers no compiled binaries and
+hasn’t been updated in years. We will describe using pre-compiled binary
+software maintained by newer developers only.</p>
+<p><strong>AMD</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/nicehash/sgminer/releases">https://github.com/nicehash/sgminer/releases</a></p></li>
+</ul>
+<p><strong>NVIDIA</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/tpruvot/ccminer/releases">https://github.com/tpruvot/ccminer/releases</a> (focus on core
+application)</p></li>
+<li><p><a class="reference external" href="https://github.com/sp-hash/ccminer/releases">https://github.com/sp-hash/ccminer/releases</a> (sp-mod, optimized CUDA
+kernels for Windows)</p></li>
+<li><p><a class="reference external" href="https://github.com/KlausT/ccminer/releases">https://github.com/KlausT/ccminer/releases</a> (similar to SP version,
+more clean)</p></li>
+</ul>
+<p>Download your chosen release and extract the zip file to a known
+location. The folder should look something like this:</p>
+<div class="figure align-default" id="id14">
+<a class="reference internal image-reference" href="./cpuminer_files/gpu-miner-files.png"><img alt="../_images/gpu-miner-files.png" src="./cpuminer_files/gpu-miner-files.png" style="width: 400px;"></a>
+<p class="caption"><span class="caption-text">Executable GPU miners for Balanced</span><a class="headerlink" href="https://docs.Balanced.org/en/stable/mining/#id14" title="Permalink to this image">¶</a></p>
+</div>
+<p>The sgminer file is the executable file, while the various files with
+.cl extensions define the various algorithms supported by sgminer. In
+this case, we are interested in the darkcoin.cl and darkcoin-mod.cl
+implementations of X11. Note that the name of the executable file may be
+different for miners with different optimizations, for example ccminer
+for NVIDIA cards.</p>
+</div>
+<div class="section" id="id6">
+<h3>Configuration<a class="headerlink" href="https://docs.Balanced.org/en/stable/mining/#id6" title="Permalink to this headline">¶</a></h3>
+<p>Begin by selecting a mining pool and generating a Balanced address. Keep
+all your mining files in a single folder. In this example we will work
+from the Desktop. The node selected for this example is from the
+p2poolming.us list and is located in China:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>http://118.184.180.43:7903/static/
+</pre></div>
+</div>
+<p>Next, open <strong>Notepad</strong> and create the basic configuration. The general
+format is as follows:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{
+  "pools" : [
+    {
+      "url" : "stratum+tcp://pooladdress:7903",
+      "user" : "walletaddress",
+      "pass" : "x",
+      "algorithm":"darkcoin"
+    }
+  ]
+}
+</pre></div>
+</div>
+<p>Where:</p>
+<ul class="simple">
+<li><p>pools = defines a list of pools (in this case, only one) towards which
+the hashing power is directed</p></li>
+<li><p>url = URL of your mining pool, including the protocol and port</p></li>
+<li><p>user = username, usually the Balanced receiving address of your wallet or
+worker</p></li>
+<li><p>pass = password, can often be set to x</p></li>
+<li><p>algorithm = hashing algorithm to use, in this case darkcoin (for
+historic reasons) or darkcoin-mod</p></li>
+</ul>
+<p>For the pool above, the configuration may be:</p>
+<div class="figure align-default" id="id15">
+<a class="reference internal image-reference" href="./cpuminer_files/gpu-config.png"><img alt="../_images/gpu-config.png" src="./cpuminer_files/gpu-config.png" style="width: 400px;"></a>
+<p class="caption"><span class="caption-text">Configuration file for a Balanced GPU miner</span><a class="headerlink" href="https://docs.Balanced.org/en/stable/mining/#id15" title="Permalink to this image">¶</a></p>
+</div>
+<p>Click <strong>File</strong>, then <strong>Save As</strong>. Change <strong>Save as type</strong> to <strong>All
+Files</strong>, then type the file name as <em>sgminer.conf</em> and save it in the
+same folder as the unzipped <em>sgminer</em> files.</p>
+</div>
+<div class="section" id="id7">
+<h3>Testing<a class="headerlink" href="https://docs.Balanced.org/en/stable/mining/#id7" title="Permalink to this headline">¶</a></h3>
+<p>Double click your <em>sgminer.exe</em> and a <strong>Command Prompt</strong> window should
+appear immediately. If it disappears too quickly, check your
+configuration for missing commas, unclosed brackets or incorrect file
+name. The program will compile a special binary specific to your GPU and
+store it in the folder, then begin hashing.</p>
+<div class="figure align-default" id="id16">
+<a class="reference internal image-reference" href="./cpuminer_files/gpu-mining.png"><img alt="../_images/gpu-mining.png" src="./cpuminer_files/gpu-mining.png" style="width: 400px;"></a>
+<p class="caption"><span class="caption-text">Example of GPU mining using sgminer 5.6.1-nicehash-51 on Intel HD
+Graphics 4600</span><a class="headerlink" href="https://docs.Balanced.org/en/stable/mining/#id16" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="asic-mining">
+<span id="id8"></span><h2>ASIC Mining<a class="headerlink" href="https://docs.Balanced.org/en/stable/mining/#asic-mining" title="Permalink to this headline">¶</a></h2>
+<p>ASIC stands for <em>Application-Specific Integrated Circuit</em> and describes
+a type of processor that is designed for one purpose only. ASICs are a
+popular choice for mining cryptocurrency because they can offer a higher
+efficiency than CPU or GPU miners, resulting in higher profit.</p>
+<p>Please note that the information on this page may become obsolete very
+quickly due to the rapidly changing market and difficulty of mining
+Balanced. You are responsible for carrying out your own research and any
+listing on this page should not be considered an endorsement of any
+particular product. A good place to begin your research is the <a class="reference external" href="https://discord.gg/HkHyKCjfRQ">mining
+section</a>.</p>
+<p>The following X11 ASIC miners are available on the market today, click
+the product name to visit the manufacturer’s website:</p>
+<div class="wy-table-responsive"><table class="docutils align-default">
+<colgroup>
+<col style="width: 64%">
+<col style="width: 9%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 10%">
+<col style="width: 5%">
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Hash rate</p></th>
+<th class="head"><p>Power</p></th>
+<th class="head"><p>Weight</p></th>
+<th class="head"><p>Dimensions (mm)</p></th>
+<th class="head"><p>Price</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://shop.bitmain.com.cn/product/detail?pid=000201811150956053407f2Bhw2x068D">Bitmain Antminer D5</a></p></td>
+<td><p>119 GH/s ±5%</p></td>
+<td><p>1566 W</p></td>
+<td><p>7.5 kg</p></td>
+<td><p>486 x 265 x 388</p></td>
+<td><p>$1,180</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.spondoolies-tech.com/products/spx36">Spondoolies SPx36</a></p></td>
+<td><p>540 GH/s ±10%</p></td>
+<td><p>4400 W</p></td>
+<td><p>19.5 kg</p></td>
+<td><p>640 x 525 x 185</p></td>
+<td><p>$7,000</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://strongu.com.cn/Home/Goods/goodsInfo/id/263.html">StrongU STU-U6</a></p></td>
+<td><p>420 GH/s ±8%</p></td>
+<td><p>2100 W</p></td>
+<td><p>8.5 kg</p></td>
+<td><p>370 x 135 x 208</p></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>ASIC resellers may also have miners avaiable:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://cryptomining.tools/">https://cryptomining.tools/</a></p></li>
+<li><p><a class="reference external" href="http://kaboomracks.com/">http://kaboomracks.com</a></p></li>
+</ul>
+<p>The following ASIC miners are either no longer easily available or
+obsolete due to the increase in difficulty on the network.</p>
+<div class="wy-table-responsive"><table class="docutils align-default">
+<colgroup>
+<col style="width: 67%">
+<col style="width: 10%">
+<col style="width: 5%">
+<col style="width: 6%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Hash rate</p></th>
+<th class="head"><p>Power</p></th>
+<th class="head"><p>Weight</p></th>
+<th class="head"><p>Dimensions (mm)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.baikalminer.com/product09.php">Baikal BK-X</a></p></td>
+<td><p>10 GH/s ±5%</p></td>
+<td><p>800 W</p></td>
+<td><p>3.8 kg</p></td>
+<td><p>312 x 125 x 130</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.baikalminer.com/">Baikal Mini</a></p></td>
+<td><p>150 MH/s ±10%</p></td>
+<td><p>40 W</p></td>
+<td><p>.475 kg</p></td>
+<td><p>140 x 100 x 95</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.baikalminer.com/product06.php">Baikal Giant+ A2000</a></p></td>
+<td><p>2000 MH/s ±10%</p></td>
+<td><p>430 W</p></td>
+<td><p>3 kg</p></td>
+<td><p>300 x 140 x 125</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://www.baikalminer.com/">Baikal Giant A900</a></p></td>
+<td><p>900 MH/s ±5%</p></td>
+<td><p>217 W</p></td>
+<td><p>2.5 kg</p></td>
+<td><p>300 x 123 x 123</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.baikalminer.com/">Baikal Quad Cube</a></p></td>
+<td><p>1200 MH/s ±10%</p></td>
+<td><p>300 W</p></td>
+<td><p>3 kg</p></td>
+<td><p>135 x 135 x 425</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://shop.bitmain.com/product/detail?pid=000201810311345082643S60TX7I0609">Bitmain Antminer D3</a></p></td>
+<td><p>17 GH/s ±5%</p></td>
+<td><p>970 W</p></td>
+<td><p>6.5 kg</p></td>
+<td><p>320 x 130 x 190</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://ibelink.co/">iBelink DM384M</a></p></td>
+<td><p>384 MH/s ±10%</p></td>
+<td><p>715 W</p></td>
+<td><p>21 kg</p></td>
+<td><p>490 x 350 x 180</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://ibelink.co/product/ibelink-dm11g/">iBelink DM11G</a></p></td>
+<td><p>11 GH/s ±5%</p></td>
+<td><p>810 W</p></td>
+<td><p>22 kg</p></td>
+<td><p>490 x 350 x 180</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://ibelink.co/product/ibelink-dm22g-x11Balanced-miner-with-22-ghs-hash-rate/">iBelink DM22G</a></p></td>
+<td><p>22 GH/s ±5%</p></td>
+<td><p>810 W</p></td>
+<td><p>19 kg</p></td>
+<td><p>490 x 350 x 180</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pinidea DR-1</p></td>
+<td><p>500 MH/s ±10%</p></td>
+<td><p>320 W</p></td>
+<td><p>4.5 kg</p></td>
+<td><p>290 x 130 x 150</p></td>
+</tr>
+<tr class="row-even"><td><p>Pinidea DR-2</p></td>
+<td><p>450 MH/s&nbsp;±5%</p></td>
+<td><p>335 W</p></td>
+<td><p>4.5 kg</p></td>
+<td><p>200 x 165 x 135</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pinidea DR-3</p></td>
+<td><p>600 MH/s&nbsp;±5%</p></td>
+<td><p>345 W</p></td>
+<td><p>4.5 kg</p></td>
+<td><p>200 x 165 x 135</p></td>
+</tr>
+<tr class="row-even"><td><p>Pinidea DU-1</p></td>
+<td><p>9 MH/s&nbsp;±5%</p></td>
+<td><p>7 W</p></td>
+<td></td>
+<td><p>50 x 50 x 30</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pinidea DRX-Kuznetsov</p></td>
+<td><p>900 MH/s&nbsp;±5%</p></td>
+<td><p>650 W</p></td>
+<td></td>
+<td><p>280 x 180 x 150</p></td>
+</tr>
+<tr class="row-even"><td><p>Pinidea DRX-Varyag</p></td>
+<td><p>1200 MH/s&nbsp;±5%</p></td>
+<td><p>850 W</p></td>
+<td></td>
+<td><p>280 x 180 x 150</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://ibelink.co/product/ibelink-dm56g-x11-Balanced-miner-with-56-gh-s-hash-rate/">iBelink DM56G</a></p></td>
+<td><p>56 GH/s ±5%</p></td>
+<td><p>2100 W</p></td>
+<td><p>17 kg</p></td>
+<td><p>490 x 390 x 180</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://www.innosilicon.com/html/a5-miner/index.html">Innosilicon A5</a></p></td>
+<td><p>32 GH/s ±8%</p></td>
+<td><p>750 W</p></td>
+<td><p>3.1 kg</p></td>
+<td><p>400 x 135 x 158</p></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    
+
+  <hr>
+
+  <div role="contentinfo">
+    <p>
+        © Copyright 2021, Balanced Core Team.
+      <span class="commit">
+        
+        Revision <code>70043</code>.
+      </span>
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org/">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+   
+
+
+</body></html>
