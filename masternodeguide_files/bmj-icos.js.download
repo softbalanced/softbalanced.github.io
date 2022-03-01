@@ -1,0 +1,136 @@
+jQuery(document).ready(function($) {
+	'use strict';
+
+	$('.ico-year').on('change', function() {
+		var val = $(this).val();
+		var url = window.location.href;
+		url = url.replace(/((\?|&)ico-year=)\d+/, '');
+		url = url.replace('#ico-table', '');
+		if(url.indexOf('?') != -1) {
+			window.location.href = url + '&ico-year=' + val + '#ico-table';
+		} else {
+			window.location.href = url + '?ico-year=' + val + '#ico-table';
+		}
+		return false;
+	});
+
+	// Close poup after success
+	$('.pum').on('pumFormSuccess', function (popup_id) {
+		var settings = $(this).data('popmake');
+        setTimeout(function () {
+            PUM.close(settings.id);
+        }, 3000); // 5 seconds
+	});
+	// End Popup Close
+
+	$(".top-scroll-wrapper").scroll(function(){
+		$(".ico-table-wrap").scrollLeft($(".top-scroll-wrapper").scrollLeft());
+	});
+	$(".ico-table-wrap").scroll(function(){
+		$(".top-scroll-wrapper").scrollLeft($(".ico-table-wrap").scrollLeft());
+	});
+
+	$('.ico-newsletter-signup-btn').click(function(e) {
+
+		var form = this.closest('form');
+
+		e.preventDefault();
+		// Get out if it's already processing
+		if($(this).hasClass('in-progress')) {
+			return;
+		}
+
+		// Remove any previous errors
+		$('.invalid-error').remove();
+
+		// Add processing class
+		$(this).addClass('in-progress');
+		
+		// Get email
+		var email = $('input[name="ico-newsletter-email"]', form).val();
+		var firstname = $('input[name="ico-newsletter-first-name"]', form).val();
+		var lastname = $('input[name="ico-newsletter-last-name"]', form).val();
+		var list = $('input[name="ico-mailing-list-name"]', form).val();
+
+		var form_error = '';
+
+		// Validation
+
+		if(!firstname && !lastname) {
+			form_error += 'Please enter your first and last name';
+		} else if (!firstname) {
+			form_error += 'Please enter your first name. ';
+		} else if(!lastname) {
+			form_error += 'Please enter your last name';
+		}
+
+		// test email
+		if(!isEmail(email)) {
+			$(form).append('<p class="invalid-error">Please enter a valid email. ' + form_error + '</p>');
+			$(this).removeClass('in-progress');
+			return;
+		}
+
+		if(form_error != ''){
+			$(form).append('<p class="invalid-error">' + form_error + '</p>');
+			$(this).removeClass('in-progress');
+			return;
+		}
+
+		// /Validation
+
+		// Add the user if the email is good to go
+		$.ajax({
+			url : icoSignup.ajax_url,
+			type : 'post',
+			data : {
+				action    : 'process_ico_subscriber',
+				email     : email,
+				firstname : firstname,
+				lastname  : lastname,
+				list	    : list,
+				post_id   : icoSignup.post_id
+			},
+			success : function( response ) {
+				var json = $.parseJSON(response);
+				if(typeof(json.status) != 'undefined' && json.status !== null) {
+					if(json.title == 'Member Exists') {
+						$(form).append('<p class="invalid-error">This email is already subscribed.</p>');
+					} else {
+						$(form).append('<p class="invalid-error">Error signing up user. <a href="/contact">Contact us</a> instead.</p>');
+					}
+				} else {
+					console.log(json);
+					$(form).append('<p class="invalid-error valid">'+json.sucessMsg+'</p>');
+					$('.num-subscribers').text(json.subscribers + ' investors subscribed');
+				}
+				$('.ico-newsletter-signup-btn').removeClass('in-progress');
+			}
+		});
+
+		return;
+
+	})
+
+	$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+	});
+
+	$('.fake-button').click(function(e) {
+		e.preventDefault();
+	});
+
+});
+
+function isEmail(email) {
+  var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  return regex.test(email);
+}
+
+// Circirful
+// (function(a){a.fn.circliful=function(b,d){var c=a.extend({fgcolor:"#556b2f",bgcolor:"#eee",fill:false,width:15,dimension:200,fontsize:15,percent:50,animationstep:1,iconsize:"20px",iconcolor:"#999",border:"default",complete:null},b);return this.each(function(){var w=["fgcolor","bgcolor","fill","width","dimension","fontsize","animationstep","endPercent","icon","iconcolor","iconsize","border"];var f={};var F="";var n=0;var t=a(this);var A=false;var v,G;t.addClass("circliful");e(t);if(t.data("text")!=undefined){v=t.data("text");if(t.data("icon")!=undefined){F=a("<i></i>").addClass("fa "+a(this).data("icon")).css({color:f.iconcolor,"font-size":f.iconsize})}if(t.data("type")!=undefined){j=a(this).data("type");if(j=="half"){s(t,"circle-text-half",(f.dimension/1.45))}else{s(t,"circle-text",f.dimension)}}else{s(t,"circle-text",f.dimension)}}if(a(this).data("total")!=undefined&&a(this).data("part")!=undefined){var I=a(this).data("total")/100;percent=((a(this).data("part")/I)/100).toFixed(3);n=(a(this).data("part")/I).toFixed(3)}else{if(a(this).data("percent")!=undefined){percent=a(this).data("percent")/100;n=a(this).data("percent")}else{percent=c.percent/100}}if(a(this).data("info")!=undefined){G=a(this).data("info");if(a(this).data("type")!=undefined){j=a(this).data("type");if(j=="half"){D(t,0.9)}else{D(t,1.25)}}else{D(t,1.25)}}a(this).width(f.dimension+"px");var i=a("<canvas></canvas>").attr({width:f.dimension,height:f.dimension}).appendTo(a(this)).get(0);var g=i.getContext("2d");var r=i.width/2;var q=i.height/2;var C=f.percent*360;var H=C*(Math.PI/180);var l=i.width/2.5;var B=2.3*Math.PI;var z=0;var E=false;var o=f.animationstep===0?n:0;var p=Math.max(f.animationstep,0);var u=Math.PI*2;var h=Math.PI/2;var j="";var k=true;if(a(this).data("type")!=undefined){j=a(this).data("type");if(j=="half"){B=2*Math.PI;z=3.13;u=Math.PI*1;h=Math.PI/0.996}}function s(J,x,y){a("<span></span>").appendTo(J).addClass(x).text(v).prepend(F).css({"line-height":y+"px","font-size":f.fontsize+"px"})}function D(y,x){a("<span></span>").appendTo(y).addClass("circle-info-half").css("line-height",(f.dimension*x)+"px")}function e(x){a.each(w,function(y,J){if(x.data(J)!=undefined){f[J]=x.data(J)}else{f[J]=a(c).attr(J)}if(J=="fill"&&x.data("fill")!=undefined){A=true}})}function m(x){g.clearRect(0,0,i.width,i.height);g.beginPath();g.arc(r,q,l,z,B,false);g.lineWidth=f.width+1;g.strokeStyle=f.bgcolor;g.stroke();if(A){g.fillStyle=f.fill;g.fill()}g.beginPath();g.arc(r,q,l,-(h),((u)*x)-h,false);if(f.border=="outline"){g.lineWidth=f.width+13}else{if(f.border=="inline"){g.lineWidth=f.width-13}}g.strokeStyle=f.fgcolor;g.stroke();if(o<n){o+=p;requestAnimationFrame(function(){m(Math.min(o,n)/100)},t)}if(o==n&&k&&typeof(b)!="undefined"){if(a.isFunction(b.complete)){b.complete();k=false}}}m(o/100)})}}(jQuery));
+!function(e){e.fn.circliful=function(t,r){var n=e.extend({foregroundColor:"#3498DB",backgroundColor:"#ccc",pointColor:"none",fillColor:"none",foregroundBorderWidth:15,backgroundBorderWidth:15,pointSize:28.5,fontColor:"#aaa",percent:75,animation:1,animationStep:5,icon:"none",iconSize:"30",iconColor:"#ccc",iconPosition:"top",target:0,start:0,showPercent:1,percentageTextSize:22,percentageX:100,percentageY:113,textAdditionalCss:"",targetPercent:0,targetTextSize:17,targetColor:"#2980B9",text:null,textStyle:null,textColor:"#666",textY:null,textX:null,multiPercentage:0,percentages:[],multiPercentageLegend:0,textBelow:!1,noPercentageSign:!1,replacePercentageByText:null,halfCircle:!1,animateInView:!1,decimals:0,alwaysDecimals:!1,title:"Circle Chart",description:"",progressColor:null},t);return this.each(function(){function t(){var e=P,t=W;if(1===n.multiPercentage){var r,l,a=n.percentages,c=360;for(r=0;r<a.length;++r)l=a[r].percent,t=c/100*l,e=d.find("#circle"+(r+1)),r>0&&(c+=62.5,t=c/100*l),o(e,t,c,l)}else o(e,t,360,l)}function o(t,o,l,a){var c=window.setInterval(function(){B>=o?(window.clearInterval(c),S=1,"function"==typeof r&&r.call(this)):(B+=T,z+=X),n.halfCircle?2*B/(l/100)>=a&&1===S&&(B=l/100*a/2):B/(l/100)>=a&&1===S&&(B=l/100*a),z>n.target&&1===S&&(z=n.target),null===n.replacePercentageByText&&(Y=n.halfCircle?parseFloat(100*B/l*2):parseFloat(100*B/l),Y=Y.toFixed(n.decimals),!n.alwaysDecimals&&(0===a||a>1&&1!==S)&&(Y=parseInt(Y))),t.attr("stroke-dasharray",B+", 20000"),1!==n.multiPercentage?1===n.showPercent?b.find(".number").text(Y):(b.find(".number").text(z),b.find(".percent").text("")):(b.find(".number").text(""),b.find(".percent").text("")),null!==w&&e.each(w,function(e,r){n.halfCircle&&(e/=2),B>=e*(l/100)&&t.css({stroke:r,transition:"stroke 0.1s linear"})})}.bind(t),v)}function l(){var t=-1!==navigator.userAgent.toLowerCase().indexOf("webkit")?"body":"html",r=e(t).scrollTop(),n=r+e(window).height(),o=Math.round(P.offset().top),l=o+P.height();return n>o&&l>r}function a(){P.hasClass("start")||l(P)&&(P.addClass("start"),setTimeout(t,250))}function c(t,r){e.each(t,function(e,n){e.toLowerCase()in r&&(t[e]=r[e.toLowerCase()])})}function i(){if(1===n.multiPercentage){var t,r,o,l,a,c=n.percentages,i=47,p=360,u=-90;for(t=0;t<c.length;++t)o=c[t].percent,l=c[t].color,r=p/100*o,t>0&&(p+=62.5,r=p/100*o),i+=10,a+='<circle cx="100" cy="100" r="'+i+'" class="border" fill="'+n.fillColor+'" stroke="'+n.backgroundColor+'" stroke-width="'+m+'" stroke-dasharray="'+p+'" transform="rotate('+u+',100,100)" /><circle class="circle" id="circle'+(t+1)+'" data-percent="'+o+'" cx="100" cy="100" r="'+i+'" class="border" fill="none" stroke="'+l+'" stroke-width="'+n.foregroundBorderWidth+'" stroke-dasharray="'+r+',20000" transform="rotate('+u+',100,100)" />';d.addClass("svg-container").append(e('<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 194 186" class="circliful">'+("undefined"!=typeof f?f:"")+a+g+'<text class="timer" text-anchor="middle" x="'+C+'" y="'+y+'" style="font-size: '+n.percentageTextSize+"px; "+x+";"+n.textAdditionalCss+'" fill="'+n.fontColor+'"><tspan class="number">'+(null===n.replacePercentageByText?0:n.replacePercentageByText)+'</tspan><tspan class="percent">'+(n.noPercentageSign||null!==n.replacePercentageByText?"":"%")+"</tspan></text>")),1===n.multiPercentageLegend&&s()}else d.addClass("svg-container").append(e('<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 194 186" class="circliful">'+("undefined"!=typeof f?f:"")+'<circle cx="100" cy="100" r="57" class="border" fill="'+n.fillColor+'" stroke="'+n.backgroundColor+'" stroke-width="'+m+'" stroke-dasharray="360" transform="rotate(-90,100,100)" /><circle class="circle" cx="100" cy="100" r="57" class="border" fill="none" stroke="'+n.foregroundColor+'" stroke-width="'+n.foregroundBorderWidth+'" stroke-dasharray="0,20000" transform="rotate(-90,100,100)" /><circle cx="100" cy="100" r="'+n.pointSize+'" fill="'+n.pointColor+'" />'+g+'<text class="timer" text-anchor="middle" x="'+C+'" y="'+y+'" style="font-size: '+n.percentageTextSize+"px; "+x+";"+n.textAdditionalCss+'" fill="'+n.fontColor+'"><tspan class="number">'+(null===n.replacePercentageByText?0:n.replacePercentageByText)+'</tspan><tspan class="percent">'+(n.noPercentageSign||null!==n.replacePercentageByText?"":"%")+"</tspan></text>"))}function s(){var t,r=d.height(),o=d.width(),l=n.percentages,a="";for(t=0;t<l.length;++t){var c=l[t].title,i=l[t].color,s=l[t].percent;a+='<div><span class="color-box" style="background: '+i+'"></span>'+c+", "+s+"%</div>"}d.append(e("<div/>").append(a).attr("style","position:absolute;top:"+r/3+"px;left:"+(o+20)+"px").attr("class","legend-line"))}var d=e(this);c(n,d.data());var x,f,g,p=n.percent,u=83,h=100,y=n.percentageY,C=n.percentageX,m=n.backgroundBorderWidth,w=n.progressColor;if(n.halfCircle?"left"===n.iconPosition?(h=80,u=100,C=117,y=100):n.halfCircle&&(u=80,y=100):"bottom"===n.iconPosition?(u=124,y=95):"left"===n.iconPosition?(h=80,u=110,C=117):"middle"===n.iconPosition?(1!==n.multiPercentage&&(f='<g stroke="'+("none"!==n.backgroundColor?n.backgroundColor:"#ccc")+'" ><line x1="133" y1="50" x2="140" y2="40" stroke-width="2"  /></g>',f+='<g stroke="'+("none"!==n.backgroundColor?n.backgroundColor:"#ccc")+'" ><line x1="140" y1="40" x2="200" y2="40" stroke-width="2"  /></g>',C=170,y=35),u=110):"right"===n.iconPosition?(h=120,u=110,C=80):"top"===n.iconPosition&&"none"!==n.icon&&(y=120),n.targetPercent>0&&n.halfCircle!==!0&&(y=95,f='<g stroke="'+("none"!==n.backgroundColor?n.backgroundColor:"#ccc")+'" ><line x1="75" y1="101" x2="125" y2="101" stroke-width="1"  /></g>',f+='<text text-anchor="middle" x="'+C+'" y="120" style="font-size: '+n.targetTextSize+'px;" fill="'+n.targetColor+'">'+n.targetPercent+(n.noPercentageSign&&null===n.replacePercentageByText?"":"%")+"</text>",f+='<circle cx="100" cy="100" r="69" fill="none" stroke="'+n.backgroundColor+'" stroke-width="3" stroke-dasharray="450" transform="rotate(-90,100,100)" />',f+='<circle cx="100" cy="100" r="69" fill="none" stroke="'+n.targetColor+'" stroke-width="3" stroke-dasharray="'+4.35*n.targetPercent+', 20000" transform="rotate(-90,100,100)" />'),null!==n.text&&(f+=n.halfCircle?n.textBelow?'<text text-anchor="middle" x="'+(null!==n.textX?n.textX:"100")+'" y="'+(null!==n.textY?n.textY:"64%")+'" style="'+n.textStyle+'" fill="'+n.textColor+'">'+n.text+"</text>":'<text text-anchor="middle" x="'+(null!==n.textX?n.textX:"100")+'" y="'+(null!==n.textY?n.textY:"115")+'" style="'+n.textStyle+'" fill="'+n.textColor+'">'+n.text+"</text>":n.textBelow?'<text text-anchor="middle" x="'+(null!==n.textX?n.textX:"100")+'" y="'+(null!==n.textY?n.textY:"99%")+'" style="'+n.textStyle+'" fill="'+n.textColor+'">'+n.text+"</text>":'<text text-anchor="middle" x="'+(null!==n.textX?n.textX:"100")+'" y="'+(null!==n.textY?n.textY:"115")+'" style="'+n.textStyle+'" fill="'+n.textColor+'">'+n.text+"</text>"),"none"!==n.icon&&(g='<text text-anchor="middle" x="'+h+'" y="'+u+'" class="icon" style="font-size: '+n.iconSize+'px" fill="'+n.iconColor+'">&#x'+n.icon+"</text>"),n.halfCircle){var k='transform="rotate(-180,100,100)"';d.addClass("svg-container").append(e('<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 194 186" class="circliful">'+("undefined"!=typeof f?f:"")+'<clipPath id="cut-off-bottom"> <rect x="100" y="0" width="100" height="200" /> </clipPath><circle cx="100" cy="100" r="57" class="border" fill="'+n.fillColor+'" stroke="'+n.backgroundColor+'" stroke-width="'+m+'" stroke-dasharray="360" clip-path="url(#cut-off-bottom)" transform="rotate(-90,100,100)" /><circle class="circle" cx="100" cy="100" r="57" class="border" fill="none" stroke="'+n.foregroundColor+'" stroke-width="'+n.foregroundBorderWidth+'" stroke-dasharray="0,20000" '+k+' /><circle cx="100" cy="100" r="'+n.pointSize+'" fill="'+n.pointColor+'" clip-path="url(#cut-off-bottom)" transform="rotate(-90,100,100)" />'+g+'<text class="timer" text-anchor="middle" x="'+C+'" y="'+y+'" style="font-size: '+n.percentageTextSize+"px; "+x+";"+n.textAdditionalCss+'" fill="'+n.fontColor+'"><tspan class="number">'+(null===n.replacePercentageByText?0:n.replacePercentageByText)+'</tspan><tspan class="percent">'+(n.noPercentageSign||null!==n.replacePercentageByText?"":"%")+"</tspan></text>"))}else i();var P=d.find(".circle"),b=d.find(".timer"),v=30,B=0,T=n.animationStep,S=0,z=0,X=0,Y=p,W=3.6*p;n.halfCircle&&(W=3.6*p/2),null!==n.replacePercentageByText&&(Y=n.replacePercentageByText),n.start>0&&n.target>0&&(p=n.start/(n.target/100),X=n.target/100),1===n.animation?n.animateInView?e(window).scroll(function(){a()}):t():1!==n.multiPercentage?(P.attr("stroke-dasharray",W+", 20000"),1===n.showPercent?b.find(".number").text(Y):(b.find(".number").text(n.target),b.find(".percent").text(""))):null!==n.replacePercentageByText&&(b.find(".number").text(n.replacePercentageByText),b.find(".percent").text(""))})}}(jQuery);

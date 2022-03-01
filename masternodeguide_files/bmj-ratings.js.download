@@ -1,0 +1,302 @@
+jQuery( document ).ready( function( $ ) {
+
+	/**
+	 * Rating/Score Reviews on single page contents
+	 **/
+	if($('.bmj-quickscore-title-wrapper').length == 1) {
+
+		$('.your-ratings').addClass('active');
+		$('.your-ratings').css('border-top','1px solid #E8E8E8');
+
+	} else if ($('.bmj-quickscore-title-wrapper').length == 2  // If 2 tabs
+		&& $('.their-ratings').length == 0 // and no their ratings
+		&& $('*[data-tab="our-ratings"]').attr('data-tooltip') === "Score: --") { // and no bmj rating
+		
+		$('.bmj-quickscore-title-wrapper').removeClass('active');
+		$('*[data-tab="your-ratings"]').addClass('active');
+		var your_data = $('*[data-tab="your-ratings"]').data( 'tab' );
+		$('.bmj-quickscore-wrapper').removeClass('active');
+		$('.bmj-quickscore-wrapper.' + your_data).addClass('active');
+
+	} else if ($('.bmj-quickscore-title-wrapper').length == 2) { // if 2 tabs
+
+		$('.their-ratings').addClass('active');
+		$('.their-ratings').css('border-top','1px solid #E8E8E8');
+
+	} else if ($('.bmj-quickscore-title-wrapper').length == 3 // if 3 tabs
+		&& $('*[data-tab="our-ratings"]').attr('data-tooltip') === "Score: --" ) { // and no bmj rating
+
+		$('.bmj-quickscore-title-wrapper').removeClass('active');
+		$('*[data-tab="your-ratings"]').addClass('active');
+		var your_data = $('*[data-tab="your-ratings"]').data( 'tab' );
+		$('.bmj-quickscore-wrapper').removeClass('active');
+		$('.bmj-quickscore-wrapper.' + your_data).addClass('active');
+
+	}
+
+	/**
+	 * Selecting rating with stars
+	 **/
+	$('.five-point-ranking .your-ratings .bmj-star').click(function() {
+		var color = '';
+		var selected_value = $(this).data('value');
+		var kpi = $(this).closest('.bmj-quickscore-data');
+
+		if(selected_value <= 1.9) {
+			color = 'red';
+		} else if(selected_value > 1.9 && selected_value <= 3.9) {
+			color = 'yellow';
+		} else {
+			color = 'green';
+		}
+
+		$(kpi).find('.bmj-star').removeClass('red yellow green selected');
+
+		for (var i = 0; i <= selected_value; i++) {
+			$(kpi).find('[data-value=' + i + ']').addClass(color);
+		};
+		$(this).addClass('selected');
+	});
+
+	/**
+	 * Initial load, color stars
+	 **/
+	$('.bmj-star').each(function( index, element ) {
+		if($(element).hasClass('selected')) {
+			$(element).click();
+		}
+	});
+
+	/**
+	 * Switching between rating tabs
+	 **/
+	$('.bmj-quickscore-title-wrapper').click(function() {
+		$('.bmj-quickscore-title-wrapper').removeClass('active');
+		$(this).addClass('active');
+		var tab_data = $(this).data( 'tab' );
+
+		$('.bmj-quickscore-wrapper').removeClass('active');
+		$('.bmj-quickscore-wrapper.' + tab_data).addClass('active');
+	});
+
+	/**
+	 * Ratings Form Submitted
+	 **/
+	$('#rating-form-submit').click(function() {
+
+		var valid = validate_rating_form();
+		if(valid === 0) {
+			return;
+		}
+
+		var post_id = ratings_post.post_id;
+
+		var market = $('.market .bmj-star.selected').data('value');
+		var competition = $('.competition .bmj-star.selected').data('value');
+		var token = $('.token .bmj-star.selected').data('value');
+		var team = $('.team .bmj-star.selected').data('value');
+		var adoption = $('.adoption .bmj-star.selected').data('value');
+		var comment = $('.comment').val();
+		var name = '';
+
+		jQuery.ajax({
+			url : ratings_post.ajaxurl,
+			type : 'post',
+			data : {
+				action : 'rating_form_submit',
+				post_id : post_id,
+				market : market,
+				competition : competition,
+				token : token,
+				team : team,
+				adoption : adoption,
+				comment : comment,
+				name : name,
+				security : ratings_post.security
+			},
+			success : function( response ) {
+				// Signin Popup
+				if(response !== 'woo') {
+					jQuery('#rating-form-submit').after('<input type="hidden" class="newval" name="newval" value="' + response + '"/>');
+				}
+				if(response == 'confirmed_signed_in') {
+					window.location.replace("/rating-submitted-thankyou");
+				} else if(response === 'alt_confirmed_signed_in') {
+					window.location.replace("/alt-rating-submitted-thankyou");
+				}
+
+				// If we don't redirect we show the pop-up because they are logged out
+				$('#my_popup').popup('show');
+			}
+		});
+		return false;
+	});
+
+	/**
+	 * Validate Ratings Form
+	 **/
+	function validate_rating_form() {
+
+		// Remove any previous errors
+		$('.invalid-error').remove();
+		// Add processing class
+		$('.five-point-ranking').addClass('in-progress');
+
+		var market = $('.market .bmj-star.selected');
+		var competition = $('.competition .bmj-star.selected');
+		var token = $('.token .bmj-star.selected');
+		var team = $('.team .bmj-star.selected');
+		var adoption = $('.adoption .bmj-star.selected');
+		var comment = $('textarea.comment');
+		var name = $('#name');
+
+		var market_val = $(market).data('value');
+		var competition_val = $(competition).data('value');
+		var token_val = $(token).data('value');
+		var team_val = $(team).data('value');
+		var adoption_val = $(adoption).data('value');
+		var comment_val = $(comment).val();
+		var name_val = $(name).val();
+
+		var form_error = '';
+
+		if(typeof(market_val) === 'undefined' || typeof(competition_val) === 'undefined' || typeof(token_val) === 'undefined' || typeof(team_val) === 'undefined' || typeof(adoption_val) === 'undefined' ) {
+			form_error += 'Please review each category.<br/>';
+		}
+
+		if(comment_val == '') {
+			form_error += ' Please provide a comment.<br/>';
+		}
+
+		if(name_val == '') {
+			form_error += ' Please provide your name.';
+		}
+
+		if(form_error != '') {
+			$('#rating-form-submit').after('<p class="invalid-error">' + form_error + '</p>');
+			$('.five-point-ranking').removeClass('in-progress');
+			return 0;
+		} else {
+			return 1;
+		}
+	}
+
+	/**
+	 * Validate and submit signin Popup
+	 **/
+	$("#bmj_email_confirmation").click( function() {
+
+		// Remove any previous errors
+		$('.invalid-error').remove();
+
+		var email = $('#subs-email').val();
+		if(typeof(email) === 'undefined' || email == '') {
+			$('#my_popup .form-grid-wrap').after('<p class="invalid-error">Please provide your Bitcoin Market Journal subscription email address.</p>');
+			return;
+		}
+
+		var newval = $('.newval').val();
+		var post_id = ratings_post.post_id;
+
+		jQuery.ajax({
+			url : ratings_post.ajaxurl,
+			type : 'post',
+			data : {
+				action : 'rating_email_form_submit',
+				email : email,
+				newval : newval,
+				post_id : post_id,
+			},
+			success : function( response ) {
+				if(response === 'no') {
+					$('#my_popup .form-grid-wrap').after('<p class="invalid-error">Please provide your Bitcoin Market Journal subscription email address.</p>');
+				} else if(response === 'done') {
+
+					if($('body').hasClass("single-t_altcoins")) {
+						$('#my_popup .form-grid-wrap').after('<p class="invalid-error">You can only review an Altcoin once.</p>');
+					} else {
+						$('#my_popup .form-grid-wrap').after('<p class="invalid-error">You can only review an ICO once.</p>');
+					}
+				} else if(response === 'yes') {
+					window.location.replace("/rating-submitted-thankyou");
+				} else if(response === 'alt_yes') {
+					window.location.replace("/alt-rating-submitted-thankyou");
+				}
+			}
+		});
+	});
+
+	/**
+	 * Signin Popup
+	 **/
+	$('#my_popup').popup({
+		'color' : '#4B5C72',
+		onopen: function() {
+		    bmj_popup_init();
+		},
+		onclose: function() {
+			var $flip_sections = $('.flip');
+			$.each($flip_sections, function(key, value) {
+				if($(value).hasClass('active')) {
+					$(value).removeClass('active');
+				}
+			})
+		},
+	});
+
+	/**
+	 * QTIP
+	 **/
+	$('[data-tooltip!=""]').each(function() {
+		$(this).qtip({ // Grab all elements with a non-blank data-tooltip attr.
+			content: {
+				attr: 'data-tooltip', // Tell qTip2 to look inside this attr for its content
+			},
+		    position: {
+		        my: 'center left',  // Position my top left...
+		        at: 'center right', // at the bottom right of...
+		        target: $(this) // my target
+		    }
+		});
+	});
+
+	/**
+	 * Sign-up/Register Form Overlay
+	 **/
+	function bmj_popup_init() {
+		var $flip_sections = $('.flip');
+		$.each($flip_sections, function(key, value) {
+			if($(value).hasClass('active')) {
+				$(value).show();
+			}
+		});
+		$('.flip-click').click(function() {
+			$('.flip').hide();
+			if($(this).hasClass('flip-forgot-password')) {
+				$('.forgot-password').show();
+			}
+			if($(this).hasClass('flip-register')) {
+				$('.register').show();
+			}
+			if($(this).hasClass('flip-sign-up')) {
+				$('.sign-up').show();
+			}
+		});
+	}
+
+	/**
+	 * Display membership forms if form error
+	 **/
+	if(ratings_post.is_login_attempt == 1) {
+		$('#my_popup').popup('show');
+	}
+	if(ratings_post.is_reg_attempt == 1) {
+		$('#my_popup').popup('show');
+		$('.flip-register').click();
+	}
+	if(ratings_post.is_lost_password == 1) {
+		$('#my_popup').popup('show');
+		$('.flip-forgot-password').click();
+	}
+
+} );

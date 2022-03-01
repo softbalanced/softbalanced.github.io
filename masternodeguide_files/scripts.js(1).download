@@ -1,0 +1,92 @@
+jQuery( document ).ready( function() {
+	jQuery('.subscribe-menu-item').click(function() {
+		jQuery('.subscribe-menu-item').removeClass('active');
+		jQuery(this).addClass('active');
+	});
+	jQuery('.subscribe-menu-item.cc-payment').click(function() {
+		jQuery('.payment-gateway.cc-payment').show();
+		jQuery('.payment-gateway.bitcoin-payment').hide();
+	});
+	jQuery('.subscribe-menu-item.bitcoin-payment').click(function() {
+		jQuery('.payment-gateway.bitcoin-payment').show();
+		jQuery('.payment-gateway.cc-payment').hide();
+	});
+
+    fixFlexsliderHeight();
+});
+
+
+jQuery(window).load(function() {
+    fixFlexsliderHeight();
+});
+
+jQuery(window).resize(function() {
+    fixFlexsliderHeight();
+});
+
+function fixFlexsliderHeight() {
+
+    var featuredHeight = jQuery('.featured-widgets').height();
+    // Set fixed height based on the tallest slide
+    jQuery('.flexslider').each(function(){
+        var sliderHeight = 0;
+        jQuery(this).find('.slides > li').each(function(){
+            slideHeight = jQuery(this).height();
+            if (sliderHeight < slideHeight) {
+                sliderHeight = slideHeight;
+            }
+        });
+
+        if(sliderHeight > featuredHeight) {
+            sliderHeight = featuredHeight;
+        }
+
+        jQuery(this).find('ul.slides').css({'height' : sliderHeight});
+        jQuery(this).find('.flex-viewport').css({'height' : sliderHeight});
+    });
+}
+
+/**
+ *
+ *
+ MemberPress
+ *
+ *
+ **/
+jQuery( document ).ready( function() {
+    var action = BMJGetUrlParameter('action');
+    if(action) {
+        jQuery('.bmj-signup-text').hide();
+    }
+
+    // Hide page meta if user isn't authorized
+    if(jQuery('.mepr-unauthorized-message').length >= 1) {
+        jQuery('.entry-footer').hide();
+    }
+
+    // Update coupon link test
+    jQuery('.have-coupon-link').html('Have a promo code?');
+    // Move form elements
+    jQuery('#mepr_account_form .mepr_email').after(jQuery('.mepr-account-change-password'));
+    // Hide author things for unauthed users
+    var unauth_element = jQuery('.mepr-unauthorized-message');
+    if(unauth_element.length > 0) {
+        jQuery('.post-meta').hide();
+    }
+});
+
+function BMJGetUrlParameter(sParam) {
+        var sPageURL = window.location.search.substring(1),
+            sURLVariables = sPageURL.split('&'),
+            sParameterName,
+            i;
+
+        for (i = 0; i < sURLVariables.length; i++) {
+            sParameterName = sURLVariables[i].split('=');
+
+            if (sParameterName[0] === sParam) {
+                return typeof sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+            }
+        }
+        return false;
+    };

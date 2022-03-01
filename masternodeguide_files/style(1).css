@@ -1,0 +1,1572 @@
+/*
+Theme Name: Tribune Child 02
+Theme URI: http://www.wpzoom.com/themes/tribune/
+Template: tribune
+Author: WPZOOM
+Author URI: http://www.wpzoom.com
+Version: 56.454
+Updated: 2021-05-09 17:43:40
+
+*/
+
+/**
+ * Table of Contents
+ *
+ * - Header
+ * - Main
+ * - Entry Content
+ * - Homepage
+ * - Subscription Page
+ * - ICOs
+ * - Contact Page
+ * - Comments
+ * - Footer
+ * - Five Point Ranking
+ *
+ * ---------
+ * Media Styles
+ * 
+ * - Screen && max-width 768
+ * - Screen && max-width 980
+ **/
+
+body {
+	font-size: 18px;
+}
+
+.mobile-only {
+	display: none;
+}
+@media only screen and (max-device-width : 480px) {
+	.mobile-only {
+		display: block;
+	}
+	.desktop-only {
+		display: none;
+	}
+}
+
+/**
+ * Pop-up
+ **/
+.pum-form--layout-block div.pum-grid.grid-60 {
+	width: 60%;
+}
+
+.pum-form--layout-block div.pum-grid.grid-30 {
+	width: 30%;
+}
+@media (max-width: 2767px) {
+	.pum-form--layout-block div.pum-grid.mobile-grid-100 {
+		width: 100%;
+	}
+}
+
+/**
+ * Header
+ **/
+ .main-navbar .sf-menu > li {
+ 	padding: 12px 10px;
+ }
+ .main-navbar .navbar-nav a {
+ 	font-size: 14px;
+ }
+.main-navbar .navbar-nav ul a {
+	text-align: left;
+}
+.main-navbar {
+	margin-bottom: 6px;
+	padding: 0;
+}
+#header #header-inner {
+	padding-bottom: 15px;
+}
+.navbar-brand .header_date {
+	margin-top: -20px;
+}
+.navbar-brand img {
+	margin-bottom: 0;
+}
+#news-ticker dt {
+	font-size: 16px;
+	line-height: 100%;
+}
+h1.entry-title {
+	font-size: 40px;
+}
+#news-ticker {
+  background: #99999b;
+  border-color: #99999b;
+  margin-bottom: 6px;
+}
+.sharedaddy {
+	float: right;
+}
+.sharedaddy .sd-social ul {
+	margin-bottom: 0 !important;
+}
+.meta-custom-floater {
+	margin-top: -32px;
+}
+.sd-content ul li.share-end {
+	display: none;
+}
+.sd-content ul li.share-pinterest {
+	margin-right: 0;
+}
+.sfsiplus_norm_row.sfsi_plus_wDiv {
+	width: 30% !important;
+	text-align: right !important;
+	position: static !important;
+	float: right !important;
+}
+#sfsi_holder {
+	display: none;
+}
+header i.fa {
+	color: #999;
+	font-size: 20px;
+	margin: 0px 8px;
+}
+header i.fa:hover {
+	color: #000;
+}
+/**
+ * Main
+ **/
+#main {
+	margin-bottom: 24px;
+}
+.section-title {
+	text-align: left;
+}
+
+/**
+ * Entry Content
+ **/
+.entry-content ul li {
+  list-style-type: circle;
+}
+.entry-content ul, .entry-content ol {
+  margin: 20px 0 35px 35px;
+}
+.entry-content ul li, .entry-content ol li {
+	margin: 12px 0;
+}
+.entry-content strong {
+	background-color: #ffff00;
+}
+#post-7742 .entry-content ol,
+#post-7746 .entry-content ol {
+	margin: 20px 0 35px 0
+}
+
+article.t_preicos .preico-section,
+article.t_icos .preico-section {
+	padding: 14px 12px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+article.t_preicos .participate-data.preico-section,
+article.t_icos .participate-data.preico-section {
+	background: #E6EEF5;
+	padding: 14px;
+}
+
+article.t_preicos .preico-section header,
+article.t_icos .preico-section header {
+	display: block;
+	width: 100%;
+	margin-bottom: 8px;
+}
+
+article.t_preicos .preico-section header h2,
+article.t_icos .preico-section header h2 {
+	color: #466182;
+	font-weight: bold;
+	font-size: 18px;
+	float: left;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: 8px;
+}
+
+article.t_preicos .preico-section header img,
+article.t_icos .preico-section header img {
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+
+article.t_preicos .preico-section ul li,
+article.t_preicos .preico-section ul,
+article.t_icos .preico-section ul li,
+article.t_icos .preico-section ul {
+	list-style-type: disc;
+	line-height: 175%;
+	margin: 0;
+	margin-left: 12px;
+}
+
+article.t_preicos .preico-section ul p,
+article.t_icos .preico-section ul p {
+	margin-bottom: 0;
+	margin-top: 12px;
+}
+
+/**
+ * Homepage
+ **/
+#main.main-home {
+  float: left;
+  width: 100%;
+}
+
+body.home #main h2.section-title {
+	display: none;
+}
+
+#slider .flex-direction-nav .flex-prev:after, #slider .flex-direction-nav .flex-next:after {
+	margin-top: 12px;
+	font-size: 16px;
+}
+.flex-control-nav {
+	margin-top: 0;
+	display: none;
+}
+
+@media screen and (max-width: 2350px) {
+	#main.main-home {
+  	width: 100%;
+	}
+}
+
+/**
+ * Most Viewed Widget
+ **/
+.viewed-widget-tabs {
+	display: block;
+	width: 100%;
+}
+.viewed-widget-tabs h3.title {
+	display: inline-block;
+	float: left;
+	padding: 12px;
+	border-bottom: 0;
+	margin-bottom: 0;
+	background: #efefef;
+	border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  cursor: pointer;
+}
+
+.viewed-widget-tabs h3.title:hover {
+	background: #F5F5F5;
+}
+
+.viewed-widget-tabs .active h3.title {
+	border-left: 1px solid #efefef;
+  border-top: 1px solid #efefef;
+  border-right: 1px solid #efefef;
+  background: #FFF;
+  border-bottom: 0;
+  cursor: inherit;
+}
+
+.viewed-widget-tabs h3.title .fa {
+	padding-left: 6px;
+}
+
+.popular-views-investor ol.popular-posts li:nth-child(1) {
+	padding-top: 10px;
+}
+.popular-views-investor .list-wrapper:nth-child(even),
+ul.feature-posts-list li:nth-child(even) {
+	background: #F5F5F5;
+	border-bottom: 1px solid #ffefef;
+}
+
+#sidebar.top-sidebar h3.title,
+#sidebar.top-sidebar h2.widgettitle {
+	font-size: 18px;
+}
+
+#sidebar.top-sidebar {
+	width: 100%;
+	float: none;
+}
+
+#sidebar.top-sidebar .bmj-newsletter-signup-btn {
+	font-size: 14px;
+}
+
+#sidebar.top-sidebar .widget,
+#sidebar.top-sidebar .mc-general-newsletter-container-wrap,
+#sidebar.top-sidebar .widget.event-promotion-investor,
+#sidebar.top-sidebar .widget.feature-posts {
+	float: left;
+	width: 25%;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+#sidebar.top-sidebar .mc-general-newsletter-container-wrap {
+	display: block !important;
+	height: auto !important;
+	padding-bottom: 32px;
+}
+
+#sidebar.top-sidebar .widget.popular-views-investor {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#sidebar.top-sidebar .widget.event-promotion-investor {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#sidebar .widget.feature-posts {
+	padding-left: 0;
+	padding-right: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+	padding-top: 0;
+	margin-bottom: 14px;
+}
+#sidebar .widget.feature-posts ul li {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-bottom: 0;
+	padding-top: 15px;	
+}
+.feature-posts.widget h2.widgettitle {
+  background: #F5F5F5;
+  margin: 0 0 25px;
+  padding: 10px 0 10px;
+  border-bottom: 0;
+  font-size: 20px;
+  color: #B02B33;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  margin-bottom: 0;
+  padding-left: 15px;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+.widget .feature-posts-list li a {
+	color: #093969;
+}
+
+.popular-views-investor .popular-posts {
+	display: none;
+}
+.popular-views-investor .popular-posts.active {
+	display: block;
+}
+ol.popular-posts li {
+	margin: 0 0 10px 30px;
+}
+.description-wrapper span {
+	color: #656565;
+	display: block;
+	padding-top: 10px;
+	text-align: right;
+}
+@media screen and (max-width: 2767px) {
+	.description-wrapper span {
+  	text-align: left;
+  	margin-bottom: 15px;
+  	padding-top: 0;
+	}
+	.description-wrapper h2 {
+		margin-bottom: 0;
+	}
+}
+
+.testimonial-widget-container {
+	background: #EFF4F7;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	margin-bottom: 30px;
+}
+
+.widget.testimonials-investor {
+	overflow: hidden;
+	margin-bottom: 0;
+}
+
+.testimonial-widget-container .widgettitle {
+	text-align: center;
+}
+
+.circle-image {
+	border-radius: 50%;
+}
+
+.bmj-testimonial {
+	padding: 20px;
+}
+.free-subscribe-text ul {
+	margin-left: 0;
+	list-style-type: disc;
+}
+.free-subscribe-text ul li {
+	list-style-type: disc;
+}
+
+/**
+ * Subscription Page
+ **/
+.stripe-button-el {
+	display: block !important;
+	margin: 0 auto;
+}
+body.page-template-template-subscribe .entry-title {
+	border-bottom: 1px solid #eee;
+	text-align: center;
+}
+h2.sidebar-title {
+	text-align: center;
+}
+#sidebar .stripe-button-el span {
+	font-size: 13px;
+	margin-left: 0;
+	margin-right: 0;
+}
+#sidebar .widget {
+	margin-bottom: 4px;
+}
+
+#sidebar .widget.popular-views-investor {
+	padding: 0;
+	border: 0;
+	margin-top: 42px;
+	margin-bottom: 42px;
+}
+#sidebar .viewed-widget-tabs h3.title {
+	padding: 8px 6px;
+}
+.subscribe-menu {
+	max-width: 460px;
+}
+li.subscribe-menu-item {
+	width: 50%;
+	text-align: center;
+	border: 1px solid #eee;
+  border-bottom: 3px solid #DFE0E0;
+  display: inline-block;
+  cursor: pointer;
+}
+li.subscribe-menu-item.last {
+	float: right;
+}
+.subscribe-menu-item.active {
+	background: #DFE0E0;
+}
+#coinbase_inline_iframe_a3938c94304d7df179503ceb049d886e {
+	max-width: 100%;
+}
+.cc-payment {
+	display: none;
+}
+.subscription-wrapper {
+	max-width: 460px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.mug-shots img.full-mug {
+	width: 90%;
+}
+
+.full-width .mc-general-newsletter-container-wrap {
+	max-width: 100%;
+}
+
+#ico-newsletter.bmj-newsletter-trial input {
+	margin: 0;
+}
+#ico-newsletter.bmj-newsletter-trial {
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
+
+/* V2 */
+.entry-content .subscribe-header h2 {
+	font-size: 42px;
+	font-weight: 200;
+	color: #0D325E;
+	margin-top: 22px;
+	text-align: center;
+	margin-bottom: 12px;
+}
+.entry-content .subscribe-header h3 {
+	font-size: 28px;
+	font-weight: 200;
+	color: #393F47;
+	margin-top: 0;
+	text-align: center;
+	padding-bottom: 24px;
+}
+.subscribe-top-box {
+	background: #F6F6F6;
+	padding: 38px;
+	margin-bottom: 110px;
+	position: relative;
+}
+.subscribe-top-box h3 {
+	color: #0D325E;
+}
+.subscribe-top-box ul {
+	margin-left: 0;
+	margin-bottom: 15px;
+}
+.subscribe-top-box ul li {
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+}
+.subscribe-top-box ul li span.dashicons {
+	color: #61A048;
+	width: 30px;
+	height: 30px;
+	font-size: 30px;
+}
+.subscribe-box {
+	background: #E1E9F2;
+	min-height: 328px;;
+/*	margin-bottom: 62px;*/
+}
+.subscribe-box img.ab-img {
+	position: absolute;
+	top: -30px;
+	left: 10%;
+}
+
+.subscribe-box-white {
+	background: #FFF;
+	margin-bottom: 0;
+	min-height: 0;
+}
+
+.best-deal {
+	display: inline-block;
+	position: relative;
+	left: -10px;
+	background: #BC1C34;
+	color: #FFF;
+	padding: 4px 28px;
+	font-weight: 800;
+}
+.best-deal-none {
+	background: #FFF;
+	padding: 4px 0;
+}
+
+.subscribe-box p {
+	font-size: 24px;
+	line-height: 38px;
+	font-weight: 200;
+}
+.subscribe-youtube .embed-youtube .fluid-width-video-wrapper {
+	min-height: 300px;
+}
+
+body.page-id-2447 {
+	margin-bottom: -32px;
+}
+
+/**
+ * ICOS
+ **/
+article.t_icos,
+article.t_preicos,
+article.t_altcoins {
+	margin-top: 36px;
+}
+
+article.t_icos .top-button-wrapper,
+article.t_preicos .top-button-wrapper,
+article.t_altcoins .top-button-wrapper {
+	float: right;
+	margin-top: 16px;
+}
+
+article.t_icos .top-button-wrapper .ico-top-button-single,
+article.t_preicos .top-button-wrapper .ico-top-button-single,
+article.t_altcoins .top-button-wrapper .ico-top-button-single {
+	min-width: 120px;
+}
+
+article.t_icos .raised-label,
+article.t_preicos .raised-label,
+article.t_altcoins .raised-label {
+	font-size: 12px;
+}
+
+article.t_icos .entry-header,
+article.t_preicos .entry-header,
+article.t_altcoins .entry-header {
+	margin-bottom: 36px;
+}
+article.t_icos .entry-title,
+article.t_preicos .entry-title,
+article.t_altcoins .entry-title {
+	margin-bottom: 0;
+	float: left;
+}
+article.t_icos .ico-header span.symbol,
+article.t_preicos .ico-header span.symbol,
+article.t_altcoins .ico-header span.symbol {
+	float: left;
+	margin-top: 14px;
+	margin-left: 12px;
+}
+article.t_icos .ico-header span.ico-date-label,
+article.t_preicos .ico-header span.ico-date-label,
+article.t_altcoins .ico-header span.ico-date-label {
+	font-weight: 800;
+}
+article.t_icos .ico-header span.ico-date-labe,
+article.t_preicos .ico-header span.ico-date-labe,
+article.t_altcoins .ico-header span.ico-date-label,
+article.t_icos .ico-header span.ico-date,
+article.t_preicos .ico-header span.ico-date,
+article.t_altcoins .ico-header span.ico-date {
+	font-size: 16px;
+}
+article.t_icos .ico-thumbnai,
+article.t_preicos .ico-thumbnai,
+article.t_altcoins .ico-thumbnail,
+article.t_icos .ico-header,
+article.t_preicos .ico-header,
+article.t_altcoins .ico-header {
+	float: left;
+}
+article.t_icos .entry-header img,
+article.t_preicos .entry-header img,
+article.t_altcoins .entry-header img {
+	float: left;
+	margin-right: 24px;
+	margin-top: 0px;
+	max-width: 100px;
+	height: auto;
+}
+article.t_icos .quick-description,
+article.t_preicos .quick-description,
+article.t_altcoins .quick-description {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: #656565;
+}
+article.t_icos .team-members,
+article.t_preicos .team-members,
+article.t_altcoins .team-members {
+	margin-top: 24px;
+}
+article.t_icos .ico-left,
+article.t_preicos .ico-left,
+article.t_altcoins .ico-left {
+	margin-top: 0px;
+}
+article.t_icos .embedded-video iframe,
+article.t_preicos .embedded-video iframe,
+article.t_altcoins .embedded-video iframe {
+	max-width: 100%;
+	max-height: 300px;
+}
+article.t_icos .bmj-quickscore-wrapper .bmj-star,
+article.t_preicos .bmj-quickscore-wrapper .bmj-star,
+article.t_altcoins .bmj-quickscore-wrapper .bmj-star {
+	font-size: 28px;
+}
+article.t_icos h2,
+article.t_preicos h2,
+article.t_altcoins h2 {
+	font-weight: 400;
+}
+article.t_icos .ico-links,
+article.t_preicos .ico-links,
+article.t_altcoins .ico-links {
+	font-size: 15px;
+}
+.grid-container {
+	padding-left: 0;
+	padding-right: 0;
+}
+article.t_icos .overview-detail,
+article.t_preicos .overview-detail,
+article.t_altcoins .overview-detail {
+	margin-bottom: 36px;
+}
+.bmj-quickscore-wrapper {
+	margin: 0 auto 36px;
+	border: 1px solid #E8E8E8;
+}
+.bmj-quickscore-wrapper .bmj-quickscore-title {
+	text-align: center;
+	margin: 0 auto -12px;
+}
+.bmj-quickscore-title h3 {
+	font-size: 20px;
+	margin-bottom: 0;
+}
+.bmj-quickscore-wrapper .sub-value {
+	width: 33%;
+	float: left;
+	text-align: center;
+}
+
+.bmj-quickscore-wrapper .sub-value.alt {
+	width: 20%;
+}
+
+.bmj-quickscore-wrapper .star-ratings {
+	text-align: center;
+  font-size: 36px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.t_altcoins .bmj-quickscore-title-wrapper,
+.t_preicos .bmj-quickscore-title-wrapper {
+	padding-top: 8px;
+	padding-bottom: 0px;
+	background: #F6F6F6;
+}
+.t_icos .bmj-quickscore-title-wrapper,
+.t_icos .t_preicos-quickscore-title-wrapper {
+	padding-top: 28px;
+	padding-bottom: 24px;
+	background: #F6F6F6;
+}
+.timer {
+	font-weight: 800;
+}
+.circlestat.svg-container {
+	margin-bottom: -14px;
+}
+
+/* Altcoin 2.0 */
+article.altcoinv2 .entry-header {
+	margin: 0;
+}
+article.altcoinv2 .entry-header h2 {
+	font-weight: 700;
+	margin-bottom: 12px;
+	font-size: 40px;
+	text-align: center;
+	float: none;
+}
+
+article.altcoinv2 h1.entry-title {
+	font-size: 36px;
+}
+article.altcoinv2 .entry-header .ico-header {
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+	align-items: flex-start;
+}
+article.altcoinv2 .entry-header .ico-header .video-row {
+	max-width: 500px;
+    order: 4;
+    margin-left: auto;
+}
+article.altcoinv2 .entry-header .ico-header .sub-row {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 400px;
+}
+article.altcoinv2 .entry-header .ico-header .rating-row {
+	text-align: center;
+	flex-grow: 2;
+}
+article.altcoinv2.t_altcoins .entry-header img {
+	margin-right: 18px;
+}
+article.altcoinv2 .entry-header .ico-header .bmj-star {
+	margin: 0 2px;
+}
+article.altcoinv2 .entry-content {
+	margin-top: 32px;
+}
+article.altcoinv2 .short-overview-detail {
+	font-size: 18px;
+	color: #2f2f2f;
+	margin-top: 24px;;
+}
+article.altcoinv2 .altcoinv2-category {
+	background: #E0E9F2;
+	padding: 18px 24px;
+}
+article.altcoinv2 .overview-detail {
+	padding: 18px 24px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0;
+	align-items: top;
+}
+article.altcoinv2 .overview-detail.one-off {
+	background: #F6F6F6;
+}
+article.altcoinv2 .overview-detail.average-detail {
+	background: #FFF0C1;
+	margin-bottom: 32px;
+}
+article.altcoinv2 .overview-detail.overall-detail {
+}
+article.altcoinv2 .overview-detail h4 {
+	font-size: 20px;
+	margin-bottom: 0;
+}
+article.altcoinv2 .overview-detail p {
+	font-size: 16px;
+	margin-bottom: 0;
+}
+article.altcoinv2 .altcoinv2-category h3 {
+	color: #083869;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-size: 28px;
+}
+article.altcoinv2 .star-row {
+	min-width: 102px;
+}
+article.altcoinv2 .entry-footer {
+	margin: 0 24px 12px;
+}
+#ico-table td, .ico-table td, #ico-table th, .ico-table th {
+	font-size: 14px !important;
+}
+#ico-table th._market_cap {
+	width: 155px;
+}
+#ico-table th._volume_24h {
+	width: 120px;
+}
+#ico-table th._circulating_supply {
+	width: 195px;
+}
+#ico-table th.post_title {
+	width: 225px;
+}
+#ico-table th.nvm_ratio,
+#ico-table th.nvt_ratio,
+#ico-table th.token_velocity, {
+	/*width: 125px;*/
+}
+.altcoin-table td,
+.altcoin-table th,
+.altcoin-table tr {
+	border: 0 !important;
+}
+.altcoin-table th {
+	background: #add8e6;
+        vertical-align: top;
+}
+.altcoin-table tr.odd {
+	background: #f3f3f3;
+}
+span.tooltip {
+	display: inline-block;
+	background: #093969;
+	color: white;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 10px;
+    margin: 0 auto;
+    border: 1px solid white;
+}
+span.tooltip:hover {
+	color: #B02B33;
+}
+
+/* Snapshot ICOS */
+.featured-widgets td,
+.featured-widgets th {
+	font-size: 14px;
+	text-align: center;
+	vertical-align: top;
+}
+.featured-widgets td.name {
+	text-align: left;
+	font-weight: 700;
+}
+.featured-widgets td.price {
+	padding: 12px 0;
+}
+.featured-widgets th {
+	color: #093969;
+	background: #ECF2F7;
+	padding: 3px 12px;
+}
+.featured-widgets th.name {
+	text-align: left;
+}
+.featured-widgets h4 {
+	text-align: center;
+	margin-bottom: 12px;
+}
+.featured-widgets .btn {
+	text-align: center;
+	color: #BE1E31;
+	border: 2px solid #BE1E31;
+	padding: 6px 36px;
+	font-size: 14px;
+	font-weight: 700;
+	width: 230px;
+	display: block;
+	margin: 0 auto;
+}
+.snapshot {
+	margin-bottom: 1.5em;
+}
+
+/*
+ * 
+ * CIRCIRLE
+ *
+ */
+.circliful {
+    position: relative;
+    margin: 0 auto;
+}
+
+.circle-text, .circle-info, .circle-text-half, .circle-info-half {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+}
+
+.circle-info, .circle-info-half {
+	color: #999;
+}
+
+.circliful .fa {
+	margin: -10px 3px 0 3px;
+	position: relative;
+	bottom: 4px;
+}
+
+.circle-container {
+  display: block;
+  float: left;
+  margin-right: 55px;
+  margin-bottom: 45px;
+}
+
+.circle-container h3 {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.4em;
+  color: #363636;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+/*
+ *
+ *
+ * End Circle
+ *
+ */
+
+/* ICO Shortcode */
+.headerSortDown:after,
+.headerSortUp:after{
+  content: ' ';
+  position: absolute;
+  right: 6px;
+  border: 8px solid transparent;
+}
+.headerSortDown:after{
+  top: 15px;
+  border-top-color: silver;
+}
+.headerSortUp:after{
+  bottom: 15px;
+  border-bottom-color: silver;
+}
+.headerSortDown,
+.headerSortUp{
+  padding-right: 10px;
+}
+
+#ico-table td,
+.ico-table td,
+#ico-table th,
+.ico-table th {
+	border: 1px solid #ccc;
+	font-size: 15px;
+	padding: 6px;
+}
+#ico-table th,
+.ico-table th {
+	position: relative;
+}
+#ico-table,
+.ico-table {
+	max-width: 99.9%;
+  margin-top: 24px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.ico-table-wrap {
+	margin-bottom: 1.5em;
+	overflow-x: hidden;
+	overflow-y: hidden;
+
+}
+.ico-logo img {
+	max-width: 100%;
+  max-height: 55px;
+  margin: 0 auto;
+  display: block;
+}
+
+.top-scroll-wrapper {height: 20px; margin-top: 1.5em; }
+
+.top-scroll {
+  width:1000px;
+  height: 20px;
+}
+
+#ico-table,
+.ico-table {
+  height: 200px;
+  overflow: auto;
+}
+
+.current {
+	color: green;
+}
+
+.single-post .full-width .entry-content ul {
+	margin-bottom: 0;
+}
+
+/* ICO Signup */
+.signup-container {
+	margin: 0px 0 36px;
+}
+
+.ico-newsletter {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ico-newsletter input {
+	font-size: 14px;
+	padding: 14px;
+}
+
+.ico-newsletter input[type="email"] {
+	/*width: 425px;
+	max-width: 100%;
+	display: block;
+	margin-bottom: 8px;
+	margin-left: auto;
+	margin-right: auto;*/
+}
+
+.ico-top-button-single.fake-button {
+	cursor: auto;
+	line-height: 110%;
+	padding-top: 8px;
+}
+.ico-top-button-single.fake-button:hover {
+	background-color: #BD2036;
+}
+
+.ico-newsletter-signup-btn,
+.ico-top-button-single,
+.bmj-newsletter-signup-btn,
+.bmj-newsletter-signup-trial-btn {
+	font-family: 'Merriweather', sans-serif;
+  font-size: 16px;
+  padding: 12px 16px;
+  font-weight: bold;
+  background-color: #BD2036;
+  border: none;
+  color: white;
+  -webkit-transition: 0.4s ease all;
+  -o-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+	margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 100%;
+  text-align: center;
+}
+.ico-newsletter-signup-btn:hover,
+.ico-top-button-single:hover,
+.bmj-newsletter-signup-btn:hover,
+.bmj-newsletter-signup-trial-btn:hover,
+.ico-newsletter-signup-btn.in-progress,
+.ico-top-button-single.in-progress,
+.bmj-newsletter-signup-btn.in-progress
+.bmj-newsletter-signup-trial-btn.in-progress {
+	background: #222;
+	color: #FFF;
+}
+
+.invalid-error {
+	text-align: center;
+	font-size: 14px;
+	color: red;
+}
+.invalid-error.valid {
+	color: green;
+}
+.num-subscribers {
+	font-size: 12px;
+	text-align: center;
+	display: block;
+}
+
+.bmj-newsletter {
+	width: 100%;
+	max-width: 100%;
+}
+
+/**
+ * Contact Page
+ **/
+
+.input-urls input {
+	max-width: 90%;
+}
+
+.wpcf7 label span {
+  color: #aaa;
+  margin-left: 0px;
+  font-weight: 400;
+}
+
+.wpcf7 label span.wpcf7-not-valid-tip {
+  color: #f00;
+  font-size: 1em;
+  font-weight: normal;
+}
+
+.wpcf7 textarea {
+  height: 200px;
+  width: 80%;
+  float: none;
+  margin-bottom: 0px;
+}
+.wpcf7 button,.wpcf7 input[type=button],.wpcf7 input[type=reset],.wpcf7 input[type=submit] {
+	font-size: 16px;
+	margin-top: 0px;
+}
+
+#post-24540 div.wpcf7-response-output {
+	margin: 0;
+}
+
+/**
+ * Comments and Edit links
+ **/
+.nocomments,
+.edit-link,
+.post-edit-link { 
+	display: none;
+}
+
+/**
+ * Footer
+ **/
+#footer .footer-logo {
+	width: 25%;
+	float: left;
+}
+#footer .footer-logo img {
+	max-width: 100%;
+}
+#footer .footer-menu {
+	float: left;
+	margin: 18px 0 0 35px;
+}
+#footer .copyright {
+	text-align: right;
+	float: right;
+  margin: 19px 0 0 0;
+}
+
+#footer .footer-info {
+  padding: 5px 0 0;
+  margin: 5px 0 0;
+}
+
+#social-footer-sidebar {
+	float: left;
+	width: 100px;
+}
+
+#social-footer-sidebar .genericon {
+	font-size: 36px;
+	margin-top: 12px;
+}
+
+#social-footer-sidebar .widget_wpcom_social_media_icons_widget ul li {
+	margin: 0 .13em;
+}
+
+#social-footer-sidebar ul {
+	text-align: center;
+}
+
+/**
+ * FIVE POINT RANKING
+ **/
+.five-point-ranking .bmj-quickscore-title h3 {
+	text-align: center;
+}
+.five-point-ranking .star-ratings {
+	margin: 0 auto;
+	display: block;
+	width: 101px;
+}
+
+.five-point-ranking .bmj-quickscore-title-wrapper, 
+.five-point-ranking .t_preicos-quickscore-title-wrapper {
+	padding: 10px 0;
+}
+
+.five-point-ranking .bmj-quickscore-title-wrapper {
+	border: 1px solid #E8E8E8;
+	cursor: pointer;
+}
+
+.five-point-ranking .your-ratings .bmj-star {
+	cursor: pointer;
+}
+
+.five-point-ranking .bmj-quickscore-title-wrapper.active {
+	background: #FFF;
+	border-bottom: 0;
+}
+
+.five-point-ranking .bmj-quickscore-title-wrapper.active:hover {
+	background: #FFF;
+}
+
+.five-point-ranking .bmj-quickscore-title-wrapper:hover {
+	background: #EAEAEA;
+}
+
+.five-point-ranking .star-ratings.individual .bmj-star {
+	font-size: 24px;
+}
+
+.five-point-ranking .bmj-quickscore-data p {
+	font-size: 14px;
+}
+
+.five-point-ranking .bmj-quickscore-data h3 {
+	float: left;
+	margin-top: 22px;
+	margin-bottom: 0;
+	font-size: 18px;
+	padding-right: 18px;
+}
+
+.five-point-ranking .bmj-quickscore-data textarea {
+	padding-top: 12px;
+	margin-top: 16px;
+	padding-bottom: 12px;
+	width: 100%;
+}
+
+.five-point-ranking .star-ratings.individual {
+	float: left;
+	width: auto;
+}
+
+.five-point-ranking .bmj-quickscore-data {
+	padding: 0 12px;
+	margin-left: 12px;
+	margin-right: 12px;
+	border-bottom: 1px solid #E8E8E8;
+}
+
+.five-point-ranking .bmj-quickscore-wrapper {
+	display: none;
+	border-top: none;
+}
+.five-point-ranking .bmj-quickscore-wrapper.active {
+	display: block;
+}
+
+.five-point-ranking .rating-form-submit {
+	margin: 0 0 12px 0;
+	width: 100%;
+	padding: 10px;
+}
+
+#my_popup .form-grid-wrap input {
+	max-width: 100%;
+}
+
+.single .entry-content p.review-content {
+	color: #486486;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+#my_popup {
+	background: #FFF;
+	text-align: center;
+	max-width: 380px;
+}
+
+#my_popup .popup-wrap {
+	padding: 24px;
+}
+
+.my_popup_close {
+	text-align: right;
+	float: right;
+	padding: 6px;
+	background: white;
+	color: gray;
+}
+
+#my_popup h3 {
+	font-weight: 100;
+	text-align: center;
+	line-height: 120%;
+	font-size: 28px;
+}
+
+#my_popup p {
+	text-align: center;
+	font-size: 14px;
+}
+
+#my_popup .text-wrap {
+	padding: 12px;
+}
+
+#my_popup img {
+	margin: 12px auto 24px;
+	display: block;
+}
+
+#my_popup #bmj_email_confirmation {
+	padding: 9px 0
+}
+
+.page-template-linkedin-request .entry-content {
+	padding-top: 48px;
+}
+
+.red {
+	color: #ff8100;
+}
+
+.yellow {
+	color: #F9BA22;
+}
+
+.green {
+	color: #62A14B;
+}
+
+.qtip-default {
+	background: #FFF;
+	border: 1px solid #ccc;
+	padding: 10px;
+	color: #000;
+	font-size: 14px
+}
+
+.t_events .ico-thumbnail {
+	float: left;
+}
+.t_events .bmj-quickscore-title-wrapper {
+	float: right;
+	background: transparent;
+}
+.t_events .bmj-quickscore-title-wrapper .bmj-star {
+	margin: 0 2px;
+}
+
+/* Captcha */
+.grecaptcha-badge {
+	display: none !important;
+}
+
+@media screen and (max-width: 640px) {
+	.sharedaddy {
+		float:none;
+	}
+	.meta-custom-floater {
+		margin-top: 0;
+	}
+	.meta-custom-floater .sd-social-icon .sd-content ul li[class*=share-] a {
+		height: 32px;
+	}
+	.subscribe-box img {
+		position: static !important;
+	}
+	.subscribe-box p {
+		margin-top: 12px !important;
+	}
+	#my_popup {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#footer .footer-logo {
+		width: 100%;
+		float: none;
+	}
+	#footer .footer-logo img {
+		max-width: 100%;
+	}
+	#footer .footer-menu {
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+	#footer .copyright {
+		text-align: center;
+		float: none;
+	  margin: 0 auto;
+	  display: block;
+	}
+	#social-footer-sidebar {
+		width: 100%;
+		clear: both;
+	}
+	article.t_icos .top-button-wrapper,
+	article.t_preicos .top-button-wrapper,
+	article.t_altcoins .top-button-wrapper {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		clear: both;
+		padding-top: 24px;
+	}
+	article.t_icos .ico-header span.symbol,
+	article.t_preicos .ico-header span.symbol,
+	article.t_altcoins .ico-header span.symbol {
+		margin-top: 6px;
+	}
+
+	#sidebar.top-sidebar .widget,
+	#sidebar.top-sidebar .mc-general-newsletter-container-wrap,
+	#sidebar.top-sidebar .widget.event-promotion-investor,
+	#sidebar.top-sidebar .widget.feature-posts,
+	#sidebar.top-sidebar .mc-general-newsletter-container-wrap {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#sidebar.top-sidebar .widget.event-promotion-investor,
+	#sidebar.top-sidebar .widget.popular-views-investor,
+	#sidebar.top-sidebar .mc-general-newsletter-container-wrap {
+		margin-bottom: 24px;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	#ico-table,
+	.ico-table,
+        .tablepress {
+	  min-width: 1000px;
+	}
+	.ico-table-wrap {
+		overflow-x: scroll;
+		width: 1000px;
+	}
+	.top-scroll-wrapper, .ico-table-wrap {
+	  width: 99%;
+	  overflow-x: scroll;
+	  overflow-y:hidden;
+	}
+/*	body.page-template-template-subscribe #sidebar.subscription-sidebar {
+		width: 100%;
+	}
+	body.page-template-template-subscribe #main {
+		width: 100%;
+	}*/
+}
+
+
+/* Book Stripe Popup */
+#book_popup {
+	display: none;
+}
+.book_popup_wrap {
+	background: #FFF;
+    padding: 12px;
+    max-width: 500px;
+    font-size: 14px;
+}
+.book_popup_wrap label {
+	margin-bottom: 0;
+	margin-top: 8px;
+}
+.book_popup_wrap input {
+	width: 100%;
+	border: 0;
+}
+.book_popup_wrap .address-inputs {
+	margin-top: 0;
+}
+.book_popup_wrap .btn {
+	display: block;
+	margin: 20px;
+}
+.book_popup_wrap #card-errors,
+.book_popup_wrap .error {
+	color: red;
+	font-size: 12px;
+	text-align: center;
+}
+.book_popup_wrap .error {
+	text-align: left;
+	margin-top: 0;
+}
+.book_popup_wrap::placeholder {
+	color: #32325d;
+}
+/**
+* The CSS shown here will not be introduced in the Quickstart guide, but
+* shows how you can use CSS to style your Element's container.
+*/
+.StripeElement {
+  height: 40px;
+  padding: 10px 12px;
+  margin: 12px;
+
+  color: #32325d;
+  background-color: white;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
