@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.0" width="145.000000pt" height="144.000000pt" viewBox="0 0 145.000000 144.000000" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+  <circle style="fill: 
+rgb(255, 255, 255);" transform="matrix(1.632273, 0, 0, 1.494441, -661.957153, -448.841034)" cx="418.519" cy="315.185" r="9.825"/>
+  <g transform="matrix(0.031181, 0, 0, -0.030852, -0.741805, 44.229225)" fill="#37ab75" stroke="none" style="">
+    <path d="M544 1296 c-107 -34 -172 -74 -249 -151 -120 -119 -175 -254 -175 -425 0 -171 55 -306 175 -425 76 -76 152 -121 259 -154 94 -29 247 -29 342 0 206 62 367 227 418 425 21 80 21 228 0 308 -51 198 -212 363 -418 425 -98 30 -254 29 -352 -3z m315 -276 c69 -22 132 -44 140 -49 11 -7 -15 -71 -129 -320 -79 -171 -147 -311 -150 -311 -11 0 -293 620 -286 628 10 9 257 90 280 91 10 1 75 -17 145 -39z" style="fill: 
+rgb(55, 171, 117);"/>
+    <path d="M600 983 c-58 -20 -100 -38 -95 -40 6 -2 57 -23 115 -46 l105 -42 5 -199 5 -199 108 234 c59 129 107 239 107 244 0 10 -213 86 -235 84 -5 0 -57 -17 -115 -36z" style="fill:
+ rgb(55, 171, 117);"/>
+  </g>
+  <text style="fill: rgb(244, 244, 244); font-family: Arial, sans-serif; font-size: 7.1px; font-weight: 700; paint-order: fill; white-space: pre;" transform="matrix(2.31867, 0, 0, 1.849156, -45.385521, -12.234509)"><tspan x="40.499" y="18.474">BALANCED</tspan><tspan x="40.499" dy="1em">​</tspan><tspan>DOLLAR</tspan></text>
+</svg>
