@@ -1,0 +1,82 @@
+/* Sign up Page */
+#post-137910 .post-meta,
+#post-137761 .post-meta {
+	display: none;
+}
+
+#post-137910 .entry-header,
+#post-137761 .entry-header {
+        display: none;
+}
+
+.mepr-signup-form .mepr_price {
+	display: none;
+}
+
+.mp_invoice .mp_price_str {
+	display: none;
+}
+
+.mepr-signup-form .mepr-submit {
+	margin-bottom: 16px;
+}
+
+.mepr-signup-form .mp-form-submit {
+	float: left;
+}
+
+.mp_invoice .mp-table thead tr th:last-child {
+	text-align: right;
+}
+
+/* Login Page */
+#post-137653 .post-meta {
+	display: none;
+}
+
+.mp_login_form .mp-spacer {
+	display: none;
+}
+
+.mp_login_form .submit {
+	float: left;
+}
+
+.mp_login_form .mepr-login-actions a {
+	float: right;
+	text-align: right;
+	color: black;
+    text-decoration: underline;
+}
+
+/* Account */
+#post-137652 .post-meta {
+	display: none;
+}
+.mepr-payment-row td {
+	word-wrap: break-word;
+}
+
+/* Thank you page */
+#post-137763 .entry-date,
+#post-137763 .entry-author,
+#post-137763 .meta-custom-floater {
+	display: none;
+}
+
+#post-137763 .post-meta {
+	margin-top: -40px;
+}
+
+/* Etc */
+.have-coupon-link {
+	text-align: right;
+        display: block;
+        color: black;
+        text-decoration: underline;
+}
+.button.mp-hide-pw {
+	display: none;
+}
+
+
