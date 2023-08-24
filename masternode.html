@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://softbalanced.com/masternodeguide.html -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="chrome-extension://jcacnejopjdphbnjgfaaobbfafkihpep/hive_keychain.js"></script>
+	<meta name="norton-safeweb-site-verification" content="825ygbnuzwt63uplvtaunnq3kr28x5iuus-pd1885f8oecmt56yw6bxpbw8s74xow5vxh3mnktn99vxfsm779tlycnr94ig0g16rs6y0onpk72cv420gwohmrgkuz42o">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <link rel="pingback" href="https://www.bitcoinmarketjournal.com/xmlrpc.php">
+
+    
+	<!-- This site is optimized with the Yoast SEO plugin v15.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>How to Set Up A Masternode: A Beginner's Guide (With An Example) - Bitcoin Market Journal</title>
+	<meta name="description" content="In this article, you will discover a step-by-step guide to setting up your very own digital currency masternode in 2019.">
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+	<link rel="canonical" href="https://www.bitcoinmarketjournal.com/how-to-set-up-a-masternode/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="How to Set Up A Masternode: A Beginner&#39;s Guide (With An Example) - Bitcoin Market Journal">
+	<meta property="og:description" content="In this article, you will discover a step-by-step guide to setting up your very own digital currency masternode in 2019.">
+	<meta property="og:url" content="https://www.bitcoinmarketjournal.com/how-to-set-up-a-masternode/">
+	<meta property="og:site_name" content="Bitcoin Market Journal">
+	<meta property="article:published_time" content="2019-09-18T08:00:57+00:00">
+	<meta property="article:modified_time" content="2019-09-17T18:56:48+00:00">
+	<meta property="og:image" content="https://www.bitcoinmarketjournal.com/wp-content/uploads/2019/09/masternode.jpg">
+	<meta property="og:image:width" content="600">
+	<meta property="og:image:height" content="290">
+	<meta name="twitter:card" content="summary">
+
+
+<link rel="dns-prefetch" href="https://cdn.rawgit.com/">
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+<link rel="dns-prefetch" href="https://www.google.com/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Bitcoin Market Journal » Feed" href="https://www.bitcoinmarketjournal.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Bitcoin Market Journal » Comments Feed" href="https://www.bitcoinmarketjournal.com/comments/feed/">
+		
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="colorbox-css" href="./masternode_files/colorbox.css" type="text/css" media="all">
+<link rel="stylesheet" id="mp-theme-css" href="./masternode_files/theme.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="./masternode_files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="qtipcss-css" href="./masternode_files/jquery.qtip.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="./masternode_files/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="wpz-shortcodes-css" href="./masternode_files/shortcodes.css" type="text/css" media="all">
+<link rel="stylesheet" id="zoom-font-awesome-css" href="./masternode_files/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="chld_thm_cfg_parent-css" href="./masternode_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="unsemantic_grid-css" href="./masternode_files/unsemantic-grid-responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="bmj_memberpress-css" href="./masternode_files/bmj-memberpress.css" type="text/css" media="all">
+<link rel="stylesheet" id="tribune-google-fonts-css" href="./masternode_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="tribune-style-css" href="./masternode_files/style(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="media-queries-css" href="./masternode_files/media-queries.css" type="text/css" media="all">
+<link rel="stylesheet" id="tribune-google-font-default-css" href="./masternode_files/css(1)" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="./masternode_files/dashicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="./masternode_files/tablepress-combined.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wzslider-css" href="./masternode_files/wzslider.css" type="text/css" media="all">
+<link rel="stylesheet" id="popup-maker-site-css" href="./masternode_files/pum-site-styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="jquery-ui-smoothness-css" href="./masternode_files/jquery-ui.min.css" type="text/css" media="screen">
+<link rel="stylesheet" id="wpzoom-custom-css" href="./masternode_files/custom.css" type="text/css" media="all">
+<style type="text/css">.tabber{display:none;}</style>        
+
+
+
+<meta name="msapplication-TileImage" content="https://www.bitcoinmarketjournal.com/wp-content/uploads/2017/08/cropped-BitcoinMarketJournalIcon-270x270.png">
+<style>#user_description {height: 54px;}#wpua-max-upload-existing, #wpua-allowed-files-existing { font-size: 12px; }p#wpua-preview-existing, 
+					#wpua-thumbnail-existing span.description, 
+					span#wpua-edit-attachment-existing a, 
+					p#wpua-upload-button-existing #wpua-upload-existing,
+					.wpum-template #wpua-undo-button-existing,
+					#wpua-undo-button-existing,
+					#wpum-submit-registration-form #wpua-images-existing { 
+						display: none !important; 
+					}.smart-badge { background-image: url('/wp-content/plugins/bmj-users/images/smart_badge.jpg') }
+					.expert-badge { background-image: url('/wp-content/plugins/bmj-users/images/expert_badge.jpg') }
+					.pro-badge { background-image: url('/wp-content/plugins/bmj-users/images/pro_badge.jpg') }
+					.badge { position: relative; width: 100%; height: 90px; background-size: 100%; background-repeat: no-repeat; }
+					.badge-count { position: absolute; text-align: center; top: 10px; width: 100%; font-size: 65%; }
+					.smart-badge .badge-count { color: #28A549; }
+					.expert-badge .badge-count { color: #F9A133; }
+					.pro-badge .badge-count { color: #0D84C8; }#my_popup .flip { display: none; }
+					#my_popup .popup-wrap { font-size: 65% }.gcard.grofile,
+					.grav-clone-a { display: none !important; }</style>
+    
+<style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style><script>function respond_to_ext(type, response) { window.postMessage({ type: type, text: response}, "*"); }</script><script>respond_to_ext("isweb3", typeof web3 != "undefined");</script><script>respond_to_ext("browser_location", window.location.href);</script><script>respond_to_ext("web3accountslength", web3 && web3.eth && web3.eth.accounts && web3.eth.accounts.length);</script><script>respond_to_ext("web3account", web3 && web3.eth && web3.eth.accounts && web3.eth.accounts.length && web3.eth.accounts[0]);</script><script>respond_to_ext("web3coinbase", web3 && web3.eth.coinbase);</script><script>if(document.getElementsByName("user-login").length > 0){respond_to_ext("githubusername", document.getElementsByName("user-login")[0].content);}</script><script>   var callback = function(error, result){      respond_to_ext("ethbalance", Math.round(result.toNumber()* web3.fromWei("1", "ether") * 100) / 100);  };  if(typeof web3 != "undefined" && web3.eth.coinbase){     web3.eth.getBalance(web3.eth.coinbase, callback);  }   </script></head>
+<body data-rsssl="1" class="post-template-default single single-post postid-116936 single-format-standard"><div id="menu-main-slide" class="menu-main-v4-container mm-menu mm-vertical mm-theme-dark mm-pageshadow mm-border-full mm-offcanvas"><div class="mm-panel mm-vertical mm-opened mm-current" id="menu-main-v4"><ul class="menu mm-listview mm-vertical mm-first mm-last"><li id="menu-item-132291" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-132291 mm-vertical"><a class="mm-next keychainify-checked" href="https://www.bitcoinmarketjournal.com/how-to-set-up-a-masternode/#mm-1" data-target="#mm-1"></a><a href="https://www.bitcoinmarketjournal.com/blockchain-investing-basics/" class="keychainify-checked">Start Here</a>
+<div class="mm-panel mm-vertical" id="mm-1"><ul class="sub-menu mm-listview mm-vertical mm-first mm-last">
+	<li id="menu-item-132292" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132292"><a href="https://www.bitcoinmarketjournal.com/blockchain-investing-101/" class="keychainify-checked">Blockchain Market Basics</a></li>
+	<li id="menu-item-132293" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132293"><a href="https://www.bitcoinmarketjournal.com/blockchain-investing-portfolio/" class="keychainify-checked">Blockchain Portfolio</a></li>
+	<li id="menu-item-132294" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132294"><a href="https://www.bitcoinmarketjournal.com/blockchain-investor-scorecard/" class="keychainify-checked">Investor Scorecard</a></li>
+	<li id="menu-item-135152" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-135152"><a href="https://www.bitcoinmarketjournal.com/blockchain-investing-principles/" class="keychainify-checked">Investing Principles</a></li>
+	<li id="menu-item-135153" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-135153"><a href="https://www.bitcoinmarketjournal.com/the-10-commandments-of-blockchain-investing/" class="keychainify-checked">Ten Commandments</a></li>
+	<li id="menu-item-137468" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-137468"><a href="https://www.bitcoinmarketjournal.com/blockchain-valuation/" class="keychainify-checked">Value Investing</a></li>
+	<li id="menu-item-137620" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-137620"><a href="https://www.bitcoinmarketjournal.com/avoid-crypto-transaction-fees/" class="keychainify-checked">Avoiding Fees</a></li>
+	<li id="menu-item-132295" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-132295 mm-vertical"><a class="mm-next keychainify-checked" href="https://www.bitcoinmarketjournal.com/how-to-set-up-a-masternode/#mm-2" data-target="#mm-2"></a><a href="https://www.bitcoinmarketjournal.com/invest-in-defi/" class="keychainify-checked">DeFi Investing Basics</a>
+	<div class="mm-panel mm-vertical" id="mm-2"><ul class="sub-menu mm-listview mm-vertical mm-first mm-last">
+		<li id="menu-item-136980" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-136980"><a href="https://www.bitcoinmarketjournal.com/how-to-invest-in-defi/" class="keychainify-checked">How to Invest</a></li>
+		<li id="menu-item-136981" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-136981"><a href="https://www.bitcoinmarketjournal.com/invest-in-defi/" class="keychainify-checked">How to Evaluate</a></li>
+		<li id="menu-item-136982" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-136982"><a href="https://www.bitcoinmarketjournal.com/crypto-unicorn/" class="keychainify-checked">How to Find Unicorns</a></li>
+	</ul></div>
+</li>
+	<li id="menu-item-135154" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-135154"><a href="https://www.bitcoinmarketjournal.com/blockchain-investors-guide-to-nfts/" class="keychainify-checked">NFT Investing Basics</a></li>
+	<li id="menu-item-137467" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-137467"><a href="https://www.bitcoinmarketjournal.com/blockchain-investing-sectors/" class="keychainify-checked">Sector Investing</a></li>
+	<li id="menu-item-135437" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-135437"><a href="https://www.bitcoinmarketjournal.com/blockchain-impact-investing/" class="keychainify-checked">Impact Investing</a></li>
+	<li id="menu-item-132296" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-132296 mm-vertical"><a class="mm-next keychainify-checked" href="https://www.bitcoinmarketjournal.com/how-to-set-up-a-masternode/#mm-3" data-target="#mm-3"></a><a href="https://www.bitcoinmarketjournal.com/read-and-grow-rich/" class="keychainify-checked">Read and Grow Rich</a>
+	<div class="mm-panel mm-vertical" id="mm-3"><ul class="sub-menu mm-listview mm-vertical mm-first mm-last">
+		<li id="menu-item-132297" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132297"><a href="https://www.bitcoinmarketjournal.com/read-and-grow-rich/" class="keychainify-checked">Recommended Reading</a></li>
+		<li id="menu-item-132298" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132298"><a href="https://www.bitcoinmarketjournal.com/best-bitcoin-books/" class="keychainify-checked">Best Bitcoin Books</a></li>
+		<li id="menu-item-132299" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132299"><a href="https://www.bitcoinmarketjournal.com/best-blockchain-books/" class="keychainify-checked">Best Blockchain Books</a></li>
+	</ul></div>
+</li>
+</ul></div>
+</li>
+<li id="menu-item-132300" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-132300 mm-vertical"><a class="mm-next keychainify-checked" href="https://www.bitcoinmarketjournal.com/how-to-set-up-a-masternode/#mm-4" data-target="#mm-4"></a><a href="https://www.bitcoinmarketjournal.com/bitcoin-investment-apps/" class="keychainify-checked">Our Top Picks</a>
+<div class="mm-panel mm-vertical" id="mm-4"><ul class="sub-menu mm-listview mm-vertical mm-first mm-last">
+	<li id="menu-item-132301" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132301"><a href="https://www.bitcoinmarketjournal.com/bitcoin-investment-apps/" class="keychainify-checked">Best Investment Apps</a></li>
+	<li id="menu-item-132302" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132302"><a href="https://www.bitcoinmarketjournal.com/cryptocurrency-exchanges/" class="keychainify-checked">Best Crypto Exchanges</a></li>
+	<li id="menu-item-132303" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-132303 mm-vertical"><a class="mm-next keychainify-checked" href="https://www.bitcoinmarketjournal.com/how-to-set-up-a-masternode/#mm-5" data-target="#mm-5"></a><a href="https://www.bitcoinmarketjournal.com/bitcoin-etf/" class="keychainify-checked">Best Bitcoin ETFs</a>
+	<div class="mm-panel mm-vertical" id="mm-5"><ul class="sub-menu mm-listview mm-vertical mm-first mm-last">
+		<li id="menu-item-132304" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132304"><a href="https://www.bitcoinmarketjournal.com/bitcoin-etf/" class="keychainify-checked">Best Bitcoin ETFs</a></li>
+		<li id="menu-item-132305" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132305"><a href="https://www.bitcoinmarketjournal.com/blockchain-etfs/" class="keychainify-checked">Best Blockchain ETFs</a></li>
+		<li id="menu-item-132306" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132306"><a href="https://www.bitcoinmarketjournal.com/cryptocurrency-etfs/" class="keychainify-checked">Best Cryptocurrency ETFs</a></li>
+	</ul></div>
+</li>
+	<li id="menu-item-132307" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132307"><a href="https://www.bitcoinmarketjournal.com/blockchain-mutual-funds/" class="keychainify-checked">Best Blockchain Funds</a></li>
+	<li id="menu-item-132308" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132308"><a href="https://www.bitcoinmarketjournal.com/cryptocurrency-funds/" class="keychainify-checked">Best Crypto Funds</a></li>
+	<li id="menu-item-132309" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132309"><a href="https://www.bitcoinmarketjournal.com/cryptocurrency-mining/" class="keychainify-checked">Best Cryptos to Mine</a></li>
+	<li id="menu-item-132310" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132310"><a href="https://www.bitcoinmarketjournal.com/best-crypto-mining-rig/" class="keychainify-checked">Best Mining Rigs</a></li>
+	<li id="menu-item-132311" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132311"><a href="https://www.bitcoinmarketjournal.com/bitcoin-mining-stocks/" class="keychainify-checked">Best Mining Stocks</a></li>
+	<li id="menu-item-132312" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132312"><a href="https://www.bitcoinmarketjournal.com/best-blockchain-stocks/" class="keychainify-checked">Best Blockchain Stocks</a></li>
+	<li id="menu-item-132313" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132313"><a href="https://www.bitcoinmarketjournal.com/bitcoin-borrowing/" class="keychainify-checked">Best Borrowing and Lending</a></li>
+	<li id="menu-item-137071" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-137071"><a href="https://www.bitcoinmarketjournal.com/defi-interest-rates/" class="keychainify-checked">Best DeFi Interest Rates</a></li>
+	<li id="menu-item-132314" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132314"><a href="https://www.bitcoinmarketjournal.com/best-bitcoin-and-crypto-custody-providers/" class="keychainify-checked">Best Bitcoin Banks</a></li>
+	<li id="menu-item-132315" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132315"><a href="https://www.bitcoinmarketjournal.com/best-dividend-cryptocurrencies/" class="keychainify-checked">Best Dividend Cryptos</a></li>
+	<li id="menu-item-132316" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132316"><a href="https://www.bitcoinmarketjournal.com/best-staking-coins/" class="keychainify-checked">Best Staking Coins</a></li>
+	<li id="menu-item-132317" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132317"><a href="https://www.bitcoinmarketjournal.com/stablecoins/" class="keychainify-checked">Best Stablecoins</a></li>
+</ul></div>
+</li>
+<li id="menu-item-132318" class="menu-item menu-item-type-post_type menu-item-object-post current-menu-ancestor current-menu-parent menu-item-has-children menu-item-132318 mm-vertical"><a class="mm-next keychainify-checked" href="https://www.bitcoinmarketjournal.com/how-to-set-up-a-masternode/#mm-6" data-target="#mm-6"></a><a href="https://www.bitcoinmarketjournal.com/what-is-bitcoin/" class="keychainify-checked">Guides and Tips</a>
+<div class="mm-panel mm-vertical" id="mm-6"><ul class="sub-menu mm-listview mm-vertical mm-first mm-last">
+	<li id="menu-item-132319" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-132319 mm-vertical"><a class="mm-next keychainify-checked" href="https://www.bitcoinmarketjournal.com/how-to-set-up-a-masternode/#mm-7" data-target="#mm-7"></a><a href="https://www.bitcoinmarketjournal.com/buy-bitcoin-on-coinbase/" class="keychainify-checked">How to Buy Bitcoin</a>
+	<div class="mm-panel mm-vertical" id="mm-7"><ul class="sub-menu mm-listview mm-vertical mm-first mm-last">
+		<li id="menu-item-132320" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132320"><a href="https://www.bitcoinmarketjournal.com/buy-bitcoin-on-coinbase/" class="keychainify-checked">Buy Bitcoin on Coinbase</a></li>
+		<li id="menu-item-132322" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132322"><a href="https://www.bitcoinmarketjournal.com/buy-bitcoin-paypal/" class="keychainify-checked">Buy Bitcoin with PayPal</a></li>
+		<li id="menu-item-132323" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132323"><a href="https://www.bitcoinmarketjournal.com/how-to-buy-bitcoin-with-venmo/" class="keychainify-checked">Buy Bitcoin with Venmo</a></li>
+		<li id="menu-item-132324" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132324"><a href="https://www.bitcoinmarketjournal.com/how-to-buy-bitcoin-with-square-cash/" class="keychainify-checked">Buy Bitcoin with Square Cash</a></li>
+		<li id="menu-item-132325" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132325"><a href="https://www.bitcoinmarketjournal.com/buy-bitcoin-with-credit-card/" class="keychainify-checked">Buy Bitcoin with Credit Card</a></li>
+		<li id="menu-item-132326" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132326"><a href="https://www.bitcoinmarketjournal.com/buy-bitcoin-without-id/" class="keychainify-checked">Buy Bitcoin Anonymously</a></li>
+	</ul></div>
+</li>
+	<li id="menu-item-132327" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132327"><a href="https://www.bitcoinmarketjournal.com/send-bitcoin/" class="keychainify-checked">How to Send Bitcoin</a></li>
+	<li id="menu-item-132328" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132328"><a href="https://www.bitcoinmarketjournal.com/how-to-open-a-bitcoin-wallet/" class="keychainify-checked">How to Open a Wallet</a></li>
+	<li id="menu-item-135155" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-135155"><a href="https://www.bitcoinmarketjournal.com/bitcoin-to-gold-calculator/" class="keychainify-checked">Bitcoin Price Predictor</a></li>
+	<li id="menu-item-132329" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132329"><a href="https://www.bitcoinmarketjournal.com/invest-bitcoin-etf/" class="keychainify-checked">How to Invest in Bitcoin ETF</a></li>
+	<li id="menu-item-132330" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132330"><a href="https://www.bitcoinmarketjournal.com/staking-cryptocurrency/" class="keychainify-checked">How to Stake Coins</a></li>
+	<li id="menu-item-132331" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132331"><a href="https://www.bitcoinmarketjournal.com/bitcoin-options/" class="keychainify-checked">Trading Bitcoin Options</a></li>
+	<li id="menu-item-132332" class="menu-item menu-item-type-post_type menu-item-object-post current-menu-item menu-item-132332"><a href="https://www.bitcoinmarketjournal.com/how-to-set-up-a-masternode/" aria-current="page" class="keychainify-checked">Setting Up Masternodes</a></li>
+	<li id="menu-item-135156" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-135156"><a href="https://www.bitcoinmarketjournal.com/how-to-buy-a-tesla-with-bitcoin/" class="keychainify-checked">Buying a Tesla with Bitcoin</a></li>
+	<li id="menu-item-135157" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-135157"><a href="https://www.bitcoinmarketjournal.com/how-stablecoins-work-for-investors/" class="keychainify-checked">How Stablecoins Work</a></li>
+	<li id="menu-item-135158" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-135158"><a href="https://www.bitcoinmarketjournal.com/how-meme-stocks-work/" class="keychainify-checked">How Meme Stocks Work</a></li>
+</ul></div>
+</li>
+<li id="menu-item-132333" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-132333 mm-vertical"><a class="mm-next keychainify-checked" href="https://www.bitcoinmarketjournal.com/how-to-set-up-a-masternode/#mm-8" data-target="#mm-8"></a><a href="https://www.bitcoinmarketjournal.com/digital-assets/" class="keychainify-checked">Top Digital Assets</a>
+<div class="mm-panel mm-vertical" id="mm-8"><ul class="sub-menu mm-listview mm-vertical mm-first mm-last">
+	<li id="menu-item-132334" class="menu-item menu-item-type-post_type menu-item-object-t_altcoins menu-item-132334"><a href="https://www.bitcoinmarketjournal.com/analysis/btc/bitcoin/" class="keychainify-checked">Bitcoin</a></li>
+	<li id="menu-item-132335" class="menu-item menu-item-type-post_type menu-item-object-t_altcoins menu-item-132335"><a href="https://www.bitcoinmarketjournal.com/analysis/ltc/litecoin/" class="keychainify-checked">Litecoin</a></li>
+	<li id="menu-item-132336" class="menu-item menu-item-type-post_type menu-item-object-t_altcoins menu-item-132336"><a href="https://www.bitcoinmarketjournal.com/analysis/eth/ethereum/" class="keychainify-checked">Ethereum</a></li>
+	<li id="menu-item-132337" class="menu-item menu-item-type-post_type menu-item-object-t_altcoins menu-item-132337"><a href="https://www.bitcoinmarketjournal.com/analysis/bat/basic-attention-token/" class="keychainify-checked">Basic Attention Token</a></li>
+	<li id="menu-item-132338" class="menu-item menu-item-type-post_type menu-item-object-t_altcoins menu-item-132338"><a href="https://www.bitcoinmarketjournal.com/analysis/usdc/usd-coin/" class="keychainify-checked">USD Coin</a></li>
+	<li id="menu-item-132339" class="menu-item menu-item-type-post_type menu-item-object-t_altcoins menu-item-132339"><a href="https://www.bitcoinmarketjournal.com/analysis/xmr/monero/" class="keychainify-checked">Monero</a></li>
+	<li id="menu-item-132340" class="menu-item menu-item-type-post_type menu-item-object-t_altcoins menu-item-132340"><a href="https://www.bitcoinmarketjournal.com/analysis/bch/bitcoin-cash/" class="keychainify-checked">Bitcoin Cash</a></li>
+	<li id="menu-item-132341" class="menu-item menu-item-type-post_type menu-item-object-t_altcoins menu-item-132341"><a href="https://www.bitcoinmarketjournal.com/analysis/bnb/binance-coin/" class="keychainify-checked">Binance Coin</a></li>
+	<li id="menu-item-132342" class="menu-item menu-item-type-post_type menu-item-object-t_altcoins menu-item-132342"><a href="https://www.bitcoinmarketjournal.com/analysis/xlm/stellar/" class="keychainify-checked">Stellar</a></li>
+	<li id="menu-item-132343" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-132343"><a href="https://www.bitcoinmarketjournal.com/digital-assets/" class="keychainify-checked">Top 50, Rated and Reviewed</a></li>
+</ul></div>
+</li>
+<li id="menu-item-138101" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-138101"><a href="https://www.bitcoinmarketjournal.com/join/" class="keychainify-checked">Join our Blockchain Investor Newsletter</a></li>
+<li id="menu-item-138435" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-138435"><a href="https://www.bitcoinmarketjournal.com/login" class="keychainify-checked">Log In</a></li>
+</ul></div></div>
+
+<div id="mm-0" class="mm-page mm-slideout"><div class="site-wrap">
+
+    <div class="page-wrap">
+
+    	
+
+    
+    <main id="main" role="main">
+
+        
+            <div class="content-area">
+
+                <article id="post-116936" class="post-116936 post type-post status-publish format-standard has-post-thumbnail category-blockchain">
+
+    <header class="entry-header">
+
+       
+        <h1 class="entry-title">How to Set Up A Masternode: A Beginner’s Guide (With An Example)</h1>
+
+        <div class="post-meta">
+
+                                    <time class="entry-date published updated" datetime="2019-09-18T08:00:57+00:00">
+                            September 18, 2019 8:00 am                        </time>
+                    
+
+                    <span class="entry-author vcard author">by  Evan Ezquer</span>
+            <div class="meta-custom-floater clearfix">
+
+                <div class="clear"></div><br><span class="views">8,092 Investors read this</span>
+            </div>
+
+        </div>
+
+
+    </header><!-- .entry-header -->
+
+    <div class="clear"></div>
+
+    <div class="entry-content">
+
+        
+        <p><img loading="lazy" class="fr-dib aligncenter" style="" src="./masternode_files/node_header.png" alt="Blocks." width="600" height="290"></p>
+<p>Blockchain technology provides many different ways to earn income. This is the main reason why so many investors are drawn to this space. While most of the bitcoin and altcoin investments require active participation in the market, there are ways to earn passive income. An example would be to run a masternode.</p>
+<p>This article is a step-by-step beginner’s guide geared towards individuals with little to no knowledge of programming who want to set up a masternode.</p>
+<h2>What Are Masternodes?</h2>
+<p>Masternodes are nodes that perform special functions that “standard” nodes do not. To reward masternode operators for providing added services to a blockchain network, they are receive financial rewards built a collateral-based system.</p>
+<p>Masternodes come in different shapes and sizes but the setup process is similar for the majority of “masternode coins.”</p>
+<p>In this masternode guide, we will guide you through the process of setting up a Balanced masternode. Balanced is one of the most popular masternode coins in the market.</p>
+<h2>How To Set Up Balanced Dollar Masternode</h2>
+<h3><strong>1. Set up your VPS</strong></h3>
+<p>A VPS (Virtual Private Server) is an installation of an OS (operating system) running inside a virtual machine. This is needed in order to run numerous systems on a single physical server, which is more efficient and much cheaper than running it from a home desktop computer.</p>
+<p>There are many different cloud hosting services like <a href="https://aws.amazon.com/ec2" class="keychainify-checked">Amazon EC2</a>, <a href="https://cloud.google.com/compute/" class="keychainify-checked">Google Cloud</a>, but we will use <a href="https://www.vultr.com/" class="keychainify-checked">Vultr</a> as an example of a VPS.</p>
+<p>Vultr offers a variety of options for memory, storage capacity, server location. On top of that, it is affordable, reliable, and likely has the best user experience.</p>
+<p>First create an account and add credit. Then, proceed to the Servers menu item on the left and click +. Select your server location:</p>
+<p><strong><img loading="lazy" class="fr-fic fr-dii aligncenter" src="./masternode_files/pasted image 0.png" width="602" height="276"></strong></p>
+<p>The server will run on Linux, so choose Ubuntu 18.04 x64 as server type.</p>
+<p><strong><img loading="lazy" class="fr-fic fr-dii aligncenter" src="./masternode_files/pasted image 0(1).png" width="602" height="177"></strong></p>
+<p>At least 2GB of memory is required so choose the appropriate server size.</p>
+<p><strong><img loading="lazy" class="fr-fic fr-dii aligncenter" src="./masternode_files/pasted image 0(2).png" width="602" height="265"></strong></p>
+<p>Input your server hostname and label. “Dashmn1” will be used in this example.</p>
+<p><strong><img loading="lazy" class="fr-fic fr-dii aligncenter" src="./masternode_files/pasted image 0(3).png" width="602" height="76"></strong></p>
+<p>Wait for Vultr to finish installing your server for a few minutes. Once complete, click Manage and save the IP address, username, and password.</p>
+<p><strong><img loading="lazy" class="fr-fic fr-dii aligncenter" src="./masternode_files/pasted image 0(4).png" width="539" height="276"></strong></p>
+<h3>2. Set up your operating system</h3>
+<p>Now we connect to your new server.</p>
+<p>On Windows, we need to download <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html" class="keychainify-checked">PuTTY</a>. Be sure to select the appropriate installer that matches your system.</p>
+<p>On Mac or Linux, we can ssh directly from the terminal by typing:</p>
+<p dir="ltr"><strong>ssh&nbsp;root@&lt;server_ip&gt;</strong></p>
+<p>After installing PuTTY, run the app from your Start Menu. Enter the IP address of the server in the <strong>Host Name</strong> field and click <strong>Open</strong>. You may see a certificate warning, since this is the first time you are connecting to this server. Simply click <strong>Yes</strong>.</p>
+<p><strong><img loading="lazy" class="fr-fic fr-dii aligncenter" src="./masternode_files/pasted image 0(5).png" width="504" height="449"></strong></p>
+<p>Log in to your server with the user root and password supplied by your hosting provider.</p>
+<p><strong><img loading="lazy" class="fr-fic fr-dii aligncenter" src="./masternode_files/pasted image 0(6).png" width="602" height="356"></strong></p>
+<p>The root password must be changed as soon as possible for security purposes. Copy and paste this command to the PuTTY window:</p>
+<p dir="ltr"><strong>passwd root</strong></p>
+<p>Enter a new password. Next we will create a new user with the following command, replacing &lt;username&gt; with a username of your choice:</p>
+<p dir="ltr"><strong>adduser&nbsp;&lt;username&gt;</strong></p>
+<p>You will be prompted for a password. Input your new password and be sure to save it.</p>
+<p>Now, while still as root, we will update the system from the Ubuntu package repository by inputting the commands:</p>
+<p dir="ltr"><strong>apt update</strong></p>
+<p dir="ltr"><strong>apt upgrade</strong></p>
+<p>The system will show a list of upgradable packages. Press Y and Enter to install the packages. Then, input:</p>
+<p><strong>apt install ufw python virtualenv git unzip pv</strong></p>
+<p>Press Y and Enter. Then input:</p>
+<p dir="ltr"><strong>ufw allow ssh/tcp</strong></p>
+<p dir="ltr"><strong>ufw limit ssh/tcp</strong></p>
+<p dir="ltr"><strong>ufw allow&nbsp;9999/tcp</strong></p>
+<p dir="ltr"><strong>ufw logging on</strong></p>
+<p dir="ltr"><strong>ufw enable</strong></p>
+<p>Press Y and Enter. Then input:</p>
+<p dir="ltr"><strong>fallocate&nbsp;-l&nbsp;4G&nbsp;/swapfile</strong></p>
+<p dir="ltr"><strong>chmod&nbsp;600&nbsp;/swapfile</strong></p>
+<p dir="ltr"><strong>mkswap&nbsp;/swapfile</strong></p>
+<p dir="ltr"><strong>swapon&nbsp;/swapfile</strong></p>
+<p><strong>nano&nbsp;/etc/fstab</strong></p>
+<p>Add the following line at the end of the file (press tab to separate each word/number), then press Ctrl + X to close the editor, then Y and Enter save the file.</p>
+<p><strong>/swapfile none swap sw&nbsp;0&nbsp;0</strong></p>
+<p>For security measures, we will install fail2ban and disable root login over ssh.</p>
+<p>For fail2ban, input: <strong>apt install fail2ban</strong></p>
+<p>Create a new configuration file by inputting: <strong>nano&nbsp;/etc/fail2ban/jail.local</strong></p>
+<p>And paste in the following configuration:</p>
+<p dir="ltr"><strong>[sshd]</strong></p>
+<p dir="ltr"><strong>enabled&nbsp;=&nbsp;true</strong></p>
+<p dir="ltr"><strong>port&nbsp;=&nbsp;22</strong></p>
+<p dir="ltr"><strong>filter&nbsp;=&nbsp;sshd</strong></p>
+<p dir="ltr"><strong>logpath&nbsp;=&nbsp;/var/log/auth.log</strong></p>
+<p><strong>maxretry&nbsp;=&nbsp;3</strong></p>
+<p>Then press Ctrl + X to close the editor, then Y and Enter save the file. Restart and enable the fail2ban service by inputting:</p>
+<p dir="ltr"><strong>systemctl restart fail2ban</strong></p>
+<p dir="ltr"><strong>systemctl enable fail2ban</strong></p>
+<p>Next, open the SSH configuration file to disable root login over SSH:</p>
+<p><strong>nano&nbsp;/etc/ssh/sshd_config</strong></p>
+<p>Locate the line that reads <strong>PermitRootLogin&nbsp;yes</strong> and set it to <strong>PermitRootLogin&nbsp;no</strong>. Directly below this, add a line which reads <strong>AllowUsers&nbsp;&lt;username&gt;</strong>, replacing <strong>&lt;username&gt;</strong> with the username you selected above. Then press Ctrl + X to close the editor, then Y and Enter save the file.</p>
+<p>Reboot the server by inputting: <strong>reboot now</strong></p>
+<h3>3. Send the collateral</h3>
+<p>Running a Balanced dollar masternode requires 100 USBL as collateral. A masternode can be registered using the official Balanced Core wallet. A hardware wallet is another option, and has enhanced security.</p>
+<p>In this example, we will use a software wallet as it is more commonly used.</p>
+<p>First, you must download the <a href="https://github.com/softbalanced/core/releases" class="keychainify-checked">Balanced Core Wallet</a>. Then, you open it and wait for it to complete synchronization. It should appear this way when fully synchronized:</p>
+<p><strong><img loading="lazy" class="fr-fic fr-dii aligncenter" src="./masternode_files/pasted image 0(7).png" width="560" height="390"></strong></p>
+<p>Click <strong>Tools &gt; Debug</strong> console to open the console. Input this command into the console to generate a new Balanced address for the collateral:</p>
+<p dir="ltr"><strong>getnewaddress</strong></p>
+<p dir="ltr"><strong>yiFfzbwiN9oneftd7cEfr3kQLRwQ4kp7ue</strong></p>
+<p>Save the collateral address since we will need it later.</p>
+<p>For security purposes, let’s encrypt the wallet by selecting <strong>Settings &gt; Encrypt wallet</strong>. Save your password and make sure nobody else knows about it.</p>
+<p>Back up your wallet file by selecting<strong>&nbsp;File &gt; Backup</strong><strong>&nbsp;Wallet</strong>. Save the file to an external hard drive or other storage physically separate from your computer. So, if anything happens to your hardware, you can still access your funds.</p>
+<p>Now send exactly 100 USBL in a single transaction to the collateral address you generated in the previous step, make sure 'Substract fee from amount' checkbox off. Once it’s done, view the transaction in a 
+<a href="https://softbalanced.com:3001/insight/" class="keychainify-checked">blockchain explorer</a> by searching for the address.</p>
+<p>You will need 15 confirmations before you can register the masternode, but you can continue with the next step at this point already: generating your masternode operator key.</p>
+<p><strong><img loading="lazy" class="fr-fic fr-dii aligncenter" src="./masternode_files/pasted image 0(8).png" width="602" height="297"></strong></p>
+<h3>4. Install Balanced Core</h3>
+<p>Balanced Core is the software that runs the Balanced Core graphic user interface wallet and Balanced masternodes. It is also behind the Balanced blockchain. (In case build daemon on your own required use source code https://github.com/softbalanced/core/)</p>
+<p>Open PuTTy again and connect using the username and password for your new, non-root user.</p>
+<p>input the following commands after logging in:</p>
+<p dir="ltr"><strong>cd&nbsp;~</strong></p>
+<p dir="ltr"><strong>wget https://github.com/softbalanced/core/releases/download/desktop/daemon_qt_wallet_unix.zip</strong></p>
+<p dir="ltr"><strong>mkdir ~/.bitdollar</strong></p>
+<p dir="ltr"><strong>echo 'rpcuser=bitdollar' &gt;&gt; ~/.bitdollar/bitdollar.conf</strong></p>
+<p dir="ltr"><strong>echo 'rpcpassword=yournewpassword' &gt;&gt; ~/.bitdollar/bitdollar.conf</strong></p>
+<p dir="ltr"><strong>./bitdollard -daemon</strong></p>
+<p dir="ltr"><strong>./bitdollar-cli  getnetworkinfo</strong></p>
+<p>in case connection delay use command</p>
+<p dir="ltr"><strong>./bitdollar-cli addnode chi.softbalanced.com add</strong></p>
+<p dir="ltr"><strong>./bitdollar-cli addnode atl.softbalanced.com add</strong></p>
+<h3>5. Register your masternode</h3>
+<h4><strong>Identify the funding transaction</strong></h4>
+<p>First, we need to find the txid (transaction ID) of the transaction. Click <strong>Tools &gt; Debug</strong> console and enter the following command:</p>
+<p><strong>masternode outputs</strong></p>
+<p>This should return a string of characters similar to the following:</p>
+<p dir="ltr"><strong>{</strong></p>
+<p dir="ltr"><strong>“16347a28f4e5edf39f4dceac60e2327931a25fdee1fb4b94b63eeacf0d5879e3”&nbsp;:&nbsp;“1”,</strong></p>
+<p dir="ltr"><strong>}</strong></p>
+<p>The first long string is your collateralHash, while the last number is the collateralIndex.</p>
+<p><strong>Generate a BLS key pair</strong></p>
+<p>A public/private BLS key pair is required to operate a masternode.</p>
+<p>If you are using a hosting service, they may provide you with their public key, and you can skip this step.</p>
+<p>If you are hosting your own masternode, generate a BLS public/private keypair in Balanced Core by clicking <strong>T</strong><strong>ools &gt; Debug console</strong> and entering the following command:</p>
+<p><strong>bls generate</strong></p>
+<p dir="ltr"><strong>{</strong></p>
+<p dir="ltr"><strong>&nbsp; “secret”: “395555d67d884364f9e37e7e1b29536519b74af2e5ff7b62122e62c2fffab35e”,</strong></p>
+<p dir="ltr"><strong>&nbsp; “public”: “99f20ed1538e28259ff80044982372519a2e6e4cdedb01c96f8f22e755b2b3124fbeebdf6de3587189cf44b3c6e7670e”</strong></p>
+<p dir="ltr"><strong>}</strong></p>
+<p>Save these keys (write them down if possible) and store them in a safe place.</p>
+<p><strong>Add the private key to your masternode configuration</strong></p>
+<p>The public key will be used in the following steps. The private key must be entered in the Balanced.conf file on the masternode. Log in to your masternode using ssh or PuTTY and edit the configuration as follows:</p>
+<p dir="ltr"><strong>nano ~/.bitdollar/bitdollar.conf</strong></p>
+<p>The editor appears with the existing masternode configuration. Add or uncomment these lines in the file, replacing the key with your BLS private key generated above:</p>
+<p dir="ltr"><strong>masternode=1</strong></p>
+<p><strong>masternodeblsprivkey=395555d67d884364f9e37e7e1b29536519b74af2e5ff7b62122e62c2fffab3</strong></p>
+<p>Press enter to make sure there is a blank line at the end of the file, then press Ctrl + X to close the editor and Y and Enter save the file. We now need to restart the masternode for this change to take effect.</p>
+<p>Enter the following commands, waiting a few seconds in between to give Balanced Core time to shut down:</p>
+<p dir="ltr"><strong>~/.bitdollar/bitdollar-cli stop</strong></p>
+<p dir="ltr"><strong>sleep&nbsp;15</strong></p>
+<p><strong>~/.bitdollar/bitdollard</strong></p>
+<p><strong>Prepare a ProRegTx transaction</strong></p>
+<p>A pair of BLS keys for the operator were already generated above, and the private key was entered on the masternode. The public key is used in this transaction as the <strong>operatorPubKey</strong>.</p>
+<p>First, we need to get a new, unused address from the wallet to serve as the owner key address (<strong>ownerKeyAddr</strong>). This is not the same as the collateral address holding 100 USBL. Generate a new address as follows:</p>
+<p dir="ltr"><strong>getnewaddress</strong></p>
+<p dir="ltr"><strong>yfgxFhqrdDG15ZWKJAN6dQvn6dZdgBPAip</strong></p>
+<p>This address can also be used as the voting key address (<strong>votingKeyAddr</strong>). Alternatively, you can specify an address provided to you by your chosen voting delegate, or simply generate a new voting key address as follows:</p>
+<p dir="ltr"><strong>getnewaddress</strong></p>
+<p dir="ltr"><strong>yfRaZN8c3Erpqj9iKnmQ9QDBeUuRhWV3Mg</strong></p>
+<p>Then either generate or choose an existing address to receive the owner’s masternode payouts (<strong>payoutAddress</strong>). It is also possible to use an address external to the wallet:</p>
+<p dir="ltr"><strong>getnewaddress</strong></p>
+<p dir="ltr"><strong>yjZVt49WsQd6XSrPVAUGXtJccxviH9ZQpN</strong></p>
+<p>You can also optionally generate and fund another address as the transaction fee source (<strong>feeSourceAddress</strong>). If you selected an external payout address, you must specify a fee source address. Either the payout address or fee source address must have enough balance to pay the transaction fee, or the final <strong>register_submit&nbsp;</strong>transaction will fail.</p>
+<p>The private keys to the owner and fee source addresses must exist in the wallet submitting the transaction to the network. If your wallet is protected by a password, it must now be unlocked to perform the following commands. Unlock your wallet for five minutes:</p>
+<p><strong>walletpassphrase yourSecretPassword&nbsp;300</strong></p>
+<p>We will now prepare an unsigned ProRegTx special transaction using the <strong>protx&nbsp;register_prepare</strong> command. This command has the following syntax:</p>
+<p dir="ltr"><strong>protx register_prepare collateralHash collateralIndex ipAndPort ownerKeyAddr</strong></p>
+<p dir="ltr"><strong>&nbsp; operatorPubKey votingKeyAddr operatorReward payoutAddress (feeSourceAddress)</strong></p>
+<p>Open a text editor such as notepad to prepare this command. Replace each argument to the command as follows:</p>
+<p><strong>collateralHash</strong>: The txid of the 100 USBL collateral funding transaction</p>
+<p><strong>collateralIndex</strong>: The output index of the 100 USBL funding transaction</p>
+<p><strong>ipAndPort</strong>: Masternode IP address and port, in the format x.x.x.x:yyyy</p>
+<p><strong>ownerKeyAddr</strong>: The new Balanced address generated above for the owner/voting address</p>
+<p><strong>operatorPubKey</strong>: The BLS public key generated above (or provided by your hosting service)</p>
+<p><strong>votingKeyAddr</strong>: The new Balanced address generated above, or the address of a delegate, used for proposal voting</p>
+<p><strong>operatorReward</strong>: The percentage of the block reward allocated to the operator as payment</p>
+<p><strong>payoutAddress</strong>: A new or existing Balanced address to receive the owner’s masternode rewards</p>
+<p><strong>feeSourceAddress</strong>: An (optional) address used to fund ProTx fee. <strong>payoutAddress&nbsp;</strong>will be used if not specified.</p>
+<p>Note that the operator is responsible for <a href="https://docs.balanced.org/en/stable/masternodes/maintenance.html#dip3-update-service" class="keychainify-checked">specifying their own reward</a> address in a separate <strong>update_service&nbsp;</strong>transaction if you specify a non-zero <strong>operatorReward</strong>. The owner of the masternode collateral does not specify the operator’s payout address.</p>
+<p>Example (remove line breaks if copying):</p>
+<p dir="ltr"><strong>protx register_prepare</strong></p>
+<p dir="ltr"><strong>&nbsp; 16347a28f4e5edf39f4dceac60e2327931a25fdee1fb4b94b63eeacf0d5879e3</strong></p>
+<p dir="ltr"><strong>&nbsp; 1</strong></p>
+<p dir="ltr"><strong>&nbsp; 45.76.230.239:19999</strong></p>
+<p dir="ltr"><strong>&nbsp; yfgxFhqrdDG15ZWKJAN6dQvn6dZdgBPAip</strong></p>
+<p dir="ltr"><strong>&nbsp; 99f20ed1538e28259ff80044982372519a2e6e4cdedb01c96f8f22e755b2b3124fbeebdf6de3587189cf44b3c6e7670e</strong></p>
+<p dir="ltr"><strong>&nbsp; yfRaZN8c3Erpqj9iKnmQ9QDBeUuRhWV3Mg</strong></p>
+<p dir="ltr"><strong>&nbsp; 0</strong></p>
+<p dir="ltr"><strong>&nbsp; yjZVt49WsQd6XSrPVAUGXtJccxviH9ZQpN</strong></p>
+<p dir="ltr"><strong>&nbsp; yR83WsikBaBaNusTnHZf28kAcL8oVmp1TE</strong></p>
+<p>Output:</p>
+<p dir="ltr"><strong>{</strong></p>
+<p dir="ltr"><strong>&nbsp; “tx”: “030001000175c9d23c2710798ef0788e6a4d609460586a20e91a15f2097f56fc6e007c4f8e0000000000feffffff01a1949800000000001976a91434b09363474b14d02739a327fe76e6ea12deecad88ac00000000d1010000000000e379580dcfea3eb6944bfbe1de5fa2317932e260acce4d9ff3ede5f4287a34160100000000000000000000000000ffff2d4ce6ef4e1fd47babdb9092489c82426623299dde76b9c72d9799f20ed1538e28259ff80044982372519a2e6e4cdedb01c96f8f22e755b2b3124fbeebdf6de3587189cf44b3c6e7670ed1935246865dce1accce6c8691c8466bd67ebf1200001976a914fef33f56f709ba6b08d073932f925afedaa3700488acfdb281e134504145b5f8c7bd7b47fd241f3b7ea1f97ebf382249f601a0187f5300”,</strong></p>
+<p dir="ltr"><strong>&nbsp; “collateralAddress”: “yjSPYvgUiAQ9AFj5tKFA8thFLoLBUxQERb”,</strong></p>
+<p dir="ltr"><strong>&nbsp; “signMessage”: “yjZVt49WsQd6XSrPVAUGXtJccxviH9ZQpN|0|yfgxFhqrdDG15ZWKJAN6dQvn6dZdgBPAip|yfRaZN8c3Erpqj9iKnmQ9QDBeUuRhWV3Mg|ad5f82257bd00a5a1cb5da1a44a6eb8899cf096d3748d68b8ea6d6b10046a28e”</strong></p>
+<p dir="ltr"><strong>}</strong></p>
+<p>Next, we will use the <strong>collateralAddress&nbsp;</strong>and <strong>signMessage&nbsp;</strong>fields to sign the transaction, and the output of the <strong>tx&nbsp;</strong>field to submit the transaction.</p>
+<p><strong>Sign the ProRegTx transaction</strong></p>
+<p>We will now sign the content of the <strong>signMessage&nbsp;</strong>field using the private key for the collateral address as specified in <strong>collateralAddress</strong>. The command takes the following syntax:</p>
+<p><strong>signmessage collateralAddress signMessage</strong></p>
+<p>Example:</p>
+<p><strong>signmessage yjSPYvgUiAQ9AFj5tKFA8thFLoLBUxQERb yjZVt49WsQd6XSrPVAUGXtJccxviH9ZQpN|0|yfgxFhqrdDG15ZWKJAN6dQvn6dZdgBPAip|yfRaZN8c3Erpqj9iKnmQ9QDBeUuRhWV3Mg|ad5f82257bd00a5a1cb5da1a44a6eb8899cf096d3748d68b8ea6d6b10046a28e</strong></p>
+<p>Output:</p>
+<p><strong>II8JvEBMj6I3Ws8wqxh0bXVds6Ny+7h5HAQhqmd5r/0lWBCpsxMJHJT3KBcZ23oUZtsa6gjgISf+a8GzJg1BfEg=</strong></p>
+<p><strong>Submit the signed message</strong></p>
+<p><strong>protx register_submit tx sig</strong></p>
+<p>Example:</p>
+<p><strong>protx register_submit 030001000175c9d23c2710798ef0788e6a4d609460586a20e91a15f2097f56fc6e007c4f8e0000000000feffffff01a1949800000000001976a91434b09363474b14d02739a327fe76e6ea12deecad88ac00000000d1010000000000e379580dcfea3eb6944bfbe1de5fa2317932e260acce4d9ff3ede5f4287a34160100000000000000000000000000ffff2d4ce6ef4e1fd47babdb9092489c82426623299dde76b9c72d9799f20ed1538e28259ff80044982372519a2e6e4cdedb01c96f8f22e755b2b3124fbeebdf6de3587189cf44b3c6e7670ed1935246865dce1accce6c8691c8466bd67ebf1200001976a914fef33f56f709ba6b08d073932f925afedaa3700488acfdb281e134504145b5f8c7bd7b47fd241f3b7ea1f97ebf382249f601a0187f5300 II8JvEBMj6I3Ws8wqxh0bXVds6Ny+7h5HAQhqmd5r/0lWBCpsxMJHJT3KBcZ23oUZtsa6gjgISf+a8GzJg1BfEg=</strong></p>
+<p>Output:</p>
+<p><strong>e38b79f469eee7fe81c097380c784ac484b96bd5686899f9cd6df82c3827e374</strong></p>
+<p>Your masternode is now registered and will appear on the Deterministic Masternode List after the transaction is mined to a block.</p>
+<p>You can view this list on the <strong>Masternodes -&gt; DIP3 Masternodes</strong> tab of the Balanced Core wallet, or in the console using the command <strong>protx&nbsp;list&nbsp;valid</strong>, where the txid of the final <strong>protx&nbsp;register_submit</strong> transaction identifies your masternode.</p>
+<p>At this point you can go back to your terminal window and monitor your masternode by entering <strong>~/.bitdollar/bitdollar-cli&nbsp;masternodelist</strong> 
+</p><p>Now you can finally log out of the server by typing <strong>exit</strong>.</p>
+<p>Congratulations! You now have a masternode running.</p>
+
+
+
+
+
+
+
+
+
+<p><!-- Media Shower Impressions --></p>
+<div class="ms_article_id" style="display: none;" data-ms-article-id="78256"></div>
+
+        <div class="clear"></div>
+
+        
+    </div><!-- .entry-content -->
+
+
+    <footer clas="" <="" article=""><!-- #post -->
+                
+
+
+
+</footer></article></div><!-- #comments -->
+                
+            </main></div>
+
+        
+    <!-- #main -->
+
+
+	
+	<style>
+	.mc-general-newsletter {
+		background-color: #e0e9f2;
+		background-image: url('/wp-content/plugins/bmj-mc-subscribe/assets/b_logo.png');
+		background-size: 30%;
+		background-position: 92% 22%;
+		background-repeat: no-repeat;
+		padding: 16px 24px 28px;
+		margin-bottom: 38px;
+	}
+	.mc-general-newsletter input {
+		margin: 6px 0;
+		padding-left: 16px;
+	}
+	.mc-general-newsletter h3 {
+		line-height: 1.3em;
+		margin-bottom: 12px;
+		color: #093969;
+		font-weight: 400;
+	}
+	.mc-general-newsletter .bmj-newsletter-signup-btn {
+		margin-top: 6px;
+		position: absolute;
+		background-color: #be1e31;
+	}
+	.mc-general-newsletter .bmj-newsletter-signup-btn:hover {
+		background: #000;
+	}
+	.mc-general-newsletter .button-wrapper {
+		position: relative;
+	}
+/*	.mc-general-newsletter .invalid-error {
+		position: relative;
+		margin-top: 28px;
+	}*/
+	</style>
+
+
+ <!-- /#sidebar -->
+    
+
+	<div class="clear"></div>
+
+	
+
+</div> <!-- /.page-wrap -->
+
+<div class="clear"></div>
+
+
+
+</div>
+
+<!-- Begin MediaShower.com LinkedIn AD Code -->
+
+<!-- Outbrain Pixel Starts Here -->
+</body></html>
